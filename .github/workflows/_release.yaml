@@ -128,7 +128,7 @@ jobs:
 
     - name: Download iOS App Store provisioning profile
       if: ${{ inputs.deploy_to_testflight }}
-      uses: apple-actions/download-provisioning-profiles@v3
+      uses: apple-actions/download-provisioning-profiles@v6
       with:
         bundle-id: ${{ inputs.package_name }}
         profile-type: IOS_APP_STORE
