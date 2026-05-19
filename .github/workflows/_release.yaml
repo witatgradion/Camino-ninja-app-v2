@@ -210,21 +210,21 @@ jobs:
 
     - name: Upload APK Artifact
       if: ${{ inputs.build_apk }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: apk
         path: build/app/outputs/flutter-apk/app-${{ inputs.flavor }}-release.apk
 
     - name: Upload AAB Artifact
       if: ${{ inputs.build_appbundle }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: aab
         path: build/app/outputs/bundle/${{ inputs.flavor }}Release/app-${{ inputs.flavor }}-release.aab
 
     - name: Upload iOS Artifact
       if: ${{ inputs.build_ios }}
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: ios
         path: build/ios_build.tar.gz
