@@ -43,7 +43,7 @@ dependencies:
   image_picker: ^1.2.1
   intl: ^0.20.2
   modal_bottom_sheet: ^3.0.0
-  package_info_plus: ^8.1.1
+  package_info_plus: ^9.0.1
   path: ^1.9.0
   path_provider: ^2.1.5
   remote_data:
