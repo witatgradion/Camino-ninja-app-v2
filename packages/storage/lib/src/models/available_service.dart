@@ -1,0 +1,15 @@
+enum AvailableService {
+  hotel,
+  atm,
+  cafe,
+  restaurant,
+  shopping,
+  tobacco,
+  pharmacy,
+  clinic,
+  fountain,
+  postOffice,
+  busStation,
+  trainStation,
+  airport,
+}

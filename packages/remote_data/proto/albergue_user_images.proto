@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message AlbergueUserImages {
+    int32 id = 1;
+    int32 albergue_id = 2;
+    string file_key = 3;
+    bool status = 4;
+    
+    string created_at = 28;
+    string updated_at = 29;
+    string deleted_at = 30;
+}
+
+message AlbergueUserImagesListResponse {
+    repeated AlbergueUserImages items = 1;
+}

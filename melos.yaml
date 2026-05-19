@@ -1,0 +1,76 @@
+name: camino_ninja_flutter
+
+packages:
+  - .
+  - packages/**
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  # Clean all packages
+  clean:
+    run: flutter clean
+    exec:
+      concurrency: 5
+    description: Clean all packages
+
+  # Get dependencies for all packages
+  get:
+    run: flutter pub get
+    exec:
+      concurrency: 5
+    description: Get dependencies for all packages
+
+  # Clean and get dependencies
+  refresh:
+    run: melos clean && melos bootstrap
+    description: Clean all packages and bootstrap
+
+  # Run analyzer on all packages
+  analyze:
+    run: flutter analyze --no-fatal-infos
+    exec:
+      concurrency: 1
+    description: Analyze all packages
+
+  # Run tests in all packages
+  test:
+    run: flutter test --coverage
+    exec:
+      concurrency: 1
+      failFast: true
+    packageFilters:
+      dirExists: test
+    description: Run tests in all packages
+
+  # Generate localizations
+  gen-l10n:
+    run: flutter gen-l10n --arb-dir="lib/l10n/arb"
+    description: Generate localizations
+    packageFilters:
+      scope: camino_ninja_flutter
+
+  # Generate code (build_runner)
+  build:
+    run: dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 1
+    packageFilters:
+      dependsOn: build_runner
+    description: Run build_runner in packages that need it
+
+  # Format all packages
+  format:
+    run: dart format .
+    exec:
+      concurrency: 5
+    description: Format all packages
+
+  # Fix all packages
+  fix:
+    run: dart fix --apply
+    exec:
+      concurrency: 1
+    description: Apply dart fixes to all packages

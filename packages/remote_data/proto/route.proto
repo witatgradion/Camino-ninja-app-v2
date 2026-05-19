@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message Route {
+    int32 id = 1;
+    int32 order_key = 2;
+    string route_name = 3;
+    string route_sub_name = 4;
+    string legend_color = 5;
+    bool status = 6;
+    string light_legend_color = 7;
+    string dark_legend_color = 8;
+    string short_name = 9;
+
+    string created_at = 28;
+    string updated_at = 29;
+    string deleted_at = 30;
+}
+
+message RouteListResponse {
+  repeated Route items = 1;
+}

@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "1028157933483",
+    "project_id": "camino-ninja-80a28",
+    "storage_bucket": "camino-ninja-80a28.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028157933483:android:3f2dc9f75c6f622947b4ee",
+        "android_client_info": {
+          "package_name": "ninja.camino.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028157933483-ldlu8gbefub3s31gn6fmvplmq93j5ndk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app",
+            "certificate_hash": "ac2daf51a65f6e609abfd40bd891eec370ffcf6d"
+          }
+        },
+        {
+          "client_id": "1028157933483-nqn7ksbijlcgram00n7ise2u8p32stcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app",
+            "certificate_hash": "c3ac73363118d8278e642c41b2be8ce6a2961024"
+          }
+        },
+        {
+          "client_id": "1028157933483-r3iso2liqs60bvbg82b4r4ku92k4a45r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app",
+            "certificate_hash": "760a1b68117a22eea2ede5800226df52367cc656"
+          }
+        },
+        {
+          "client_id": "1028157933483-fcie7nub57cdjru1ak0o6ohe0qrrqo7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj2U6DYa8RR51cobi1ODKSB9TpRfqMNXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028157933483-fcie7nub57cdjru1ak0o6ohe0qrrqo7e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028157933483-rrjro37l5q7uvpk31ujo0q3cmo29kn84.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ninja.camino.app.stg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028157933483:android:25488513881fe8d047b4ee",
+        "android_client_info": {
+          "package_name": "ninja.camino.app.stg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028157933483-fcie7nub57cdjru1ak0o6ohe0qrrqo7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj2U6DYa8RR51cobi1ODKSB9TpRfqMNXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028157933483-fcie7nub57cdjru1ak0o6ohe0qrrqo7e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028157933483-rrjro37l5q7uvpk31ujo0q3cmo29kn84.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ninja.camino.app.stg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+{
+  "@@locale": "ko",
+  "seeMyComment": "내 댓글 보기",
+  "versionCopied": "버전이 복사되었습니다",
+  "@versionCopied": {
+    "description": "Snack bar confirmation after copying the app version to clipboard"
+  },
+  "markAllAsRead": "Mark all as read",
+  "@markAllAsRead": {
+    "description": "Action to mark all notifications or announcements as read"
+  }
+}

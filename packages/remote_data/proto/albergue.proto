@@ -1,0 +1,225 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+import "common.proto";
+
+message Albergue {
+  int32 id = 1;
+  string name = 2;
+  string slug = 3;
+  int32 order_key = 4;
+  int32 status = 5;
+  bool is_active = 6;
+  common.GeoPoint geo_point = 7;
+  bool is_municipal = 8;
+  bool is_albergue = 9;
+  string city_name = 10;
+  string address = 11;
+  string postal_code = 12;
+  string province = 13;
+  string region = 14;
+  string country = 15;
+  string share_url = 16;
+  string web = 17;
+  int32 reservation_translation_id = 18;
+  int32 open_season_translation_id = 19;
+  int32 places_in_dormitory = 20;
+  int32 number_of_dormitories = 21;
+  int32 city_id = 22;
+
+  string booking_com_url = 24;
+  int32 dist_costa = 25;
+  int32 dist_litoral = 26;
+  string reserver_url = 27;
+  string created_at = 28;
+  string updated_at = 29;
+  string deleted_at = 30;
+  repeated AlbergueEmail emails = 31;
+  repeated AlberguePhone phones = 32;
+  repeated AlbergueImage albergue_images = 33;
+
+  double booking_price = 40;
+  string booking_price_updated_at = 41;
+
+  AlbergueFacilities facilities = 34;
+  AlbergueOperatingHours operating_hours = 35;
+  AlberguePrices prices = 36;
+  AlbergueReviews reviews = 37;
+  AlbergueSocialMedia social_media = 38;
+  repeated AlbergueWifi wifis = 39;
+}
+
+message AlbergueFacilities {
+  int32 id = 1;
+  int32 albergue_id = 2;
+
+  optional bool has_kitchen = 3;
+  optional bool has_cooktops = 4;
+  optional bool has_microwave = 5;
+  optional bool has_water_boiler = 6;
+  optional bool has_plates_utensils = 7;
+  optional bool has_cooking_pots = 8;
+  optional bool has_breakfast = 9;
+  optional bool is_breakfast_included = 10;
+  optional bool has_clothes_line = 11;
+  optional bool has_wifi = 12;
+  optional bool has_tv = 13;
+  optional bool has_restaurant = 14;
+  optional bool has_community_dinner = 15;
+  optional bool has_dinner = 16;
+  optional bool has_washing_machine = 17;
+  optional bool has_spin_dryer = 18;
+  optional bool has_hand_washing_sink = 19;
+  optional bool has_tumble_dryer = 20;
+  optional bool has_individual_powerplug = 21;
+  optional bool has_private_lockers = 22;
+  optional bool has_curtains = 23;
+  optional bool has_oven = 24;
+  optional bool has_vending_machine = 25;
+  optional bool has_full_laundry_service = 26;
+  optional bool has_fridge = 27;
+  optional bool has_lunch = 28;
+  optional bool has_vegetarian_option = 29;
+  optional bool has_vegan_option = 30;
+  optional bool has_swimming_pool = 31;
+  optional bool has_donativo_breakfast = 32;
+  optional bool has_cube_beds = 33;
+  optional bool has_community_lunch = 34;
+  optional bool is_vegetarian = 35;
+  optional bool is_vegan = 36;
+  optional bool is_organic = 37;
+  optional bool pets_allowed = 38;
+  optional bool has_cotton_sheets = 39;
+  optional bool is_dinner_included = 40;
+
+  string created_at = 41;
+  string updated_at = 42;
+  string deleted_at = 43;
+}
+
+message AlbergueOperatingHours {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  optional string checkin_time = 3;
+  optional string checkout_time = 4;
+  optional string close_time = 5;
+  optional string open_from = 6;
+  optional string open_to = 7;
+  optional string open_from_ex = 8;
+  optional string open_to_ex = 9;
+  optional string open_from_ex2 = 10;
+  optional string open_to_ex2 = 11;
+  optional string opens = 12;
+  string created_at = 13;
+  string updated_at = 14;
+  string deleted_at = 15;
+  map<string, string> open_additional_information = 16;
+  bool unknown_open_season = 17;
+  bool opens_all_year = 18;
+}
+
+message AlberguePrices {
+  int32 id = 1;
+  int32 albergue_id = 2;
+
+  optional float price_from_dormitory = 3;
+  optional float price_to_dormitory = 4;
+  optional float price_from_double_room = 5;
+  optional float price_to_double_room = 6;
+  optional float price_from_single_room = 7;
+  optional float price_to_single_room = 8;
+  optional float price_from_bed_shared_room = 9;
+  optional float price_to_bed_shared_room = 10;
+  optional float price_from_quatro_room = 11;
+  optional float price_to_quatro_room = 12;
+  optional float price_from_apartament = 13;
+  optional float price_to_apartament = 14;
+  optional float price_from_triple_room = 15;
+  optional float price_to_triple_room = 16;
+
+  string created_at = 17;
+  string updated_at = 18;
+  string deleted_at = 19;
+}
+
+
+message AlbergueReviews {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  float g_rating = 3;
+  float b_review_score = 4;
+  string b_id = 5;
+  string created_at = 6;
+  string updated_at = 7;
+  string deleted_at = 8;
+}
+
+message AlbergueSocialMedia {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  optional string facebook_url = 3;
+  optional string facebook_id = 4;
+  optional string instagram_handle = 5;
+  optional string messenger = 6;
+  string created_at = 7;
+  string updated_at = 8;
+  string deleted_at = 9;
+}
+
+
+message AlbergueWifi {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  string url = 3;
+  string created_at = 4;
+  string updated_at = 5;
+  string deleted_at = 6;
+}
+
+
+message AlbergueEmail {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  string email_address = 3;
+  string created_at = 4;
+  string updated_at = 5;
+  string deleted_at = 6;
+}
+
+message AlberguePhone {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  optional string phone_number = 3;
+  optional bool whatsapp = 4;
+  optional bool private = 5;
+  optional bool signal = 6;
+  string created_at = 7;
+  string updated_at = 8;
+  string deleted_at = 9;
+}
+
+message AlbergueImage {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  string file_key = 3;
+  bool status = 4;
+  string created_at = 5;
+  string updated_at = 6;
+  string deleted_at = 7;
+}
+
+message AlbergueListResponse {
+  repeated Albergue items = 1;
+}
+
+message AlbergueUserImage {
+  int32 id = 1;
+  int32 albergue_id = 2;
+  string file_key = 3;
+  bool status = 4;
+  string created_at = 5;
+  string updated_at = 6;
+  string deleted_at = 7;
+}

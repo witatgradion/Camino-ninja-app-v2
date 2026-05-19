@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message LatestUpdated {
+    string routes_updated_at = 1;
+    string route_points_updated_at = 2;
+    string alt_route_points_updated_at = 3;
+    string albergues_updated_at = 4;
+    string cities_updated_at = 5;
+    string albergue_user_images_updated_at = 6;
+    string albergue_user_reviews_updated_at = 7;
+}

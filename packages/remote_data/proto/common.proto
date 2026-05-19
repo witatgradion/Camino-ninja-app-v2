@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message GeoPoint {
+  double lat = 1;
+  double lon = 2;
+}

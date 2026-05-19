@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PRD — Catch Up feature/combining-trails and Ship the Multi-Trail Feature</title>
+<style>
+  :root {
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #4c51bf;
+    --border: #e5e7eb;
+    --soft-bg: #f9fafb;
+    --table-header: #eef2ff;
+    --code-bg: #f3f4f6;
+    --max-width: 880px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 48px 24px 96px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  header.doc-header {
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  header.doc-header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  header.doc-header .meta {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    margin: 48px 0 16px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    margin: 32px 0 12px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #111827;
+  }
+  h4 {
+    margin: 24px 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  ol li { padding-left: 4px; }
+  strong { color: #111827; font-weight: 600; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--code-bg);
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: #374151;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--table-header);
+    font-weight: 600;
+    color: #1e1b4b;
+  }
+  tbody tr:nth-child(even) td { background: var(--soft-bg); }
+  blockquote {
+    margin: 16px 0;
+    padding: 12px 16px;
+    border-left: 3px solid var(--accent);
+    background: var(--soft-bg);
+    color: var(--text);
+  }
+  .toc {
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 24px;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .toc ol { padding-left: 20px; margin: 8px 0 0; }
+  .toc li { margin-bottom: 4px; }
+  .toc a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .toc a:hover { text-decoration: underline; }
+  .pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--table-header);
+    color: #1e1b4b;
+    margin-right: 4px;
+  }
+  footer.doc-footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  @media print {
+    body { padding: 0; font-size: 12px; }
+    main { max-width: 100%; }
+    h2 { page-break-after: avoid; }
+    table, blockquote, .toc { page-break-inside: avoid; }
+    header.doc-header { page-break-after: avoid; }
+    .toc { display: none; }
+    a { color: var(--text); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header class="doc-header">
+  <h1>PRD — Catch Up <code>feature/combining-trails</code> and Ship the Multi-Trail Feature</h1>
+  <div class="meta">
+    <span class="pill">Product Requirements Document</span>
+    <span class="pill">Camino Ninja Flutter</span>
+    <span class="pill">2026-05-14</span>
+  </div>
+</header>
+
+<nav class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#problem">Problem Statement</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#user-stories">User Stories</a></li>
+    <li><a href="#implementation">Implementation Decisions</a></li>
+    <li><a href="#testing">Testing Decisions</a></li>
+    <li><a href="#out-of-scope">Out of Scope</a></li>
+    <li><a href="#further-notes">Further Notes</a></li>
+  </ol>
+</nav>
+
+<section id="problem">
+<h2>Problem Statement</h2>
+
+<p>Camino Ninja's pilgrimage plans are currently tied to a single route. Real pilgrims often want to combine multiple routes into one journey — either by manually walking the junction graph or by picking start/end cities and letting the app suggest combinations. The product owner wants to put this capability in front of users and measure adoption.</p>
+
+<p>Two blockers stand in the way:</p>
+
+<ol>
+  <li><strong>The branch implementing the feature is 89 commits behind the live release train.</strong> The catch-up target is <code>release/2.2.410</code>, which is 22 commits ahead of <code>develop</code> and includes a Google Maps → Mapbox migration plus the data-loss hotfixes that have shipped during the branch's lifetime. Shipping without absorbing these would re-introduce known production regressions (orphan stages breaking FK migrations, NULL <code>stage_uuid</code> causing silent stage deletion on sync, plan data loss on upgrade).</li>
+  <li><strong>The feature has known structural gaps that need to close before user exposure.</strong> Specifically: <code>trail_route_ids</code> is not yet in the sync request/response models (backend coordinating in parallel, 1-day ETA); the stage planner database lacks a downgrade handler; the feature has no entry-point flag gating or analytics instrumentation; and the multi-trail map screens need porting to Mapbox.</li>
+</ol>
+
+<p>The product owner wants to ship to real users and measure adoption while keeping prod data integrity intact and retaining the ability to kill the feature quickly if it misbehaves.</p>
+</section>
+
+<section id="solution">
+<h2>Solution</h2>
+
+<p>Catch the branch up to <code>release/2.2.410</code> on an isolated integration worktree, complete the structural gaps (DB v10, sync wiring, Mapbox port, feature flag, analytics), and ship via a phased rollout: internal staging TestFlight → internal prod TestFlight → App Store release with a Remote Config ramp.</p>
+
+<p>Multi-trail plan creation is offered to users as two paired UX surfaces on a shared underlying capability: <strong>Custom Trail</strong> (advanced, manual junction-walking) and <strong>Plan a Journey</strong> (friendlier — start city + destination city → suggested route combinations). Both feed the same <code>MultiRouteTrail</code> model and persist via the same <code>trail_route_ids</code> column.</p>
+
+<p>The catch-up work lands on the integration branch as a sequence of small reviewable chunks (C1–C8), each independently testable per the team's existing test culture (migration harness, sync integration tests via <code>FakeNetworkService</code>, cubit unit tests, pure-function tests). The Mapbox port is verified via manual smoke checklist — no widget tests for maps. When all chunks are green, a single PR lands the work on a new release branch cut from <code>release/2.2.410</code>.</p>
+
+<p>Feature visibility is gated by two independent Remote Config flags (<code>feature_custom_trail_enabled</code>, <code>feature_journey_planner_enabled</code>) so each option can be ramped independently. Internal TestFlight cohorts are targeted by build-number conditions; App Store users get a 5% → 25% → 100% ramp. A multi-signal rollback runbook (crash rate, sync failure rate, support complaints) governs kill-switch decisions during the ramp.</p>
+</section>
+
+<section id="user-stories">
+<h2>User Stories</h2>
+
+<ol>
+  <li>As a pilgrim creating a new plan, I want to see three plan-type options so that I can choose between a single route, a manually-built custom trail, or a guided journey across multiple routes.</li>
+  <li>As a pilgrim creating a new plan, I want options 2 and 3 to be hidden in production by default so that I do not see incomplete or unstable features unless I'm in the rollout cohort.</li>
+  <li>As an advanced user choosing "Custom Trail", I want to walk the junction graph step by step so that I can manually compose a multi-route journey at any junction I choose.</li>
+  <li>As a user choosing "Plan a Journey", I want to pick a start city and a destination city so that the app can suggest available route options without me knowing about the junction graph.</li>
+  <li>As a user picking a destination in journey planner, I want suggested routes ranked by reachability (direct / via junction / not reachable) so that I can pick the best fit at a glance.</li>
+  <li>As a user reviewing route options, I want to see a draggable map preview of each suggested route so that I can visually compare them before committing.</li>
+  <li>As a user who created a multi-trail plan, I want my plan to round-trip through sync so that I can sign in on a second device and still see my multi-trail plan as multi-trail (not silently downgraded to single-route).</li>
+  <li>As a user who created a multi-trail plan during the TestFlight cohort, I want my plan to remain accessible if the operator flips the feature flag off later so that my data is not lost.</li>
+  <li>As an internal team member on staging TestFlight, I want the multi-trail options to always be visible so that I can dogfood the feature without Remote Config gymnastics.</li>
+  <li>As an internal team member on prod TestFlight, I want the options to be visible to me but not to external users so that I can test against the real prod backend without exposing the feature prematurely.</li>
+  <li>As a beta user installing the App Store release, I want the feature to ramp to me at 5% → 25% → 100% so that the operator can catch problems before they affect everyone.</li>
+  <li>As the product owner, I want to see adoption metrics (selection rate, completion rate, drop-off funnel) so that I can decide whether to ramp the rollout or kill the feature.</li>
+  <li>As the product owner, I want a runbook for flipping the feature off so that I can stop a regression within minutes of detecting it.</li>
+  <li>As an existing user upgrading from an older version, I want my plans to survive the DB migration so that I do not lose data.</li>
+  <li>As a user on a device that ends up running an older app version (e.g., TestFlight sideload or downgrade), I want the app to open without crashing so that I can continue using it even if my local data resets.</li>
+  <li>As a developer switching between branches, I want the DB to handle downgrades cleanly so that switching from this branch back to <code>release/2.2.410</code> does not require manually wiping data.</li>
+  <li>As a developer reviewing the catch-up work, I want the integration to land as a sequence of small reviewable chunks so that I can audit each step instead of reviewing one mega-PR.</li>
+  <li>As a developer running the test suite, I want every DB migration path covered by fixture-based tests so that I have confidence migrations are idempotent and lossless.</li>
+  <li>As a developer running the test suite, I want sync paths covered by integration tests against a fake network service so that sync regressions are caught before they reach prod.</li>
+  <li>As a developer changing a cubit's state machine, I want unit tests for the cubit's happy path and edge cases so that I know I haven't broken the state transitions.</li>
+  <li>As a developer touching the path-finding logic, I want pure-function tests for <code>RoutePathFinder</code> and <code>JunctionService</code> against fixture route graphs so that I can refactor with confidence.</li>
+  <li>As an operator reviewing analytics, I want a clean funnel from <code>plan_type_choice_shown</code> through <code>plan_type_choice_selected</code> through per-flow step events through <code>CreatePlanEvent</code> so that I can see exactly where users drop off.</li>
+  <li>As an operator monitoring sync health, I want explicit <code>multi_trail_plan_sync_success</code> and <code>_failed</code> events so that I can detect backend regressions without parsing generic sync events.</li>
+  <li>As an operator reviewing adoption, I want <code>feature_flag_exposure</code> events keyed to the flag name and value so that I can reconcile "users in cohort × users who saw it × users who tried it."</li>
+  <li>As an operator flipping the kill switch, I want any one of three triggers (crash rate, sync failure rate, support complaints) to justify flipping so that I am not waiting on a single signal that may be delayed.</li>
+  <li>As an operator flipping the kill switch, I want a two-person authority model with a designated channel-post protocol so that the team has redundancy without flip-flopping conflict.</li>
+  <li>As an operator post-flip, I want a 30-minute investigation window with a clear decision rule (flag-stays-off vs. hotfix) so that the team knows whether a code release is required.</li>
+  <li>As a user signing in on a new device after backend lands the sync API change, I want my multi-trail plans to come back complete so that the cross-device experience matches single-route plans.</li>
+</ol>
+</section>
+
+<section id="implementation">
+<h2>Implementation Decisions</h2>
+
+<h3>Strategic</h3>
+<ul>
+  <li><strong>Target branch for catch-up is <code>release/2.2.410</code>, not <code>develop</code>.</strong> Release/2.2.410 is 22 commits ahead of develop, is a strict superset, and contains the Mapbox migration plus all data-loss hotfixes. Shipping to develop directly would re-introduce known regressions.</li>
+  <li><strong>Mapbox migration is mandatory scope.</strong> Roughly 7 multi-trail map files (the journey planner map, trail preview map, trail builder maps, stage map, embedded stage map, route map explorer) need porting from <code>google_maps_flutter</code> to <code>mapbox_maps_flutter ^2.4.0</code>. The remaining ~23 map-using files are inherited via the merge already ported.</li>
+  <li><strong>Ship sequence is three phases, in order:</strong>
+    <ul>
+      <li><strong>Phase (a) Staging TestFlight</strong> — internal team only, on the <code>camino-ninja-dev</code> Firebase project. Flavor-gated visibility (no Remote Config). Goal: dogfood + smoke test against dev backend.</li>
+      <li><strong>Phase (b) Prod TestFlight</strong> — internal team only, on prod Firebase. Remote Config gated, with build-number condition targeting the internal TF cohort. Goal: validate behavior against real prod infrastructure.</li>
+      <li><strong>Phase (c) App Store release</strong> — external (beta and general) users, Remote Config gated. Default off, ramp to 5% → 25% → 100% based on adoption signal and health metrics. Goal: gather real adoption data.</li>
+    </ul>
+  </li>
+  <li><strong>Backend coordinates <code>trail_route_ids</code> sync support in parallel</strong> with a 1-day ETA. Client work begins immediately and absorbs the sync wiring (chunk C8) when backend is ready. Hard checkpoint before phase (b): backend round-trip confirmed via curl/Postman.</li>
+</ul>
+
+<h3>Branch and worktree</h3>
+<ul>
+  <li><strong>Integration worktree:</strong> <code>.claude/worktrees/combining-trails-mapbox</code>, branched from <code>feature/combining-trails</code>.</li>
+  <li><strong>Branch memory file:</strong> <code>branches/feature-combining-trails-mapbox.md</code> tracks chunk progress.</li>
+  <li><strong>Final PR:</strong> integration branch → newly cut release branch (e.g., <code>release/2.2.411</code>), one PR at the end.</li>
+</ul>
+
+<h3>Merge strategy</h3>
+<ul>
+  <li><strong>Atomic merge of <code>origin/release/2.2.410</code> into the integration branch</strong> as the first chunk (C1). No staged sub-merges and no cherry-picking. The storage package restructure (file splits + helper-function migrations) forces atomicity — partial application would leave a broken state.</li>
+  <li><strong>Per-category conflict resolution policy:</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr><th>Category</th><th>Policy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Generated files (<code>*.pb.dart</code>, <code>*.pbjson.dart</code>, <code>*.g.dart</code>, <code>*.freezed.dart</code>)</td><td>Never hand-merge. Regenerate after source conflicts resolve.</td></tr>
+    <tr><td>Storage restructure (<code>stage_planner_database.dart</code> and friends)</td><td>Accept release/2.2.410's structure. Adopt file split, helper-function migration pattern, top-level <code>stagePlannerDatabaseVersion</code> const. Drop this branch's defensive <code>stage_uuid</code> backfill. Park <code>trail_route_ids</code> for chunk C2.</td></tr>
+    <tr><td>Map widgets</td><td>Take release/2.2.410's Mapbox port verbatim during C1. Trail-rendering logic returns in chunks C3–C5 implemented against Mapbox APIs.</td></tr>
+    <tr><td>Plan cubits/screens (8 files)</td><td>Merge intent. Their changes are sync/UUID/stage-number related; this branch's are trail_route_ids and 3-option related. Both must land.</td></tr>
+    <tr><td><code>main_staging.dart</code></td><td>Merge intent. Both the dev-Firebase reroute and the Mapbox SDK init apply.</td></tr>
+    <tr><td>Pubspec / lockfiles</td><td>Take theirs (Mapbox + their version bumps).</td></tr>
+    <tr><td>ARB localization</td><td>Union the keys. Same-key conflicts resolve in favor of release/2.2.410.</td></tr>
+  </tbody>
+</table>
+
+<blockquote><strong>Escalation rule (critical):</strong> if a conflict's semantic intent is ambiguous — both sides changed the same line in semantically different ways — stop and escalate to the product owner. Do not guess.</blockquote>
+
+<p><strong>C1 acceptance criteria:</strong> all tests that pass on <code>release/2.2.410</code> still pass; <code>flutter analyze</code> clean across all packages; builds succeed for dev flavor (Android + iOS no-codesign); app launches in dev flavor and main 4 tabs render. Options 2 and 3 may be visually broken post-C1 (Mapbox port pending in C3–C5) — that's expected.</p>
+
+<h3>Chunk plan</h3>
+<p>Eight chunks land on the integration branch in this order:</p>
+
+<table>
+  <thead>
+    <tr><th>Chunk</th><th>What it delivers</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>C1</strong></td><td>Atomic merge of <code>origin/release/2.2.410</code>. Single commit with conflict resolutions per the policy above. Includes regenerated proto/JSON-serializable output.</td></tr>
+    <tr><td><strong>C2</strong></td><td>DB v10 migration + downgrade handler + tests. Idempotent <code>ALTER TABLE stage_plans ADD COLUMN trail_route_ids TEXT</code>. <code>onDowngrade: onDatabaseDowngradeDelete</code> on stage planner DB. Fixture <code>v9.sql</code>; migration tests for v7→v10, v8→v10, v9→v10; regression test through real multi-stage plan.</td></tr>
+    <tr><td><strong>C8</strong></td><td>Sync wiring for <code>trail_route_ids</code>. Field added to <code>SyncPlanRequest</code> and <code>SyncPlanResponse</code> (nullable string). Push and pull paths in <code>stage_plan_repository</code>. Round-trip integration test via <code>FakeNetworkService</code>. Requires backend confirmation before merge.</td></tr>
+    <tr><td><strong>C3</strong></td><td>Mapbox port: stage planner core map screens. Manual smoke checklist for each.</td></tr>
+    <tr><td><strong>C4</strong></td><td>Mapbox port: trail builder maps (trail_builder_screen, trail_preview_map, embedded_stage_map).</td></tr>
+    <tr><td><strong>C5</strong></td><td>Mapbox port: journey planner map preview and dev-only explorer.</td></tr>
+    <tr><td><strong>C6</strong></td><td>Cubit unit tests. <code>TrailBuilderCubit</code> and <code>JourneyPlannerCubit</code> covering happy paths + state-machine edge cases.</td></tr>
+    <tr><td><strong>C7</strong></td><td>Feature flag wiring + analytics events + flag-gating tests. Extends <code>FirebaseConfigDataSource</code>; adds <code>PlanTypeVisibility</code> resolver; wires gate in <code>PlanTypeChoiceSheet</code>; adds funnel analytics events.</td></tr>
+  </tbody>
+</table>
+
+<p>Each chunk is reviewed by the code-reviewer agent before the next chunk starts.</p>
+
+<h3>Database</h3>
+<ul>
+  <li><strong>Schema:</strong> <code>stage_plans.trail_route_ids TEXT</code> (nullable). String encoding parsed by <code>MultiRouteTrail.parseDescriptors</code>. NULL for single-route plans.</li>
+  <li><strong>Migration body:</strong> <code>_migrateStagePlannerToV10</code> checks <code>PRAGMA table_info(stage_plans)</code> and adds the column only if missing. Idempotent.</li>
+  <li><strong>No backfill:</strong> existing single-route plans keep NULL <code>trail_route_ids</code>. Codec handles NULL gracefully.</li>
+  <li><strong>No index:</strong> the column is never used as a query filter.</li>
+  <li><strong>Downgrade handler:</strong> <code>onDowngrade: onDatabaseDowngradeDelete</code> registered on the stage planner database. A v10 → v9 downgrade resets the stage planner DB cleanly; user loses local data but app does not crash. Acceptable cost — only affects TestFlight sideload and developer branch-switching.</li>
+</ul>
+
+<h3>Sync API contract</h3>
+<p>To confirm with backend before C8:</p>
+<ul>
+  <li>Field name: <code>trail_route_ids</code></li>
+  <li>Type: nullable string</li>
+  <li>Behavior on POST: server persists as-is (opaque string)</li>
+  <li>Behavior on GET: server returns as-is</li>
+  <li>Validation: backend allows the field (does not reject as unknown property)</li>
+  <li>Backward compatibility: additive change; older clients without the field continue to work unchanged</li>
+</ul>
+
+<h3>Feature flag design</h3>
+<ul>
+  <li><strong>Two independent flags:</strong> <code>feature_custom_trail_enabled</code> and <code>feature_journey_planner_enabled</code>. Allows independent ramping.</li>
+  <li><strong>Hybrid flavor + Remote Config:</strong>
+    <ul>
+      <li>Dev + staging flavors: always visible (hard flavor gate, no Remote Config read).</li>
+      <li>Prod flavor: gated by Remote Config. In-app default <code>false</code>. If Remote Config fetch fails, in-app default applies — options stay hidden (safe-by-default).</li>
+    </ul>
+  </li>
+  <li><strong>Gate location:</strong> <code>PlanTypeChoiceSheet</code> build, via a pure <code>PlanTypeVisibility</code> resolver function.</li>
+  <li><strong>Data behavior under flag-off:</strong> gate hides the entry point only. Existing multi-trail plans continue to load, render, edit, and sync. A user whose plan was created during a flag-on window does not lose access if the flag flips off.</li>
+</ul>
+
+<h3>Cohort targeting via Remote Config</h3>
+<ul>
+  <li><strong>Internal TF cohort:</strong> Remote Config condition keyed to build-number range. Internal team is the audience for phases (a) and (b).</li>
+  <li><strong>App Store ramp:</strong> Remote Config condition keyed to App Store build number with a <code>random_percent</code> rule. Starts at 5%, ramps to 25%, ramps to 100%.</li>
+  <li><strong>Optional backup:</strong> user-property condition keyed to <code>user_email_domain == 'caminounlimited.com'</code> for internal team members on App Store builds.</li>
+</ul>
+
+<h3>Analytics</h3>
+<ul>
+  <li><strong>Existing events extended:</strong> <code>CreatePlanEvent</code> gains <code>plan_type</code> and <code>trail_route_count</code> properties.</li>
+  <li><strong>New funnel events:</strong>
+    <ul>
+      <li><code>plan_type_choice_shown</code></li>
+      <li><code>plan_type_choice_selected</code></li>
+      <li><code>journey_planner_start_city_selected</code></li>
+      <li><code>journey_planner_destination_selected</code></li>
+      <li><code>journey_planner_route_option_selected</code></li>
+      <li><code>trail_builder_junction_decision</code></li>
+      <li><code>trail_builder_undo</code></li>
+      <li><code>trail_builder_finalized</code></li>
+      <li><code>multi_trail_plan_sync_success</code> and <code>multi_trail_plan_sync_failed</code></li>
+      <li><code>feature_flag_exposure</code></li>
+    </ul>
+  </li>
+  <li><strong>Dashboard:</strong> primary view in Amplitude; Firebase Analytics as fallback for cohort filtering.</li>
+</ul>
+
+<h3>Rollback runbook</h3>
+
+<h4>Triggers (any one justifies flipping)</h4>
+<ul>
+  <li>Crash-free rate for <code>TrailBuilderScreen</code> or <code>JourneyPlannerScreen</code> drops below 99% over a 1-hour window with ≥100 sessions</li>
+  <li><code>multi_trail_plan_sync_failed</code> count exceeds 1% of <code>multi_trail_plan_sync_success</code> over a 1-hour window</li>
+  <li>Three or more unique user complaints referencing the feature within a 24-hour window</li>
+</ul>
+
+<h4>Authority &amp; protocol</h4>
+<ul>
+  <li>Two-person quorum. Product owner + 1–2 designated teammates with Remote Config access.</li>
+  <li>Flip-first protocol — post to designated channel with: which flag, which trigger, raw numbers.</li>
+  <li>Time target: under 5 minutes from trigger detection to flag flipped.</li>
+</ul>
+
+<h4>Post-flip decision (30-min investigation window)</h4>
+<ul>
+  <li>Flag flip stopped the bleeding AND no existing user data is broken → flag stays off until next planned release ships the fix.</li>
+  <li>Existing user data is in a broken state OR flag flip did not help → cut a hotfix release on the existing release branch.</li>
+</ul>
+
+<h3>Adoption KPIs</h3>
+
+<table>
+  <thead>
+    <tr><th>Phase</th><th>Success criteria</th><th>Watch window</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>(a) Staging TF</strong></td><td>No crashes, no migration failures, no sync errors. Internal team uses both options to completion at least 3 times each.</td><td>~1 week</td></tr>
+    <tr><td><strong>(b) Prod TF</strong></td><td>Same as (a) but against prod infrastructure. Backend round-trip confirmed, analytics pipeline confirmed.</td><td>~1 week</td></tr>
+    <tr><td><strong>(c) App Store ramp</strong></td><td>Selection rate ≥ 5% of <code>plan_type_choice_shown</code> sessions; crash-free rate ≥ 99.5%; multi-trail plan sync round-trip success ≥ 95%. Ramp 5% → 25% → 100%.</td><td>~1 week per level</td></tr>
+  </tbody>
+</table>
+</section>
+
+<section id="testing">
+<h2>Testing Decisions</h2>
+
+<p><strong>What makes a good test:</strong> tests external behavior, not implementation details. A test should pass before and after a refactor that does not change observable behavior. Mocks are reserved for boundaries (network, time); internal code paths use real implementations or fakes that share the production interface (e.g., <code>FakeNetworkService</code>).</p>
+
+<h3>Modules with mandatory tests</h3>
+
+<table>
+  <thead>
+    <tr><th>Module</th><th>Test approach</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>_migrateStagePlannerToV10</code></td><td>Fixture-based migration test via <code>migration_test_harness</code>. Covers v7→v10, v8→v10, v9→v10. New <code>v9.sql</code> fixture. Regression test with real multi-stage plan.</td></tr>
+    <tr><td><code>MultiRouteTrail</code> / <code>parseDescriptors</code> codec</td><td>Pure-function tests for serialization round-trip and malformed input.</td></tr>
+    <tr><td><code>RoutePathFinder</code></td><td>Pure-function tests against fixture route graphs. Direct path, via-junction, multi-trail, no-path, cycle handling, forward-only filtering, position-aware reachability.</td></tr>
+    <tr><td><code>JunctionService</code> / <code>RouteGraph</code> builder</td><td>Pure-function tests for graph construction from fixture route data. Junction identification, touching-point distance filtering.</td></tr>
+    <tr><td><code>stage_plan_repository</code> sync wiring</td><td>Integration test via <code>FakeNetworkService</code>. Round-trips a multi-trail plan through push + pull. Covers conflict resolution per existing semantics.</td></tr>
+    <tr><td><code>TrailBuilderCubit</code></td><td>Cubit unit tests: happy path, undo from any junction, no-junction-found, network failure mid-flow.</td></tr>
+    <tr><td><code>JourneyPlannerCubit</code></td><td>Cubit unit tests: happy path, no-destinations-reachable, lazy polyline loading, distance filter slider state.</td></tr>
+    <tr><td><code>PlanTypeVisibility</code> resolver</td><td>Pure-function tests over the matrix of (PlanType, Flavor, RemoteConfig flag state).</td></tr>
+    <tr><td>Analytics event correctness</td><td>Unit tests asserting each new event class emits expected name and properties.</td></tr>
+  </tbody>
+</table>
+
+<h3>Modules verified by manual smoke test only</h3>
+<ul>
+  <li><strong>Mapbox-ported map widgets</strong> (chunks C3–C5). No widget tests or golden tests — the codebase has no precedent for these. Each ported screen has a documented smoke checklist (load, pan, zoom, marker tap, polyline render, satellite toggle if applicable).</li>
+</ul>
+
+<p><strong>CI gate:</strong> every chunk's PR runs the full test suite. Promotion to phase (a) staging TestFlight requires all tests green plus all smoke checklists complete.</p>
+</section>
+
+<section id="out-of-scope">
+<h2>Out of Scope</h2>
+
+<ul>
+  <li><strong>Building the multi-trail feature's core logic.</strong> <code>RoutePathFinder</code>, <code>JunctionService</code>, <code>MultiRouteTrail</code>, <code>RouteGraph</code>, the trail builder UI, and the journey planner UI all already exist on this branch. This PRD is about catch-up and integration.</li>
+  <li><strong>Backend implementation of <code>trail_route_ids</code> sync.</strong> Backend team owns the API endpoint changes; this PRD owns the client-side wiring.</li>
+  <li><strong>Widget tests, golden tests, or end-to-end integration tests for map rendering.</strong> The team has not invested in these patterns; introducing them is a separate workstream.</li>
+  <li><strong>Server-side validation of <code>trail_route_ids</code> content.</strong> The server treats the field as an opaque string; client is the only consumer of the descriptor format.</li>
+  <li><strong>Renaming the feature labels.</strong> Current labels ("Custom Trail", "Plan a Journey") and Beta badge are accepted as-is. Polish deferred.</li>
+  <li><strong>Multi-trail support in plan sharing / QR import.</strong> The plan-sharing service currently drops <code>trail_route_ids</code> on share — multi-trail plans are not shareable in v1. Future iteration.</li>
+  <li><strong>Onboarding or in-app explainer for the new options.</strong> Treated as a follow-up if adoption signal is positive.</li>
+  <li><strong>Cross-device sync verification at phase (a) staging TF.</strong> Backend coordination targets phase (b). Phase (a) is local-only by design.</li>
+  <li><strong>Backfill of <code>trail_route_ids</code> for existing single-route plans.</strong> They stay NULL.</li>
+  <li><strong>Index on <code>trail_route_ids</code>.</strong> Not used as a query filter.</li>
+</ul>
+</section>
+
+<section id="further-notes">
+<h2>Further Notes</h2>
+
+<ul>
+  <li><strong>Branch already renamed:</strong> <code>worktree-route-graph-minimal</code> → <code>feature/combining-trails</code> on 2026-05-14. Old remote ref deleted. Branch memory updated.</li>
+  <li><strong>Release CI is currently broken</strong> — open PR #383 ("chore(ci): fix broken release pipeline + add PR-level check") has been open since 2026-05-05. This PR must land before the catch-up integration PR can ship via the standard pipeline.</li>
+  <li><strong>Release/2.2.410 stability caveat:</strong> the Mapbox migration was merged into <code>release/2.2.410</code> on 2026-05-14 (hours before this PRD was written). It has not yet been TestFlight-baked. Expect to absorb Mapbox stability fixes during the integration work.</li>
+  <li><strong>DB version collision pre-merge:</strong> this branch and release/2.2.410 both currently sit at stage planner DB version 9 with semantically different contents. The merge resolves this by adopting release/2.2.410's v9 structure and adding v10 for the column this branch needed. A user already on release/2.2.410's v9 in the wild would otherwise have skipped this branch's v9 work entirely (no migration runs for same-version) — silent feature failure. C2 closes this gap.</li>
+  <li><strong>Conflict surface measured:</strong> 27 files modified on both branches; 12 with content-level conflicts after auto-merge. Resolves into 4 conflict clusters (storage, map widgets, plan cubits/screens, startup) plus the regenerated generated-file group.</li>
+  <li><strong>Chunk ordering is load-bearing:</strong> C1 → C2 → C8 → C3 → C4 → C5 → C6 → C7. C8 cannot start before backend confirms; C3–C5 cannot start cleanly before C1 lands; C6/C7 can parallel each other after C1.</li>
+</ul>
+</section>
+
+<footer class="doc-footer">
+  Generated from <code>issues/prd.md</code>. Decisions resolved in 13-question grilling session on 2026-05-14. Broken into 25 implementation issues under <code>issues/</code>.
+</footer>
+
+</main>
+</body>
+</html>

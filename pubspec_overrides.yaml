@@ -1,0 +1,12 @@
+# melos_managed_dependency_overrides: analytics_services,core,remote_data,repository,storage
+dependency_overrides:
+  analytics_services:
+    path: packages/analytics_services
+  core:
+    path: packages/core
+  remote_data:
+    path: packages/remote_data
+  repository:
+    path: packages/repository
+  storage:
+    path: packages/storage

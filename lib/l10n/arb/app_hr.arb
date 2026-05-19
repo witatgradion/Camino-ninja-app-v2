@@ -1,0 +1,1369 @@
+{
+  "@@locale": "hr",
+  "accommodationAddress": "Adresa smještaja",
+  "@accommodationAddress": {
+    "description": ""
+  },
+  "accommodationName": "Naziv smještaja",
+  "@accommodationName": {
+    "description": ""
+  },
+  "accommodations": "Smještaji",
+  "@accommodations": {
+    "description": ""
+  },
+  "accountDeleted": "Tvoj je račun obrisan.",
+  "addPhoto": "Dodaj fotografiju",
+  "@addPhoto": {
+    "description": ""
+  },
+  "addStage": "Dodaj etapu",
+  "additionalFeedback": "Dodatne povratne informacije",
+  "@additionalFeedback": {
+    "description": ""
+  },
+  "additionalInformation": "Dodatne informacije",
+  "@additionalInformation": {
+    "description": ""
+  },
+  "allCities": "Svi gradovi",
+  "allYear": "Cijela godina",
+  "allYearChristmasToMarch6FriSat": "Cijela godina, osim od Božića do 6. ožujka kad je otvoreno samo petkom i subotom (osim za grupe veće od 6 osoba)",
+  "allYearClosedHolidays": "Cijela godina, ali zatvoreno za hodočasnike za Novu godinu, Sveta tri kralja, Uskrs, srpanj, kolovoz i Božić",
+  "allYearClosedSatSun_713": "Cijela godina (zatvoreno subotom i nedjeljom)",
+  "allYearClosedSundays": "Cijela godina (zatvoreno nedjeljom)",
+  "allYearClosedThursdays": "Cijela godina (zatvoreno četvrtkom)",
+  "allYearClosedTueNovToFebFriSun": "Cijela godina (zatvoreno utorkom. Od 1. studenog do 29. veljače otvoreno samo od petka do nedjelje)",
+  "allYearClosedTuesFeb2022": "Cijela godina, osim 1. siječnja, od 15. siječnja do 15. veljače te od 24. do 25. i od 30. do 31. prosinca (zatvoreno utorkom do veljače 2022.).",
+  "allYearClosedTuesdays": "Cijela godina (zatvoreno utorkom)",
+  "allYearClosedTuesdays_544": "Cijela godina (zatvoreno utorkom)",
+  "allYearClosedTuesdays_589": "Cijela godina (zatvoreno utorkom)",
+  "allYearClosedWednesdays_585": "Cijela godina (zatvoreno srijedom)",
+  "allYearClosedWeekends": "Cijela godina, zatvoreno vikendom",
+  "allYearDec1ToFeb28Call": "Cijela godina (od 1. prosinca do 28. veljače nazovite unaprijed)",
+  "allYearExcept20DaysJuly": "Cijela godina, osim 20 dana u srpnju",
+  "allYearExcept4DaysMidSeptember": "Cijela godina, osim 4 dana sredinom rujna zbog svečanosti (dani se mijenjaju svake godine)",
+  "allYearExceptChristmasHolidays": "Cijela godina, osim božićnih praznika",
+  "allYearExceptChristmasWeek": "Cijela godina, osim božićnog tjedna",
+  "allYearExceptChristmas_190": "Cijela godina, osim Božića",
+  "allYearExceptDec10ToJan1": "Cijela godina, osim od 10. prosinca do 1. siječnja",
+  "allYearExceptDec11ToJan9": "Cijela godina, osim od 11. prosinca do 9. siječnja",
+  "allYearExceptDec15To30": "Cijela godina, osim od 15. do 30. prosinca",
+  "allYearExceptDec15ToJan15TuesWinter": "Od 16. siječnja do 14. prosinca, osim utorkom zimi",
+  "allYearExceptDec15ToJan1_217": "Cijela godina, osim od 15. prosinca do 1. siječnja",
+  "allYearExceptDec19ToJan3": "Cijela godina, osim od 19. prosinca do 3. siječnja",
+  "allYearExceptDec20ToJan10": "Cijela godina, osim od 20. prosinca do 10. siječnja",
+  "allYearExceptDec22To25_619": "Cijela godina, osim od 22. do 25. prosinca",
+  "allYearExceptDec22To29Jan15ToFeb15": "Cijela godina, osim od 22. do 29. prosinca i od 15. siječnja do 15. veljače",
+  "allYearExceptDec22ToJan8": "Cijela godina, osim od 22. prosinca do 8. siječnja",
+  "allYearExceptDec232425": "Cijela godina, osim 23., 24. i 25. prosinca",
+  "allYearExceptDec23ToJan3": "Cijela godina, osim od 23. prosinca do 3. siječnja",
+  "allYearExceptDec23ToJan7_459": "Cijela godina, osim od 23. prosinca do 7. siječnja",
+  "allYearExceptDec23ToJan8_486": "Cijela godina, osim od 23. prosinca do 8. siječnja",
+  "allYearExceptDec23ToMarch1": "Cijela godina, osim od 23. prosinca do 1. ožujka",
+  "allYearExceptDec242531Jan156": "Cijela godina, osim 24., 25. i 31. prosinca te 1., 5. i 6. siječnja",
+  "allYearExceptDec2425_571": "Cijela godina, osim 24. i 25. prosinca",
+  "allYearExceptDec24After25Dec31AfterJan1": "Cijela godina, osim 24. prosinca (poslijepodne), 25., 31. (poslijepodne) i 1. siječnja",
+  "allYearExceptDec24And25": "Cijela godina, osim 24. i 25. prosinca",
+  "allYearExceptDec24And25_490": "Cijela godina, osim 24. i 25. prosinca",
+  "allYearExceptDec24And25_653": "Cijela godina, osim 24. i 25. prosinca",
+  "allYearExceptDec24To31": "Cijela godina, osim od 24. do 31. prosinca",
+  "allYearExceptDec24To31Jan6": "Cijela godina, osim od 24. do 31. prosinca i 6. siječnja",
+  "allYearExceptDec24ToJan10_661": "Cijela godina, osim od 24. prosinca do 10. siječnja",
+  "allYearExceptDec24ToJan7": "Cijela godina, osim od 24. prosinca do 7. siječnja",
+  "allYearExceptDec25Jan1": "Cijela godina, osim 25. prosinca i 1. siječnja",
+  "allYearExceptDec30ToJan2": "Cijela godina, osim od 30. prosinca do 2. siječnja",
+  "allYearExceptDec31": "Cijela godina, osim 31. prosinca",
+  "allYearExceptDec8To26": "Cijela godina, osim od 8. do 26. prosinca",
+  "allYearExceptDecHolidaysJan1": "Cijela godina, osim 24., 25., 31. prosinca i 1. siječnja",
+  "allYearExceptDecember": "Cijela godina, osim prosinca",
+  "allYearExceptFeb8To28_479": "Cijela godina, osim od 8. do 28. veljače",
+  "allYearExceptFebChristmas": "Cijela godina, osim veljače i Božića",
+  "allYearExceptFebClosedMondays": "Cijela godina, osim veljače (zatvoreno ponedjeljkom u siječnju, ožujku, studenom i prosincu)",
+  "allYearExceptFebClosedWed": "Cijela godina, osim veljače (zatvoreno srijedom zimi)",
+  "allYearExceptFebClosedWednesdays": "Cijela godina, osim veljače (zatvoreno srijedom)",
+  "allYearExceptFebruary": "Cijela godina, osim veljače",
+  "allYearExceptHolidaysJanuary": "Cijela godina (osim božićnih praznika i siječnja)",
+  "allYearExceptJan10ToMarch1_587": "Cijela godina, osim od 10. siječnja do 1. ožujka",
+  "allYearExceptJan10ToMarch31": "Cijela godina, osim od 10. siječnja do 31. ožujka",
+  "allYearExceptJan12April17Dec24To26": "Cijela godina, osim 1. i 2. siječnja, 17. travnja (2022.) i od 24. do 26. prosinca",
+  "allYearExceptJan15To31": "Cijela godina, osim od 15. do 31. siječnja",
+  "allYearExceptJan15ToFeb15_218": "Cijela godina, osim od 15. siječnja do 15. veljače",
+  "allYearExceptJan15ToFeb28_677": "Cijela godina, osim od 15. siječnja do 28. veljače",
+  "allYearExceptJan18Feb18Dec242531": "Cijela godina, osim 1. siječnja, od 18. siječnja do 18. veljače te 24., 25. i 31. prosinca",
+  "allYearExceptJan1ToFeb28": "Cijela godina, osim od 1. siječnja do 28. veljače",
+  "allYearExceptJan56Dec242531": "Cijela godina, osim 1., 5. i 6. siječnja te 24., 25. i 31. prosinca",
+  "allYearExceptJan6ToFeb28_481": "Cijela godina, osim od 6. siječnja do 28. veljače",
+  "allYearExceptJan8ToFeb8": "Cijela godina, osim od 8. siječnja do 8. veljače",
+  "allYearExceptJanFebNov": "Cijela godina, osim siječnja, veljače i studenog",
+  "allYearExceptJanuary_540": "Cijela godina, osim siječnja",
+  "allYearExceptJuly1ToAug31": "Cijela godina, osim od 1. srpnja do 31. kolovoza",
+  "allYearExceptJuly5To15": "Cijela godina, osim od 5. do 15. srpnja",
+  "allYearExceptJuly6To14": "Cijela godina, osim od 6. do 14. srpnja",
+  "allYearExceptLast3WeeksJan": "Cijela godina, osim posljednja 3 tjedna u siječnju",
+  "allYearExceptLastTwoWeeksDecember": "Cijela godina, osim posljednja dva tjedna u prosincu",
+  "allYearExceptNov15To30": "Cijela godina, osim od 15. do 30. studenog",
+  "allYearExceptNov15ToDec20": "Cijela godina, osim od 15. studenog do 20. prosinca",
+  "allYearExceptNov1To11Dec14ToJan2": "Cijela godina, osim od 1. do 11. studenog i od 14. prosinca do 2. siječnja",
+  "allYearExceptNov1To22": "Cijela godina, osim od 1. do 22. studenog",
+  "allYearExceptNov1To30": "Cijela godina, osim od 1. do 30. studenog",
+  "allYearExceptNov1To7_584": "Cijela godina, osim od 1. do 7. studenog",
+  "allYearExceptNov1To7_625": "Cijela godina, osim od 1. do 7. studenog",
+  "allYearExceptNov25ToDec29": "Cijela godina, osim od 25. studenog do 29. prosinca",
+  "allYearExceptNov29Dec12Dec2425Dec31Jan1": "Cijela godina, osim od 29. studenog do 12. prosinca, od 24. do 25. prosinca i od 31. prosinca do 1. siječnja",
+  "allYearExceptNov5ToJan25": "Cijela godina, osim od 5. studenog do 25. siječnja",
+  "allYearExceptNov6To20Dec20To29": "Cijela godina, osim od 6. do 20. studenog i od 20. do 29. prosinca",
+  "allYearExceptNov7To30": "Cijela godina, osim od 7. do 30. studenog",
+  "allYearExceptSomeDaysAugust": "Cijela godina, osim nekoliko dana u kolovozu",
+  "allYearExceptSomeDaysChristmas": "Cijela godina, osim nekoliko dana za Božić",
+  "allYearExceptSomeDaysWinter": "Cijela godina, osim nekoliko dana zimi",
+  "allYearJan1To31Confirm": "Cijela godina, od 1. do 31. siječnja potvrdite",
+  "allYearLowSeasonConfirm": "Cijela godina, izvan sezone potvrdite",
+  "allYearLowSeasonReservation": "Cijela godina, izvan sezone uz rezervaciju",
+  "allYearMayCloseWinter": "Cijela godina (može biti zatvoreno zimi ovisno o potražnji)",
+  "allYearNotify15Days": "Cijela godina (od 1. studenog do 31. ožujka najavite 15 dana unaprijed)",
+  "allYearNov15ToFeb15Reservation": "Cijela godina (samo uz rezervaciju između 15. studenog i 15. veljače)",
+  "allYearNov15ToMarch15Confirm": "Cijela godina, od 15. studenog do 15. ožujka potvrdite",
+  "allYearNov1ToFeb28Reservation": "Cijela godina, ali samo uz rezervaciju od 1. studenog do 28. veljače",
+  "allYearNov1ToFeb28Reservation_220": "Cijela godina, od 1. studenog do 28. veljače samo uz rezervaciju",
+  "allYearNov1ToJan31MayClose": "Cijela godina, ali može biti zatvoreno od 1. studenog do 31. siječnja",
+  "allYearNov1ToMarch31Confirm": "Cijela godina (od 1. studenog do 31. ožujka potvrdite)",
+  "allYearNovToMarchFriSat": "Cijela godina (od kraja studenog do 11. ožujka otvoreno samo petkom i subotom)",
+  "allYearOct15ToMarch15Call": "Cijela godina, od 15. listopada do 15. ožujka prvo nazovite",
+  "allYearOctToMarchGroups": "Cijela godina (od 31. listopada do 1. ožujka samo za grupe uz rezervaciju)",
+  "allYearSomeDaysClosed": "Cijela godina, ali nekih je dana hostel zatvoren.",
+  "allYearWinterConfirm": "Cijela godina, zimi potvrdite",
+  "allYearWinterGroupsReservation": "Cijela godina (zimi samo za grupe uz rezervaciju)",
+  "allYearWinterNotify": "Cijela godina, zimi najavite svoj dolazak",
+  "allYearWinterReserve": "Cijela godina, zimi rezervirajte",
+  "allow": "Dopusti",
+  "allowsPets": "Dopušteni ljubimci",
+  "andMore": "I još",
+  "@andMore": {
+    "description": ""
+  },
+  "announcementDetail": "Obavijest",
+  "announcements": "Obavijesti",
+  "albergueReviewRequestTopic": "Recenzije albergua",
+  "albergueReviewRequestTopicDescription": "Podsjetnici da ocijeniš albergue u kojima si odsjeo",
+  "awaitingYourReview": "Čeka tvoju recenziju",
+  "announcementsTopic": "Obavijesti",
+  "announcementsTopicDescription": "Ažuriranja staza, izmjene rute i novosti zajednice",
+  "apartment": "Apartman",
+  "appNotBelieveYouAreOnRoute": "Ninja aplikacija ne misli da si na ruti {routeName}",
+  "@appNotBelieveYouAreOnRoute": {
+    "description": ""
+  },
+  "appRestrictionNote": "Može se skenirati/uvesti samo unutar\nCamino Ninja aplikacije",
+  "approved": "Odobreno",
+  "april11ToOct16": "od 11. travnja do 16. listopada",
+  "april15ToNov15": "od 15. travnja do 15. studenog",
+  "april15ToNovember30": "od 15. travnja do 30. studenog",
+  "april15ToOct31_620": "od 15. travnja do 31. listopada",
+  "april15ToOctober15": "od 15. travnja do 15. listopada",
+  "april15ToSept30": "od 15. travnja do 30. rujna",
+  "april1ToDec10": "od 1. travnja do 10. prosinca",
+  "april1ToDec19": "od 1. travnja do 19. prosinca",
+  "april1ToDecember31": "od 1. travnja do 31. prosinca",
+  "april1ToNov12": "od 1. travnja do 12. studenog",
+  "april1ToNov15_541": "od 1. travnja do 15. studenog",
+  "april1ToNov1_581": "od 1. travnja do 1. studenog",
+  "april1ToNov3": "od 1. travnja do 3. studenog",
+  "april1ToNovember30": "od 1. travnja do 30. studenog",
+  "april1ToOct16_565": "od 1. travnja do 16. listopada",
+  "april1ToOct30": "od 1. travnja do 30. listopada",
+  "april1ToOct30_556": "od 1. travnja do 30. listopada",
+  "april1ToOctober15": "od 1. travnja do 15. listopada",
+  "april1ToOctober31": "od 1. travnja do 31. listopada",
+  "april1ToOctober31MonToFri": "Od 1. travnja do 31. listopada, od ponedjeljka do petka",
+  "april1ToOctober31RestConfirm": "Od 1. travnja do 31. listopada (ostatak godine konzultirajte)",
+  "april1ToOctober31RestGroupsReservation": "Od 1. travnja do 31. listopada (ostatak godine samo rezervacije za grupe)",
+  "april1ToOctober31RestGroupsReservation_187": "Od 1. travnja do 31. listopada (ostatak godine samo grupe uz rezervaciju)",
+  "april1ToOctober31RestGroupsReserve_215": "Od 1. travnja do 31. listopada (ostatak godine grupe mogu rezervirati)",
+  "april1ToOctober31RestReservation": "Od 1. travnja do 31. listopada, ostatak godine uz rezervaciju",
+  "april1ToOctober31RestReservation_226": "Od 1. travnja do 31. listopada, ostatak godine samo uz rezervaciju",
+  "april1ToSeptember30_214": "od 1. travnja do 30. rujna",
+  "april7ToOct15": "od 7. travnja do 15. listopada",
+  "april9ToOctober15": "od 9. travnja do 15. listopada",
+  "bed": "1 krevet",
+  "bedSharedRoom": "Krevet u dijeljenoj sobi",
+  "beds": "{numberBunkbeds} kreveta",
+  "bedsDormitories": "{numberBunkbeds} kreveta u {numberDormitories} spavaonica",
+  "bedsDormitory": "{numberBunkbeds} kreveta u 1 spavaonici",
+  "breakfast": "Doručak",
+  "breakfastIncluded": "Doručak je uključen",
+  "bugReportContent": "Snimka zaslona snimljena je kad si protresao uređaj. Vidjet ćeš je u sljedećem koraku.",
+  "@bugReportContent": {
+    "description": ""
+  },
+  "bugReportDescription": "Možeš dodati još snimki zaslona i detalja kako bi nam pomogao poboljšati Camino Ninju.",
+  "@bugReportDescription": {
+    "description": ""
+  },
+  "bugReportDescriptionNew": "Reci nam što se dogodilo i priloži snimku zaslona. To pomaže našem timu brže pronaći rješenje.",
+  "bugReportFailureDescription": "Pokušaj ponovno poslati prijavu greške.",
+  "@bugReportFailureDescription": {
+    "description": ""
+  },
+  "bugReportSuccessDescription": "Hvala ti što nam pomažeš učiniti Camino Ninju boljim!",
+  "@bugReportSuccessDescription": {
+    "description": ""
+  },
+  "bugReportSuccessTitle": "Greška uspješno prijavljena",
+  "@bugReportSuccessTitle": {
+    "description": ""
+  },
+  "bugReportTitle": "Snimili smo zaslon na kojem se problem dogodio",
+  "@bugReportTitle": {
+    "description": ""
+  },
+  "bunkBed": "Krevet na kat",
+  "cancel": "Odustani",
+  "canceled": "Otkazano",
+  "@canceled": {
+    "description": ""
+  },
+  "checkIn": "Prijava",
+  "checkInTouristOffice": "Prijava je u turističkom uredu",
+  "checkout": "Odjava",
+  "choseThisCity": "odabralo je ovaj grad",
+  "citiesAccommodation": "Gradovi sa smještajem",
+  "cityPastDestination": "Ovaj je grad nakon tvog odredišta. Nastaviti i odabrati novo odredište?",
+  "clearCache": "Očisti predmemoriju",
+  "@clearCache": {
+    "description": ""
+  },
+  "clickHereToTurnItOn": "Klikni ovdje da uključiš",
+  "@clickHereToTurnItOn": {
+    "description": ""
+  },
+  "closed": "Zatvoreno",
+  "@closed": {
+    "description": ""
+  },
+  "closedFebMarchSomeDec": "Zatvoreno u veljači, ožujku i neke dane u prosincu",
+  "closedTuesdays15DaysSeptember": "Zatvoreno utorkom i 15 dana u rujnu",
+  "closedWednesdays": "Zatvoreno srijedom",
+  "closed_536": "Zatvoreno 2021.",
+  "clothesline": "Štrik za rublje",
+  "communityDinner": "Zajednička večera",
+  "communityDinnerIncluded_445": "Uključena zajednička večera",
+  "communityLunch": "Zajednički ručak",
+  "confirm": "Potvrdi",
+  "@confirm": {
+    "description": ""
+  },
+  "confirmDeletePlannedRoute": "Sigurno želiš obrisati Planiranu rutu",
+  "confirmDeleteStage": "Sigurno želiš obrisati ovu etapu?",
+  "confirmSaveChange": "Izgleda da si napravio promjenu. Želiš li je spremiti?",
+  "contact": "Kontakt",
+  "contactPerson": "Kontaktiraj {name}",
+  "continueAction": "Nastavi",
+  "continueWithApple": "Nastavi s Appleom",
+  "@continueWithApple": {
+    "description": ""
+  },
+  "continueWithGoogle": "Nastavi s Googleom",
+  "@continueWithGoogle": {
+    "description": ""
+  },
+  "cookingPots": "Lonci",
+  "cooktops": "Štednjaci",
+  "cottonSheetsPillowcases": "Pamučne plahte i jastučnice",
+  "couldNotLoadNotifications": "Obavijesti se nisu mogle učitati",
+  "create": "Stvori",
+  "createNewStage": "Stvori novu etapu",
+  "createPlan": "Stvori plan",
+  "creatingStagesFor": "Stvaranje etapa za",
+  "cubeBeds": "Cube kreveti",
+  "currentElev": "Tren. nadm.",
+  "currentVersion": "Trenutno koristite verziju",
+  "darkMode": "Tamni način",
+  "@darkMode": {
+    "description": ""
+  },
+  "dayBefore": "Samo dan prije",
+  "dayGap": "dan razmaka",
+  "nightsAtStop": "{count, plural, =1{Noćenje na stajalištu} other{Noćenja na stajalištu}}",
+  "@nightsAtStop": {
+    "description": "Label for nights staying at a stop, singular/plural based on count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysGap": "dana razmaka",
+  "dec19ToJan3_505": "od 19. prosinca do 3. siječnja",
+  "deleteAccountTitle": "Obrisati svoj Camino Ninja račun?",
+  "deleteAction": "Obriši račun",
+  "deleteErasedNote": "Nakon potvrde, tvoj će račun biti izbrisan zajedno sa svim tvojim",
+  "deleteExitGreeting": "Buen Camino na tvom sljedećem putovanju!",
+  "deleteNoteBold": "trajno i odmah",
+  "deleteNoteEnd": ".",
+  "deleteNoteStart": "Imaj na umu da je ova radnja ",
+  "deleteSorryToGo": "Žao nam je što odlaziš.",
+  "deleteThisPlan": "Obriši ovaj plan",
+  "deleteThisStage": "Obriši ovu etapu",
+  "deny": "Odbij",
+  "dependentMonth": "Ovisno o mjesecu",
+  "destination": "Odredište",
+  "dinnerAvailable": "Večera dostupna",
+  "dinnerIncluded_444": "Uključena večera",
+  "distance": "udalj.",
+  "distanceFromCity": "Udaljen sam {distance} km od grada {cityName} u zračnoj liniji. Lokacija mi je najbliža na ruti {routeName}.",
+  "distanceFromRoute": "Udaljenost od rute (uključeno)",
+  "distanceFromTheTrail": "Udaljenost od staze",
+  "distance_344": "Udaljenost",
+  "doNotAskMeAgain": "Ne pitaj me više",
+  "@doNotAskMeAgain": {
+    "description": ""
+  },
+  "doNotShowThisAgain": "Ne prikazuj više",
+  "@doNotShowThisAgain": {
+    "description": ""
+  },
+  "donativoBreakfast": "Donativo doručak",
+  "dontAskAgainAndDisable": "Ne pitaj me više i isključi mi ovu funkciju protresanja za prijavu",
+  "doorsClose": "Vrata se zatvaraju",
+  "doubleRoom": "Dvokrevetna soba",
+  "dutchOwnersDinner": "Nizozemski vlasnici. Očekuj dobru, izdašnu večeru.",
+  "easterAndMay1ToOctober15": "Uskrs i od 1. svibnja do 15. listopada",
+  "easterAndMay1ToOctober_224": "Uskrs i od 1. svibnja do 31. listopada",
+  "easterToDec11_604": "Od Uskrsa do 11. prosinca",
+  "easterToNov30RestGroups20": "Od Uskrsa do 30. studenog (ostatak godine samo za grupe od 20 ili više osoba uz rezervaciju)",
+  "easterToNov30RestReservation": "Od Uskrsa do 30. studenog (ostatak godine uz rezervaciju)",
+  "easterToNovember15_128": "Od Uskrsa do 15. studenog",
+  "easterToNovember30": "Od Uskrsa do 30. studenog",
+  "easterToOct12": "Od Uskrsa do 12. listopada",
+  "easterToOctober15": "Od Uskrsa do 15. listopada",
+  "easterToOctober31": "Od Uskrsa do 31. listopada",
+  "easterToOctober31Groups": "Od Uskrsa do 31. listopada (ostatak godine otvoreno samo za velike grupe uz rezervaciju)",
+  "easterToOctober_114": "Od Uskrsa do 15. listopada",
+  "easterToSeptember30": "Od Uskrsa do 30. rujna",
+  "eightBedsDonation": "Postoji samo 8 kreveta za donaciju i daju se po dolasku. Bez rezervacije. Samo za hodočasnike koji idu pravim putem.",
+  "elevation": "nadm.",
+  "elevationGainLossRouteScreen": "uspon/spust",
+  "@elevationGainLossRouteScreen": {
+    "description": ""
+  },
+  "elevation_342": "Nadmorska visina",
+  "email": "E-mail",
+  "emailInvalidInlineError": "Unesi važeću e-mail adresu",
+  "@emailInvalidInlineError": {
+    "description": ""
+  },
+  "enableLocationAccuracy": "Omogući točnost lokacije",
+  "enableNotifications": "Omogući obavijesti",
+  "endFebToEndDec": "Od kraja veljače do kraja prosinca",
+  "endOfStage": "Kraj etape",
+  "enterSomething": "Unesi nešto",
+  "error": "Pogreška",
+  "@error": {
+    "description": ""
+  },
+  "errorLoadingAnnouncements": "Obavijesti se nisu mogle učitati",
+  "exportError": "Pogreška pri izvozu",
+  "facility_airport": "Zračna luka",
+  "facility_atm": "Bankomat",
+  "facility_bus_station": "Autobusni kolodvor",
+  "facility_cafe": "Kafić",
+  "facility_clinic": "Ambulanta",
+  "facility_fountain": "Fontana",
+  "facility_hotel": "Hotel",
+  "facility_pharmacy": "Ljekarna",
+  "facility_post_office": "Pošta",
+  "facility_restaurant": "Restoran",
+  "facility_shopping_stores": "Trgovine",
+  "facility_tobacco_shop": "Trafika",
+  "facility_train_station": "Željeznički kolodvor",
+  "feb10ToDec15": "od 10. veljače do 15. prosinca",
+  "feb12ToDec12": "od 12. veljače do 12. prosinca",
+  "feb15ToDec12_658": "od 15. veljače do 12. prosinca",
+  "feb15ToDec31_458": "od 15. veljače do 31. prosinca",
+  "feb15ToNov30_521": "od 15. veljače do 30. studenog",
+  "feb15ToOct31": "od 15. veljače do 31. listopada",
+  "feb16ToNov30RestGroups4To10": "Od 16. veljače do 30. studenog (ostatak godine grupe od 4 do 10 mogu rezervirati)",
+  "feb16ToOct31": "od 16. veljače do 31. listopada",
+  "feb16ToOct31_600": "od 16. veljače do 31. listopada",
+  "feb1ToDec11_623": "od 1. veljače do 11. prosinca",
+  "feb1ToDec12": "od 1. veljače do 12. prosinca",
+  "feb1ToDec14_615": "od 1. veljače do 14. prosinca",
+  "feb1ToDec19ClosedSunFebNovToDec": "Od 1. veljače do 19. prosinca (zatvoreno nedjeljom u veljači i od 1. studenog do 19. prosinca)",
+  "feb1ToDec19_618": "od 1. veljače do 19. prosinca",
+  "feb1ToDec19_624": "od 1. veljače do 19. prosinca",
+  "feb1ToDec23WeekendsFeb": "Od 1. veljače do 23. prosinca (u veljači otvoreno samo vikendom)",
+  "feb1ToDec31_657": "od 1. veljače do 31. prosinca",
+  "feb1ToDec7": "od 1. veljače do 7. prosinca",
+  "feb1ToDec9_694": "od 1. veljače do 9. prosinca",
+  "feb1ToNov11": "od 1. veljače do 11. studenog",
+  "feb1ToNov14": "od 1. veljače do 14. studenog",
+  "feb1ToOct31_457": "od 1. veljače do 31. listopada",
+  "feb1ToSept30": "od 1. veljače do 30. rujna",
+  "feb22ToDec22": "Od 22. veljače do 22. prosinca",
+  "feb26ToDec11": "od 26. veljače do 11. prosinca",
+  "feb26ToOct31": "od 26. veljače do 31. listopada",
+  "feb27ToDec9": "od 27. veljače do 9. prosinca",
+  "feb7ToNov30": "od 7. veljače do 30. studenog",
+  "feb8ToDec19": "od 8. veljače do 19. prosinca",
+  "february15ToDecember15": "od 15. veljače do 15. prosinca",
+  "february1ToDecember15": "od 1. veljače do 15. prosinca",
+  "february1ToDecember21": "od 1. veljače do 21. prosinca",
+  "february1ToDecember31": "od 1. veljače do 31. prosinca",
+  "february1ToNovember30_141": "od 1. veljače do 30. studenog",
+  "february1ToNovember30_171": "od 1. veljače do 30. studenog",
+  "february1ToNovember5": "od 1. veljače do 5. studenog",
+  "february28ToOctober31": "od 28. veljače do 31. listopada",
+  "feedbackAlbergueBottomSheetDescription": "Javi nam ako primijetiš nešto netočno ili što nedostaje.",
+  "@feedbackAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "feedbackAlbergueBottomSheetTitle": "Kako bismo mogli poboljšati Camino Ninju?",
+  "@feedbackAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "feedbackIsRequired": "Povratne informacije su obavezne",
+  "@feedbackIsRequired": {
+    "description": ""
+  },
+  "feedbackSubmissionFailed": "Slanje povratnih informacija nije uspjelo",
+  "@feedbackSubmissionFailed": {
+    "description": ""
+  },
+  "feedbackSubmitSuccessMessage": "Pregledavamo tvoje povratne informacije. Bit ćeš obaviješten ako budu odobrene i prikazane ovdje.",
+  "@feedbackSubmitSuccessMessage": {
+    "description": ""
+  },
+  "feedbackSubmitted": "Povratne informacije poslane",
+  "@feedbackSubmitted": {
+    "description": ""
+  },
+  "fetchingRoutesAndMarkers": "Dohvaćanje ruta i oznaka",
+  "@fetchingRoutesAndMarkers": {
+    "description": ""
+  },
+  "findTransportation": "Pronađi prijevoz",
+  "fiveEuroPerDog": "naplaćuju 5 eura po psu",
+  "freeStayWelcome": "Ljudi koji ne mogu platiti i dalje su dobrodošli.",
+  "from": "od",
+  "fromEaster": "Od Uskrsa",
+  "fromMarch15": "Od 15. ožujka",
+  "fromMarch1_238": "Od 1. ožujka",
+  "fullLaundryService": "Potpuna usluga praonice",
+  "gallery": "Galerija",
+  "@gallery": {
+    "description": ""
+  },
+  "giveARatingForThisAccommodation": "Ocijeni ovaj smještaj",
+  "@giveARatingForThisAccommodation": {
+    "description": ""
+  },
+  "goToHereToday": "Idem ovamo danas",
+  "handWashingSink": "Sudoper za ručno pranje",
+  "headOfCaminoNinja": "Voditelj Camino Ninje",
+  "headOfData": "Voditelj podataka",
+  "helpUsImproveCaminoNinja": "Pomozi nam poboljšati Camino Ninju",
+  "@helpUsImproveCaminoNinja": {
+    "description": ""
+  },
+  "here": "ovdje",
+  "hide": "Sakrij",
+  "hostel4Km": "Hostel je 4 km od rute",
+  "howWasYourStay": "Kakav je bio tvoj boravak?",
+  "iWillGoHere": "Idem ovamo",
+  "@iWillGoHere": {
+    "description": ""
+  },
+  "iWillGoThere": "Idem onamo",
+  "iWillStartHere": "Krećem odavde",
+  "iWillStayHere": "Ostat ću ovdje",
+  "iWillStayHereOptional": "Ostat ću ovdje (neobavezno)",
+  "import": "Uvezi",
+  "importSuccess": "Uvoz uspješan",
+  "imported": "Uvezeno",
+  "importingPlans": "Uvoz planova",
+  "inAppReviewContentV1": "Veselimo se čitanju tvog ljubavnog pisma! Napiši ga kao recenziju u {storeName}.",
+  "@inAppReviewContentV1": {
+    "description": ""
+  },
+  "inAppReviewContentV2": "Ako da, napiši to kao recenziju u {storeName}.",
+  "@inAppReviewContentV2": {
+    "description": ""
+  },
+  "inAppReviewContentV3": "Ako da, napiši to kao recenziju u {storeName}.",
+  "@inAppReviewContentV3": {
+    "description": ""
+  },
+  "inAppReviewContentV4": "Veselimo se čitanju tvog ljubavnog pisma! Napiši ga kao recenziju u {storeName}.",
+  "@inAppReviewContentV4": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV1": "Voliš li i ti Camino Ninju?",
+  "@inAppReviewDescriptionV1": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV2": "Jesmo li i tvoja omiljena aplikacija?",
+  "@inAppReviewDescriptionV2": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV3": "Jesmo li i mi divna aplikacija?",
+  "@inAppReviewDescriptionV3": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV4": "Voliš li i ti Camino Ninju?",
+  "@inAppReviewDescriptionV4": {
+    "description": ""
+  },
+  "inAppReviewTitleV1": "Volimo te!",
+  "@inAppReviewTitleV1": {
+    "description": ""
+  },
+  "inAppReviewTitleV2": "Naš si omiljeni korisnik!",
+  "@inAppReviewTitleV2": {
+    "description": ""
+  },
+  "inAppReviewTitleV3": "Divan si hodočasnik!",
+  "@inAppReviewTitleV3": {
+    "description": ""
+  },
+  "inAppReviewTitleV4": "Camino Ninja te voli!",
+  "@inAppReviewTitleV4": {
+    "description": ""
+  },
+  "inbox": "Sandučić",
+  "individualPowerPlugs": "Pojedinačne utičnice",
+  "instagram": "Instagram",
+  "jan10ToDec23": "od 10. siječnja do 23. prosinca",
+  "jan10ToDec23ExceptDec3To9": "Od 10. siječnja do 23. prosinca, osim od 3. do 9. prosinca",
+  "jan10ToDec23ManyExceptions": "Od 10. siječnja do 23. prosinca, osim od 26. veljače do 2. ožujka, 20. studenog i od 27. do 28. studenog te od 3. do 12. prosinca",
+  "jan10ToDec9": "od 10. siječnja do 9. prosinca",
+  "jan11ToDec19_499": "od 11. siječnja do 19. prosinca",
+  "jan11ToDec19_572": "od 11. siječnja do 19. prosinca",
+  "jan15ToDec31ExceptOct": "Od 15. siječnja do 31. prosinca, osim posljednjeg tjedna u listopadu",
+  "jan17ToDec12": "od 17. siječnja do 12. prosinca",
+  "jan17ToDec19": "od 17. siječnja do 19. prosinca",
+  "jan1ToDec21_622": "od 1. siječnja do 21. prosinca",
+  "jan1ToDec22_630": "od 1. siječnja do 22. prosinca",
+  "jan1ToNov30": "od 1. siječnja do 30. studenog",
+  "jan1ToOct31": "od 1. siječnja do 31. listopada",
+  "jan21ToDec14_640": "od 21. siječnja do 14. prosinca",
+  "jan21ToDec15FriToSun": "Od 21. siječnja do 15. prosinca (otvoreno samo od petka do nedjelje od 21. siječnja do 31. ožujka i od 1. studenog do 15. prosinca)",
+  "jan21ToDec19_636": "od 21. siječnja do 19. prosinca",
+  "jan21ToDec19_671": "od 21. siječnja do 19. prosinca",
+  "jan22ToDec18": "od 22. siječnja do 18. prosinca",
+  "jan25ToDec20": "od 25. siječnja do 20. prosinca",
+  "jan26ToDec24ClosedMondays": "Od 26. siječnja do 24. prosinca (zatvoreno ponedjeljkom u studenom, prosincu, siječnju i veljači)",
+  "jan2ToDec19": "od 2. siječnja do 19. prosinca",
+  "jan2ToDec22": "od 2. siječnja do 22. prosinca",
+  "jan2ToDec24": "od 2. siječnja do 24. prosinca",
+  "jan2ToDec24ExceptNov15To30": "Od 2. siječnja do 24. prosinca, osim od 15. do 30. studenog",
+  "jan3ToDec22_617": "od 3. siječnja do 22. prosinca",
+  "jan3ToDec23": "od 3. siječnja do 23. prosinca",
+  "jan4ToDec21": "od 4. siječnja do 21. prosinca",
+  "jan6ToDec19": "od 6. siječnja do 19. prosinca",
+  "jan6ToDec22_597": "od 6. siječnja do 22. prosinca",
+  "jan6ToDec23": "od 6. siječnja do 23. prosinca",
+  "jan6ToOct31": "od 6. siječnja do 31. listopada",
+  "jan7ToDec23": "od 7. siječnja do 23. prosinca",
+  "jan8ToDec11": "od 8. siječnja do 11. prosinca",
+  "jan8ToDec21_601": "od 8. siječnja do 21. prosinca",
+  "jan8ToDec21_669": "od 8. siječnja do 21. prosinca",
+  "jan8ToDec23_626": "od 8. siječnja do 23. prosinca",
+  "january15ToNovember30": "od 15. siječnja do 30. studenog",
+  "january16ToDecember14": "od 16. siječnja do 14. prosinca",
+  "januaryToDecember": "1. siječnja do 31. prosinca",
+  "july1ToAug30": "od 1. srpnja do 30. kolovoza",
+  "july1ToSept24_722": "od 1. srpnja do 24. rujna",
+  "july1ToSeptember15": "od 1. srpnja do 15. rujna",
+  "july20ToSept30": "od 20. srpnja do 30. rujna",
+  "june15ToOct31": "od 15. lipnja do 31. listopada",
+  "june16ToOct15": "od 16. lipnja do 15. listopada",
+  "june1ToOct30": "od 1. lipnja do 30. listopada",
+  "june1ToSeptember30": "od 1. lipnja do 30. rujna",
+  "kitchen": "Kuhinja",
+  "km": "km",
+  "kmMiles": "Km/milje",
+  "language": "Jezik",
+  "@language": {
+    "description": "Word for language selection"
+  },
+  "languageAvailable": "Dostupni jezici",
+  "@languageAvailable": {
+    "description": ""
+  },
+  "lastUpdated": "Posljednje ažuriranje",
+  "@lastUpdated": {
+    "description": ""
+  },
+  "later": "Kasnije",
+  "@later": {
+    "description": ""
+  },
+  "latestPriceOn": "Najnovija cijena na",
+  "@latestPriceOn": {
+    "description": ""
+  },
+  "laundryFree": "Pranje rublja je besplatno",
+  "legalAndPrivacy": "Pravne informacije i privatnost",
+  "@legalAndPrivacy": {
+    "description": ""
+  },
+  "letUsKnowIfAnyInformationIsIncorrect": "Javi nam ako neka informacija nije točna",
+  "@letUsKnowIfAnyInformationIsIncorrect": {
+    "description": ""
+  },
+  "letUsKnowStay": "Javi nam kako bi želio odsjesti u ovom gradu!",
+  "lightDark": "Svijetla/Tamna",
+  "lightMode": "Svijetli način",
+  "@lightMode": {
+    "description": ""
+  },
+  "list": "Popis",
+  "loadingMessage": "Učitavanje podataka o ruti...\n\nPričekaj trenutak dok učitamo potrebne podatke.\nOvo će se dogoditi samo jednom.\nNakon prvog učitavanja možeš koristiti aplikaciju izvan mreže.",
+  "@loadingMessage": {
+    "description": "Message shown during initial data loading"
+  },
+  "locateOnOtherMaps": "Pronađi na drugim kartama",
+  "@locateOnOtherMaps": {
+    "description": ""
+  },
+  "locationAccuracyDetail": "tvoju trenutnu poziciju točnije.",
+  "locationAccuracyIntro": "Uključivanjem točnosti lokacije pomažeš nam da prikažemo ",
+  "locationPermissionGuideAndroidStep1Part1": "\nIdi na ",
+  "locationPermissionGuideAndroidStep1Part2BoldPath": "Postavke > Lokacija",
+  "locationPermissionGuideAndroidStep1Part3": " i uključi ",
+  "locationPermissionGuideAndroidStep1Part4BoldAction": "Pristup lokaciji.",
+  "locationPermissionGuideAndroidStep2Part1": "\nU postavkama aplikacije također provjeri ima li ",
+  "locationPermissionGuideAndroidStep2Part2BoldAppName": "Camino Ninja",
+  "locationPermissionGuideAndroidStep2Part3": " dopuštenje za pristup tvojoj lokaciji.",
+  "locationPermissionGuideHeaderPart1": "Da bi istraživao kartu, moraš uključiti ",
+  "locationPermissionGuideHeaderPart2Bold": "Lokacijske usluge.",
+  "locationPermissionGuideHeaderPart3": "\nSamo slijedi korake za svoj uređaj:",
+  "locationPermissionGuideIosStep1Part1": "\nIdi na ",
+  "locationPermissionGuideIosStep1Part2BoldPath": "Postavke > Privatnost i sigurnost > Lokacijske usluge",
+  "locationPermissionGuideIosStep1Part3": " i uključi ",
+  "locationPermissionGuideIosStep1Part4BoldAction": "Lokacijske usluge.",
+  "locationPermissionGuideIosStep2Part1": "\nU postavkama ",
+  "locationPermissionGuideIosStep2Part2BoldTerm": "Aplikacije",
+  "locationPermissionGuideIosStep2Part3": " također provjeri ima li Camino Ninja dopuštenje za pristup tvojoj lokaciji.",
+  "locationPermissionGuideIosStep3Part1": "\nZa najbolju točnost uključi ",
+  "locationPermissionGuideIosStep3Part2BoldAction": "Točnu lokaciju.",
+  "locationPermissionGuideIosStep3Part4": " ",
+  "locationRequired": "Potrebna je lokacija",
+  "@locationRequired": {
+    "description": ""
+  },
+  "locationRouteDestination": "Lokacija, ruta i odredište",
+  "loginRequiredUpload": "Moraš biti prijavljen za prijenos",
+  "loginToShare": "Prijavi se da podijeliš ili uvezeš planove.",
+  "lunchAvailable": "Ručak dostupan",
+  "manuallyAddStay": "Ručno dodaj boravak",
+  "map": "Karta",
+  "march10ToDec23": "od 10. ožujka do 23. prosinca",
+  "march12ToOct31": "od 12. ožujka do 31. listopada",
+  "march14ToDec11": "od 14. ožujka do 11. prosinca",
+  "march15ToDec10_523": "od 15. ožujka do 10. prosinca",
+  "march15ToDec11_715": "od 15. ožujka do 11. prosinca",
+  "march15ToDec15ExceptNovGroups4": "Od 15. ožujka do 15. prosinca, osim od 15. do 30. studenog (u prosincu samo za grupe od 4 ili više)",
+  "march15ToDec15_554": "od 15. ožujka do 15. prosinca",
+  "march15ToNov15ClosedMondays": "Od 15. ožujka do 15. studenog (zatvoreno ponedjeljkom)",
+  "march15ToNov15ClosedMondays_668": "Od 15. ožujka do 15. studenog (zatvoreno ponedjeljkom)",
+  "march15ToNov15RestReservation": "Od 15. ožujka do 15. studenog, ostatak godine uz rezervaciju",
+  "march15ToNov28": "od 15. ožujka do 28. studenog",
+  "march15ToNov30_634": "od 15. ožujka do 30. studenog",
+  "march15ToNov5_700": "od 15. ožujka do 5. studenog",
+  "march15ToNovember15": "od 15. ožujka do 15. studenog",
+  "march15ToOct15RestCall": "Od 15. ožujka do 15. listopada, ostatak godine potvrdite",
+  "march15ToOct23": "od 15. ožujka do 23. listopada",
+  "march15ToOct24ClosedMondays": "Od 15. ožujka do 24. listopada (zatvoreno ponedjeljkom)",
+  "march15ToOctober15_130": "od 15. ožujka do 15. listopada",
+  "march15ToOctober15_208": "od 15. ožujka do 15. listopada",
+  "march15ToOctober15_227": "od 15. ožujka do 15. listopada",
+  "march15ToOctober31_119": "od 15. ožujka do 31. listopada",
+  "march15ToOctober31_180": "od 15. ožujka do 31. listopada",
+  "march15ToSept30_558": "od 15. ožujka do 30. rujna",
+  "march15ToSept30_563": "od 15. ožujka do 30. rujna",
+  "march15ToSept30_686": "od 15. ožujka do 30. rujna",
+  "march15ToSeptember15": "od 15. ožujka do 15. rujna",
+  "march16ToDec14RestGroups": "Od 16. ožujka do 14. prosinca (ostatak godine samo grupe s rezervacijama)",
+  "march18ToOctober19": "od 18. ožujka do 19. listopada",
+  "march18ToOctober31": "od 18. ožujka do 31. listopada",
+  "march19ToOct31_685": "od 19. ožujka do 31. listopada",
+  "march1ToDec10_528": "od 1. ožujka do 10. prosinca",
+  "march1ToDec10_672": "od 1. ožujka do 10. prosinca",
+  "march1ToDec10_695": "od 1. ožujka do 10. prosinca",
+  "march1ToDec12_654": "od 1. ožujka do 12. prosinca",
+  "march1ToDec14_606": "od 1. ožujka do 14. prosinca",
+  "march1ToDec14_663": "od 1. ožujka do 14. prosinca",
+  "march1ToDec15_649": "od 1. ožujka do 15. prosinca",
+  "march1ToDec15_702": "od 1. ožujka do 15. prosinca",
+  "march1ToDec18": "od 1. ožujka do 18. prosinca",
+  "march1ToDec19RestGroups": "Od 1. ožujka do 19. prosinca (ostatak godine samo za grupe uz rezervaciju)",
+  "march1ToDec20_550": "od 1. ožujka do 20. prosinca",
+  "march1ToDec21_673": "od 1. ožujka do 21. prosinca",
+  "march1ToDec22_707": "od 1. ožujka do 22. prosinca",
+  "march1ToDec23_627": "od 1. ožujka do 23. prosinca",
+  "march1ToDec31": "od 1. ožujka do 31. prosinca",
+  "march1ToDec31_698": "od 1. ožujka do 31. prosinca",
+  "march1ToDec8": "od 1. ožujka do 8. prosinca",
+  "march1ToDecember8": "od 1. ožujka do 8. prosinca",
+  "march1ToNov10": "od 1. ožujka do 10. studenog",
+  "march1ToNov11": "od 1. ožujka do 11. studenog",
+  "march1ToNov15RestGroups4": "Od 1. ožujka do 15. studenog (ostatak godine otvoreno samo za grupe od 4 ili više osoba)",
+  "march1ToNov19_610": "od 1. ožujka do 19. studenog",
+  "march1ToNov20": "od 1. ožujka do 20. studenog",
+  "march1ToNov26": "od 1. ožujka do 26. studenog",
+  "march1ToNov28_655": "od 1. ožujka do 28. studenog",
+  "march1ToNov30MayVary": "Od 1. ožujka do 30. studenog (ovisno o godini, može varirati)",
+  "march1ToNov30RestGroupsReservation": "Od 1. ožujka do 30. studenog (ostatak godine samo za grupe uz rezervaciju)",
+  "march1ToNov30RestGroupsReservation_203": "Od 1. ožujka do 30. studenog (ostatak godine samo grupe uz rezervaciju)",
+  "march1ToNov30RestReservation_174": "Od 1. ožujka do 30. studenog (ostatak godine uz rezervaciju)",
+  "march1ToNovember15": "od 1. ožujka do 15. studenog",
+  "march1ToNovember30": "od 1. ožujka do 30. studenog",
+  "march1ToOct24_570": "od 1. ožujka do 24. listopada",
+  "march1ToOct31ClosedSatSun": "Od 1. ožujka do 31. listopada (zatvoreno subotom i nedjeljom)",
+  "march1ToOctober15": "od 1. ožujka do 15. listopada",
+  "march1ToOctober31": "od 1. ožujka do 31. listopada",
+  "march1ToOctober31GroupsReserve": "Od 1. ožujka do 31. listopada (u ostalim mjesecima grupe mogu rezervirati)",
+  "march1ToOctober31Reservation": "Od 1. ožujka do 31. listopada (ostatak godine prema rezervacijama)",
+  "march1ToOctober31RestConfirm_123": "Od 1. ožujka do 31. listopada, ostatak godine potvrdite",
+  "march1ToOctober31RestReservation_160": "Od 1. ožujka do 31. listopada, ostatak godine rezervirajte",
+  "march1ToOctober31RestThuSun": "Od 1. ožujka do 31. listopada, ostatak godine od četvrtka do nedjelje",
+  "march1ToSeptember30": "od 1. ožujka do 30. rujna",
+  "march20ToOct24": "od 20. ožujka do 24. listopada",
+  "march20ToOct30": "od 20. ožujka do 30. listopada",
+  "march21ToNovember6": "od 21. ožujka do 6. studenog",
+  "march23ToNovember5": "od 23. ožujka do 5. studenog",
+  "march25ToDec10_692": "od 25. ožujka do 10. prosinca",
+  "march25ToOct15_553": "od 25. ožujka do 15. listopada",
+  "march26ToNov4": "od 26. ožujka do 4. studenog",
+  "march26ToOct31_679": "od 26. ožujka do 31. listopada",
+  "march28ToOct31ClosedSatSun": "Od 28. ožujka do 31. listopada (zatvoreno subotom i nedjeljom)",
+  "march28ToOct31_705": "od 28. ožujka do 31. listopada",
+  "march2ToDec20": "od 2. ožujka do 20. prosinca",
+  "march30ToOct31": "od 30. ožujka do 31. listopada",
+  "march6ToOct31": "od 6. ožujka do 31. listopada",
+  "may1ToNovember30_184": "od 1. svibnja do 30. studenog",
+  "may1ToOct15": "od 1. svibnja do 15. listopada",
+  "may1ToOctober31_173": "od 1. svibnja do 31. listopada",
+  "may1ToSeptember30": "od 1. svibnja do 30. rujna",
+  "may3ToOct30": "od 3. svibnja do 30. listopada",
+  "maybeLater": "Možda kasnije",
+  "@maybeLater": {
+    "description": ""
+  },
+  "merlinDescription": "{name} je voditelj podataka i sa svojim timom brine o novim hostelima, ažuriranim cijenama, izmjenama rute i tako dalje.",
+  "microwave": "Mikrovalna",
+  "minMaxElevRouteScreen": "min/maks nadm.",
+  "@minMaxElevRouteScreen": {
+    "description": ""
+  },
+  "missingAccommodationPlaceholder": "Dodaj poveznicu na Google Maps, web stranicu ili slično kako bismo lakše pronašli smještaj",
+  "@missingAccommodationPlaceholder": {
+    "description": ""
+  },
+  "missingAccommodationReported": "Smještaj koji nedostaje prijavljen",
+  "@missingAccommodationReported": {
+    "description": ""
+  },
+  "more": "Više",
+  "mostPopular": "Najpopularnije",
+  "myPlans": "Moji planovi",
+  "myReviews": "Moje recenzije",
+  "myStay": "Moj boravak",
+  "name": "Ime",
+  "@name": {
+    "description": ""
+  },
+  "nameItLater": "Imenovat ću ga kasnije",
+  "namePlanHint": "Moj prvi Camino",
+  "namePlanOptional": "Imenuj svoj plan (neobavezno)",
+  "namePlanTitle": "Kako želiš nazvati ovaj plan?",
+  "newDataAvailable": "Dostupni novi podaci",
+  "@newDataAvailable": {
+    "description": ""
+  },
+  "newDataAvailableDescription": "Ažuriranje može sadržavati nove albergues, informacije o rezervacijama itd.",
+  "@newDataAvailableDescription": {
+    "description": ""
+  },
+  "newStagePlanner": "Novo: PLANER ETAPA",
+  "newsAndAnnouncements": "Vijesti i obavijesti",
+  "nextCity": "Sljedeći grad",
+  "no": "Ne",
+  "noAnnouncements": "Još nema obavijesti",
+  "noLocationServices": "Nisi odobrio lokacijske usluge. Tvoja lokacija, udaljenost od rute i nadmorska visina ne mogu se prikazati na karti.",
+  "noNotificationsYet": "Još nema obavijesti",
+  "noReservationCheck": "Ne, ali moguće je provjeriti dostupnost",
+  "noResultsFound": "Nema rezultata",
+  "@noResultsFound": {
+    "description": ""
+  },
+  "noSavedAccommodationYet": "Još nema spremljenih smještaja.",
+  "@noSavedAccommodationYet": {
+    "description": ""
+  },
+  "noSavedPlans": "Trenutno nema spremljenih planova.\nSlobodno stvori novi!",
+  "noStagePlannedToday": "Nemaš isplaniranu etapu za danas",
+  "notNow": "Ne sada",
+  "@notNow": {
+    "description": ""
+  },
+  "notOnRouteName": "Moja Ninja aplikacija ne misli da sam na ruti {routeName}.",
+  "notSameDay": "Ne isti dan",
+  "notificationPromptDescription": "Obavještavat ćemo te o važnim ažuriranjima Camino staze — zatvaranjima, novim smještajima i sezonskim novostima.",
+  "notificationSettings": "Obavijesti",
+  "notificationSettingsDescription": "Upravljaj svojim postavkama obavijesti",
+  "notifications": "Obavijesti",
+  "notificationsDisabledDescription": "Omogući obavijesti u postavkama uređaja kako bi primao ažuriranja sa staze i novosti zajednice.",
+  "notificationsDisabledTitle": "Obavijesti su onemogućene",
+  "notificationsUnavailable": "Obavijesti nisu dostupne u ovoj verziji.",
+  "nov1ToFeb29ExceptDec13To15": "Od 1. studenog do 29. veljače, osim od 13. do 15. prosinca",
+  "nov1ToFeb29_590": "od 1. studenog do 29. veljače",
+  "ok": "U redu",
+  "onlyLowSeason_250": "Samo izvan sezone",
+  "onlyOffSeason": "Samo izvan sezone",
+  "oopsSomethingWentWrong": "Ups, nešto je pošlo po zlu",
+  "@oopsSomethingWentWrong": {
+    "description": ""
+  },
+  "open": "Otvoreno",
+  "@open": {
+    "description": ""
+  },
+  "openSeason": "Otvorena sezona",
+  "openSeasonUnknown": "Otvorena sezona nepoznata",
+  "openSettings": "Otvori postavke",
+  "@openSettings": {
+    "description": ""
+  },
+  "openWhenOthersClosed": "Otvoreno samo kada su svi drugi albergues u Frómisti zatvoreni",
+  "openWhenOthersClosedOctToMay": "Otvoreno kada su drugi albergues u Frómisti zatvoreni. Otvoreno od listopada do svibnja s prekidima (nazovite da provjerite dostupnost). Obično zatvoreno od lipnja do rujna.",
+  "optional": "Neobavezno",
+  "@optional": {
+    "description": ""
+  },
+  "organic": "Organsko",
+  "original": "Original",
+  "otherChannels": "Drugi kanali",
+  "@otherChannels": {
+    "description": ""
+  },
+  "oven": "Pećnica",
+  "pending": "Na čekanju",
+  "peterDescription": "{name} je voditelj Camino Ninje, i on i njegov tim brinu o strateškim pitanjima, novim funkcijama aplikacije i svemu ostalom.",
+  "phone": "Telefon",
+  "@phone": {
+    "description": ""
+  },
+  "photoItem": "Učitane fotografije",
+  "photoUploaded": "Fotografija učitana",
+  "@photoUploaded": {
+    "description": ""
+  },
+  "photosAndReviews": "fotografije i recenzije",
+  "plan": "Plan",
+  "planDataIncomplete": "Podaci nepotpuni. Ažuriraj na najnovije podatke da vidiš ovaj plan.",
+  "planDeletedSuccessfully": "Plan uspješno obrisan",
+  "planDetail": "Detalji plana",
+  "planFor": "Plan za",
+  "plannedRoute": "Planirana ruta",
+  "plans": "Planovi",
+  "plansImportSuccess": "Planovi uspješno uvezeni!",
+  "plansLinkedDescription": "Planovi su sada povezani s tvojim računom. Prijavi se za pristup značajkama dijeljenja i uvoz novih Camino Ninja planova.",
+  "platesUtensils": "Tanjuri i pribor",
+  "pleaseRegisterToReviewYourStay": "Registriraj se da ocijeniš svoj boravak",
+  "@pleaseRegisterToReviewYourStay": {
+    "description": ""
+  },
+  "pleaseTryAgainLater": "Pokušaj ponovno kasnije!",
+  "@pleaseTryAgainLater": {
+    "description": ""
+  },
+  "postedOn": "Objavljeno",
+  "preciseLocationWarning": "Točna lokacija je isključena, pa tvoja lokacija može biti netočna.",
+  "@preciseLocationWarning": {
+    "description": ""
+  },
+  "preferences": "Postavke",
+  "price": "Cijena",
+  "@price": {
+    "description": ""
+  },
+  "privacyCurtains": "Zavjese za privatnost",
+  "privateHomePizza": "Ovo nije albergue. To je privatni dom koji povremeno ugošćuje hodočasnike. Također i odličan pizza restoran.",
+  "privateLockers": "Privatni ormarići",
+  "proceedAsAGuest": "Nastavi kao gost",
+  "@proceedAsAGuest": {
+    "description": ""
+  },
+  "proceedWithName": "Nastavi s ovim imenom",
+  "provideARating": "Ostavi ocjenu",
+  "@provideARating": {
+    "description": ""
+  },
+  "qrCodeInvalid": "QR kod nije valjan",
+  "qrCodeInvalidError": "QR kod nije valjan",
+  "qrCodeSaveSuccess": "QR kod uspješno spremljen u galeriju!",
+  "qrCodeSaved": "QR kod spremljen",
+  "quadrupleRoom": "Četverokrevetna soba",
+  "qualityReasonPhotos": "Ovo nam pomaže osigurati kvalitetu fotografija.",
+  "qualityReasonReviews": "Ovo nam pomaže osigurati kvalitetu recenzija.",
+  "rateThisAccommodation": "Ocijeni ovaj smještaj",
+  "@rateThisAccommodation": {
+    "description": ""
+  },
+  "ratings": "Ocjene",
+  "@ratings": {
+    "description": ""
+  },
+  "recommendLogin": "Preporučujemo prijavu / izradu računa.",
+  "recommended": "Preporučeno",
+  "refrigerator": "Hladnjak",
+  "registerForPhotos": "Registriraj se da preneseš fotografije",
+  "registerForReview": "Registriraj se da napišeš recenziju",
+  "remindMeLater": "Podsjeti me kasnije",
+  "removeStay": "Ukloni boravak",
+  "rentWholeUntilMarch2022": "Do ožujka 2022. moguće je iznajmiti samo cijeli albergue za 120 po noći (10 osoba)",
+  "reportAnIssue": "Prijavi problem",
+  "@reportAnIssue": {
+    "description": ""
+  },
+  "reportMissingAccommodation": "Prijavi nedostajući smještaj",
+  "@reportMissingAccommodation": {
+    "description": ""
+  },
+  "reportMissingAlbergueBottomSheetDescription": "Pomozi nam tako da dodaš detalje — poveznicu na Google Maps ili informacije o lokaciji.",
+  "@reportMissingAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "reportMissingAlbergueBottomSheetTitle": "Ne vidiš smještaj koji znaš u ovom gradu?",
+  "@reportMissingAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "reportMissingAlbergueMessage": "Hvala ti što pomažeš održavati Camino Ninju ažurnim.",
+  "@reportMissingAlbergueMessage": {
+    "description": ""
+  },
+  "reportTechnicalIssue": "Prijavi tehnički problem",
+  "required": "Obavezno",
+  "@required": {
+    "description": ""
+  },
+  "reservation60Plus": "Rezervacija je moguća samo za hodočasnike starije od 60 godina",
+  "reserve": "Rezerviraj",
+  "restaurant": "Restoran",
+  "retry": "Pokušaj ponovno",
+  "@retry": {
+    "description": ""
+  },
+  "returnToAllLocations": "Vrati se na sve lokacije",
+  "@returnToAllLocations": {
+    "description": ""
+  },
+  "reviewAlbergueBottomSheetDescription": "Drugi hodočasnici bi to željeli znati!",
+  "@reviewAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "reviewAlbergueBottomSheetTitle": "Kako bi ocijenio cjelokupno iskustvo s ovim mjestom?",
+  "@reviewAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "reviewApp": "Recenziraj Camino Ninja aplikaciju",
+  "reviewItem": "Recenzije smještaja",
+  "reviewRequiredLoginDescription": "Objavljivanje s računom čini recenzije iskrenijima i pouzdanijima za sve u zajednici.",
+  "@reviewRequiredLoginDescription": {
+    "description": ""
+  },
+  "reviews": "Recenzije",
+  "@reviews": {
+    "description": ""
+  },
+  "reviewsIHaveWritten": "Recenzije koje sam napisao",
+  "route": "Ruta",
+  "routeSummary": "Sažetak rute",
+  "save": "Spremi",
+  "@save": {
+    "description": ""
+  },
+  "saveChange": "Spremi promjenu",
+  "saveQrCode": "Spremi QR kod",
+  "savedAccommodation": "Spremljeni smještaj",
+  "savedAccommodations": "Spremljeni smještaji",
+  "@savedAccommodations": {
+    "description": ""
+  },
+  "savedOn": "Spremljeno",
+  "savedStaysNote": "Moji spremljeni boravci su ovdje",
+  "scanHere": "Skeniraj ovdje",
+  "scanOrOpenPhoto": "Skeniraj (ili otvori kao fotografiju)\nu Camino Ninja aplikaciji",
+  "scanOrUploadQr": "Skeniraj ili učitaj QR kod",
+  "schedulingConflict": "Imaš zakazani sukob na ovaj datum",
+  "search": "Traži",
+  "@search": {
+    "description": ""
+  },
+  "secondMostPopular": "2. najpopularnije",
+  "seeMyComment": "Pogledaj moj komentar",
+  "seeThemOnTheMap": "Pogledaj ih na karti",
+  "@seeThemOnTheMap": {
+    "description": ""
+  },
+  "selectCityCurrentLocation": "Odaberi grad iz trenutne lokacije",
+  "selectDate": "Odaberi datum",
+  "selectStartDate": "Odaberi datum početka",
+  "selectDestinationCity": "Odaberi svoj odredišni grad",
+  "selectFromTheList": "Odaberi s popisa",
+  "selectLanguage": "Odaberi jezik",
+  "selectLanguageDescription": "Mali podsjetnik da neke jezike možda prevodi AI.",
+  "@selectLanguageDescription": {
+    "description": ""
+  },
+  "selectLocation": "Odaberi lokaciju",
+  "@selectLocation": {
+    "description": ""
+  },
+  "selectOrSpecify": "Odaberi ili navedi",
+  "selectPlan": "Odaberi plan",
+  "selectPlansToShare": "Odaberi planove za dijeljenje",
+  "selectRoute": "Odaberi rutu",
+  "@selectRoute": {
+    "description": ""
+  },
+  "selectRouteForMap": "Odaberi rutu za prikaz na karti.",
+  "selectRoute_431": "Odaberi rutu",
+  "selectStartingCity": "Odaberi svoj polazni grad",
+  "selectTheme": "Odaberi temu",
+  "selectUnit": "Odaberi jedinicu",
+  "selectedRoute": "odabrana ruta",
+  "sendLuggage": "Pošalji prtljagu u Santiago",
+  "sessionExpired": "Tvoja je sesija istekla. Prijavi se ponovno.",
+  "@sessionExpired": {
+    "description": "Shown when the user's authentication session expires and they are logged out"
+  },
+  "setStartingDateOptional": "Postavi datum početka (neobavezno)",
+  "shakeNinja": "Protresi Ninju",
+  "@shakeNinja": {
+    "description": ""
+  },
+  "share": "Podijeli",
+  "shareMessageSocial": "Podijeli u poruci ili na društvenim mrežama",
+  "sharePlan": "Podijeli plan",
+  "shareYourPhotosOfThisAccommodation": "Podijeli svoje fotografije ovog smještaja",
+  "@shareYourPhotosOfThisAccommodation": {
+    "description": ""
+  },
+  "show": "Prikaži",
+  "showOriginal": "Prikaži original",
+  "showTranslated": "Prikaži prijevod",
+  "signInSignUp": "Prijava / Registracija",
+  "signInToSync": "Prijavi se da sinkroniziraš svoje planove na svim uređajima",
+  "signOut": "Odjava",
+  "@signOut": {
+    "description": ""
+  },
+  "singleRoom": "Jednokrevetna soba",
+  "somethingNotWorking": "Nešto ne radi?",
+  "spinDryer": "Centrifuga",
+  "stageDeletedSuccessfully": "Etapa uspješno obrisana",
+  "stageDistance": "Udaljenost etape",
+  "stageElevation": "Nadmorska visina etape",
+  "stagePlannerDescription": "Od sada možeš PLANIRATI svoj cijeli camino s Ninjom, planirajući onoliko dana unaprijed koliko želiš.\n\nOvo je prva verzija značajke PLAN. Ako imaš ideju kako možemo poboljšati ovu novu značajku, pošalji povratnu informaciju protresanjem telefona ili koristi kontakt e-mail u odjeljku VIŠE.",
+  "stagePlural": "Etape",
+  "stageScheduledPastDate": "Ova je etapa zakazana za prošli datum",
+  "stageSingular": "Etapa",
+  "stageToDeleteDetails": "Etapa od",
+  "startHereToday": "Krećem odavde danas",
+  "startOfStage": "Početak etape",
+  "startingDate": "Datum početka",
+  "stayInTheLoop": "Budi u tijeku",
+  "submit": "Pošalji",
+  "@submit": {
+    "description": ""
+  },
+  "suspended_537": "Suspendirano",
+  "swimmingPool": "Bazen",
+  "switchUnit": "Promijeni jedinicu",
+  "@switchUnit": {
+    "description": ""
+  },
+  "switchUnitKmMiles": "Promijeni jedinicu (km/milje)",
+  "@switchUnitKmMiles": {
+    "description": ""
+  },
+  "sync": "Sinkronizacija",
+  "syncFailed": "Sinkronizacija neuspješna",
+  "syncFailureDescription": "Tvoji se planovi nisu mogli sinkronizirati. Pokušaj ponovno kasnije.",
+  "syncFailureTitle": "Sinkronizacija neuspješna",
+  "syncSuccessDescription": "Tvoji su planovi uspješno sinkronizirani.",
+  "syncSuccessTitle": "Planovi sinkronizirani",
+  "synced": "Sinkronizirano!",
+  "syncedCopy": "Sinkronizirana kopija",
+  "syncing": "Sinkronizacija...",
+  "system": "Sustav",
+  "@system": {
+    "description": ""
+  },
+  "tapToSeeTheMap": "Dodirni za prikaz karte",
+  "@tapToSeeTheMap": {
+    "description": ""
+  },
+  "taxiBoat": "Ako želiš hodati uz obalu u Španjolskoj duž Caminho Português da Costa (Senda Litoral), možeš uzeti taxi-brod Taxi-Mar (+351 915 955 827) sa starog trajektnog pristaništa",
+  "taxiBoatPontecesures": "Amare Turismo Náutico ima taxi-brodove koji plove iz Vilanove de Arousa do Pontecesuresa cijele godine za 25 eura po osobi. Minimalno 8, maksimalno 12 osoba. Rezervacije telefonom / WhatsAppom: +34 650 41 03 22",
+  "tellUsMoreAboutTheIssue": "Reci nam više o problemu",
+  "@tellUsMoreAboutTheIssue": {
+    "description": ""
+  },
+  "tellYourFriendAboutThisPlace": "Reci prijatelju o ovom mjestu",
+  "@tellYourFriendAboutThisPlace": {
+    "description": ""
+  },
+  "tentDonation": "Možeš pitati možeš li postaviti šator u vrtu uz donaciju i malo volontirati. Donacije su dobrodošle i za obnovu opatije.",
+  "tentsMattressSheet": "Šatori su osigurani za spavanje s madracem i plahtom",
+  "theme": "Tema",
+  "@theme": {
+    "description": ""
+  },
+  "themeAvailable": "Dostupne teme",
+  "@themeAvailable": {
+    "description": ""
+  },
+  "thereIsNoAccommodationInThisLocation": "Na ovoj lokaciji nema smještaja.",
+  "@thereIsNoAccommodationInThisLocation": {
+    "description": ""
+  },
+  "thirdMostPopular": "3. najpopularnije",
+  "thisFieldIsRequired": "Ovo polje je obavezno",
+  "@thisFieldIsRequired": {
+    "description": ""
+  },
+  "to": "do",
+  "toReportAProblemWithTheApp": "za prijavu problema s aplikacijom",
+  "@toReportAProblemWithTheApp": {
+    "description": ""
+  },
+  "today": "Danas",
+  "translate": "Prevedi",
+  "translated": "Prevedeno",
+  "travelerStats": "{percent} putnika koji kreću iz {startCity} završava u {endCity}.",
+  "tripleRoom": "Trokrevetna soba",
+  "tryAdjustingYourSearchTerms": "Pokušaj prilagoditi pojmove pretraživanja.",
+  "@tryAdjustingYourSearchTerms": {
+    "description": ""
+  },
+  "tumbleDryer": "Sušilica",
+  "tv": "TV",
+  "twoWeeksBeforeEasterToNov15": "Od dva tjedna prije Uskrsa do 15. studenog",
+  "unnamedPlan": "Neimenovani plan",
+  "updateDescription": "Koristiš staru verziju aplikacije. Ažuriraj danas kako bi tvoja prijava ostala aktivna i kako bi dobio naše najnovije karte staza — inače ćeš propustiti sve najnovije značajke.",
+  "updateNow": "Ažuriraj sada",
+  "@updateNow": {
+    "description": ""
+  },
+  "updateTitle": "Ažuriraj kako bi ostao u toku!",
+  "updateToUseQR": "Da bi koristio ovaj QR kod, ažuriraj svoju aplikaciju na verziju {versionName} ili noviju.",
+  "update_360": "Ažuriraj",
+  "updatingMessage": "Ažuriranje najnovijih podataka",
+  "@updatingMessage": {
+    "description": "Message shown when updating data"
+  },
+  "uploadFailDueToCancellation": "Prijenos nije uspio jer je otkazan.",
+  "@uploadFailDueToCancellation": {
+    "description": ""
+  },
+  "uploadFailed": "Prijenos neuspješan",
+  "@uploadFailed": {
+    "description": ""
+  },
+  "uploadFromGallery": "Ili učitaj QR kod\niz galerije",
+  "uploadImages": "Učitaj slike",
+  "@uploadImages": {
+    "description": ""
+  },
+  "uploadPhotoSuccessMessage": "Pregledavamo tvoje fotografije kako bismo aplikaciju zadržali pristojnom i visoke kvalitete.",
+  "@uploadPhotoSuccessMessage": {
+    "description": ""
+  },
+  "uploadPhotos": "Učitaj fotografije",
+  "useMyLocation": "Koristi moju lokaciju",
+  "@useMyLocation": {
+    "description": ""
+  },
+  "useWithoutLogin": "Camino Ninju možeš koristiti i bez prijave - i to se nikada neće promijeniti.",
+  "vegan": "Veganski",
+  "veganOption": "Veganska opcija",
+  "vegetarian": "Vegetarijanski",
+  "vegetarianOption": "Vegetarijanska opcija",
+  "viewDetail": "Pogledaj detalje",
+  "viewOnMap": "Pogledaj na karti",
+  "viewPlan": "Pogledaj plan",
+  "warningOnlineToLoadAlbergueReviews": "Moraš biti na mreži da bi učitao recenzije albergua.",
+  "@warningOnlineToLoadAlbergueReviews": {
+    "description": ""
+  },
+  "warningRateBeforeSubmitReview": "Dodirni zvjezdice za ocjenu prije slanja.",
+  "@warningRateBeforeSubmitReview": {
+    "description": ""
+  },
+  "washingMachine": "Perilica rublja",
+  "waterBoiler": "Bojler",
+  "website": "Web stranica",
+  "whatInHere": "Što ima ovdje",
+  "@whatInHere": {
+    "description": ""
+  },
+  "wifi": "Wi-Fi",
+  "willBeDeleted": "bit će izbrisano",
+  "winterCheckIn1400To2000": "Zimi je prijava od 14:00 do 20:00",
+  "xuntaReservation": "Da, obavezno. Albergues Xunta de Galicia zahtijevaju online rezervaciju najkasnije isti dan prije 13:00.",
+  "xuntaWifi": "Svi Xunta albergues: Wi-Fi može i ne mora raditi ovisno o tvojoj zemlji i pružatelju usluga jer je za prijavu na Wi-Fi potrebna SMS poruka.",
+  "yes": "Da",
+  "yes24Hours": "Da, 24 sata unaprijed",
+  "yes5DaysWebsite": "Da, 5 dana unaprijed na web stranici",
+  "yesEmailPrepayment": "Da, e-mailom i uz predujam",
+  "yesExceptAugust": "Da, osim u kolovozu",
+  "yesExceptSummer": "Da, osim ljeti",
+  "yesOneDayAdvance": "Da, ali najmanje jedan dan unaprijed.",
+  "yesOnline": "Da, samo online",
+  "yesPrivateRoomOnly": "Da, samo za privatne sobe",
+  "yesRecommendedChristmas": "Da, preporučeno oko Božića",
+  "yesRecommendedWinter": "Da, preporučeno zimi",
+  "yesRecommended_246": "Da, preporučeno",
+  "yesRecommended_249": "Da, preporučeno",
+  "yesRequired": "Da (obavezno)",
+  "yesRequiredFebMarch": "Da, obavezno u veljači i ožujku",
+  "yesRequiredWinter": "Da, obavezno zimi",
+  "yesRequired_257": "Da, obavezno",
+  "yesSameDay": "Da, isti dan",
+  "youAreDistanceFromCity": "Udaljen si {distance} km od grada {cityName}, lokacije najbliže meni na ",
+  "@youAreDistanceFromCity": {
+    "description": ""
+  },
+  "youAreHere": "Ovdje si",
+  "@youAreHere": {
+    "description": ""
+  },
+  "youAreTooFar": "Predaleko si",
+  "@youAreTooFar": {
+    "description": ""
+  },
+  "stagesNotConnected": "Tvoje etape nisu povezane",
+  "@stagesNotConnected": {
+    "description": ""
+  },
+  "addCityInBetween": "Dodaj grad između sada",
+  "@addCityInBetween": {
+    "description": ""
+  },
+  "markAllAsRead": "Označi sve kao pročitano",
+  "@markAllAsRead": {
+    "description": "Action to mark all notifications or announcements as read"
+  },
+  "scanWithVersion": "Skenirajte s aplikacijom Camino Ninja {version} ili novijom verzijom.",
+  "@scanWithVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "versionCopied": "Verzija kopirana",
+  "@versionCopied": {
+    "description": "Snack bar confirmation after copying the app version to clipboard"
+  },
+  "addANote": "Dodaj bilješku",
+  "@addANote": {
+    "description": "Placeholder text shown on the plan-detail Notes card when the stage has no note yet."
+  },
+  "buyNinjaACoffee": "Časti {brand} kavom",
+  "@buyNinjaACoffee": {
+    "description": "Title on the Buy Me a Coffee banner on the More tab. {brand} is the Camino Ninja brand mascot name and is rendered in the brand color. Translators may move {brand} where natural in their language; the substituted text 'Ninja' stays in English.",
+    "placeholders": {
+      "brand": {
+        "type": "String"
+      }
+    }
+  },
+  "clearNote": "Obriši bilješku",
+  "@clearNote": {
+    "description": "Button label in the stage-note bottom sheet that clears the existing note."
+  },
+  "notesOptional": "Bilješke (neobavezno)",
+  "@notesOptional": {
+    "description": "Label shown above the optional Notes text field in the Add/Edit Stage screen."
+  },
+  "stageNoteDescription": "Dodaj osobnu bilješku za ovu etapu — upute, podsjetnike, dojmove. Samo je ti vidiš.",
+  "@stageNoteDescription": {
+    "description": "Subtitle/helper text in the stage-note bottom sheet explaining that notes are private."
+  },
+  "stageNoteTitle": "Bilješka etape",
+  "@stageNoteTitle": {
+    "description": "Title shown at the top of the bottom sheet where the user edits a stage note."
+  },
+  "notes": "Bilješke",
+  "loginReminderBannerCallToAction" : "Dodirni",
+  "@loginReminderBannerCallToAction" : {
+    "description" : "Bold leading word of the login reminder banner. Translators may swap this with the natural call-to-action verb in their language; pair with loginReminderBannerCallToActionRest."
+  },
+  "loginReminderBannerCallToActionRest" : " za prijavu i sigurnosnu kopiju tvog plana s {stageCount} etapa",
+  "@loginReminderBannerCallToActionRest" : {
+    "description" : "Remainder of the login reminder banner copy after the bold call-to-action word. Begins with a leading space so it concatenates after loginReminderBannerCallToAction.",
+    "placeholders" : {
+      "stageCount" : {
+        "type" : "int"
+      }
+    }
+  },
+  "loginReminderBannerDismissLabel" : "Odbaci podsjetnik za prijavu",
+  "@loginReminderBannerDismissLabel" : {
+    "description" : "Accessibility label for the dismiss (X) button on the login reminder banner."
+  },
+  "loginReminderSheetTitle" : "Ne izgubi svoj napredak!",
+  "@loginReminderSheetTitle" : {
+    "description" : "Title shown at the top of the login reminder bottomsheet."
+  },
+  "loginReminderSheetSubtitle" : "Izgleda da imaš puno isplanirano. Prijavi se sada da zaštitiš svoje podatke i otključaš još značajki:",
+  "@loginReminderSheetSubtitle" : {
+    "description" : "Subtitle shown below the title in the login reminder bottomsheet, introducing the feature list."
+  },
+  "loginReminderSheetCloudSyncTitle" : "Sinkronizacija u oblaku",
+  "@loginReminderSheetCloudSyncTitle" : {
+    "description" : "Title of the Cloud Sync feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCloudSyncDescription" : "Pristup smještajima i planovima na bilo kojem uređaju.",
+  "@loginReminderSheetCloudSyncDescription" : {
+    "description" : "Description of the Cloud Sync feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCommunityTitle" : "Zajednica",
+  "@loginReminderSheetCommunityTitle" : {
+    "description" : "Title of the Community feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCommunityDescription" : "Recenziraj mjesta i podijeli planove s prijateljima.",
+  "@loginReminderSheetCommunityDescription" : {
+    "description" : "Description of the Community feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetPeaceOfMindTitle" : "Mir uma",
+  "@loginReminderSheetPeaceOfMindTitle" : {
+    "description" : "Title of the Peace of Mind feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetPeaceOfMindDescription" : "Tvoji planovi ostaju sigurni, što god se dogodilo.",
+  "@loginReminderSheetPeaceOfMindDescription" : {
+    "description" : "Description of the Peace of Mind feature row in the login reminder bottomsheet."
+  },
+  "cameraPermissionTitle" : "Potreban pristup kameri",
+  "@cameraPermissionTitle" : {
+    "description" : "Title shown on the QR scanner permission explainer when camera access is required."
+  },
+  "cameraPermissionBody" : "Trebamo pristup kameri za skeniranje QR kodova. I bez njega možeš učitati QR sliku iz galerije.",
+  "@cameraPermissionBody" : {
+    "description" : "Body text shown on the QR scanner permission explainer when camera access is required."
+  },
+  "includeDbDumpTitle" : "Share My Plans data to help us troubleshoot",
+  "@includeDbDumpTitle" : {
+    "description" : "Title for the bug-report opt-in checkbox that attaches an anonymized stage planner DB snapshot"
+  },
+  "includeDbDumpSubtitle" : "Plan names and notes are excluded for your privacy.",
+  "@includeDbDumpSubtitle" : {
+    "description" : "Subtitle/description under the bug-report DB-attachment checkbox; informs the user that PII is scrubbed"
+  }
+}

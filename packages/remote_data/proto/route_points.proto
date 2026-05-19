@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+import "common.proto";
+
+message RoutePoints {
+    int32 id = 1;
+    int32 route_id = 2;
+    int32 order_key = 3;
+    double elevation = 4;
+    common.GeoPoint geo_point = 5;
+}
+
+message RoutePointsListResponse {
+    repeated RoutePoints items = 1;
+}

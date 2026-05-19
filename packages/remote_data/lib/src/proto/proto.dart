@@ -1,0 +1,11 @@
+export 'albergue.pb.dart';
+export 'albergue_user_images.pb.dart';
+export 'albergue_user_ratings.pb.dart';
+export 'albergue_user_reviews.pb.dart';
+export 'alt_route_points.pb.dart';
+export 'city.pb.dart';
+export 'city_pairs.pb.dart';
+export 'common.pb.dart';
+export 'latest_updated.pb.dart';
+export 'route.pb.dart';
+export 'route_points.pb.dart';

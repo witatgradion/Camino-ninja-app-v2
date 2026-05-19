@@ -1,0 +1,31 @@
+name: repository
+description: A Very Good Project created by Very Good CLI.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.4.0
+  flutter: ^3.22.0
+
+dependencies:
+  analytics_services:
+    path: ../analytics_services
+  equatable: ^2.0.8
+  core:
+    path: ../core
+  flutter:
+    sdk: flutter
+  remote_data:
+    path: ../remote_data
+  storage:
+    path: ../storage
+  sqflite: ^2.3.3+1
+  dio: ^5.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  path: ^1.9.0
+  sqflite_common_ffi: ^2.3.3
+  very_good_analysis: ^10.0.0

@@ -1,0 +1,28 @@
+name: camino_ninja_flutter (production)
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_android:
+        description: 'Skip Android (AAB build + Play upload)'
+        type: boolean
+        default: false
+      skip_ios:
+        description: 'Skip iOS (IPA build + TestFlight upload)'
+        type: boolean
+        default: false
+
+jobs:
+  build_production:
+    uses: ./.github/workflows/_release.yaml
+    with:
+      flavor: production
+      main_target: lib/main_production.dart
+      release_tag_suffix: production
+      build_appbundle: ${{ inputs.skip_android != true }}
+      build_apk: false
+      build_ios: ${{ inputs.skip_ios != true }}
+      deploy_to_play: ${{ inputs.skip_android != true }}
+      deploy_to_testflight: ${{ inputs.skip_ios != true }}
+      package_name: ninja.camino.app
+    secrets: inherit

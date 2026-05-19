@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+import "common.proto";
+
+message AltRoutePoints {
+    int32 id = 1;
+    int32 order_key = 2;
+    string color = 3;
+    bool dotted = 4;
+    int32 route_id = 7;
+    repeated AltRoutePointsValues alt_route_points_values = 8;
+
+    string created_at = 28;
+    string updated_at = 29;
+    string deleted_at = 30;
+}
+
+message AltRoutePointsValues {
+    int32 id = 1;
+    int32 alt_route_points_id = 2;
+    int32 order_key = 3;
+    common.GeoPoint geo_point = 5;
+    string created_at = 28;
+    string updated_at = 29;
+    string deleted_at = 30;
+}
+
+message AltRoutePointsListResponse {
+    repeated AltRoutePoints items = 1;
+}

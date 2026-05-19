@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+import "common.proto";
+
+message CityRoutes {
+    int32 id = 1;
+    int32 order_key = 2;
+    string route_name = 3;
+    string route_sub_name = 4;
+    string legend_color = 5;
+    bool status = 6;
+
+    string created_at = 28;
+    string updated_at = 29;
+}
+
+message CityRoutePoints {
+    int32 id = 1;
+    int32 route_id = 2;
+    int32 order_key = 3;
+    double elevation = 4;
+    common.GeoPoint geo_point = 7;
+}
+
+message City {
+    int32 id = 1;
+    string name = 2;
+    string country = 3;
+    string region = 4;
+    string province = 5;
+    string slug = 6;
+    int32 km = 7;
+    bool has_atm = 8;
+    bool has_bar_cafe = 9;
+	bool has_restaurant = 10;
+	bool has_shop = 11;
+	bool has_med_clinic = 12;
+	bool has_pharmacy = 13;
+	bool has_fountain = 14;
+	bool has_post_office = 15;
+	bool has_bus_station = 16;
+	bool has_train_station = 17;
+	bool etape_city = 18;
+	bool has_tobacco_store = 19;
+	bool has_airport = 20;
+    string share_url = 21;
+    string search = 22;
+    common.GeoPoint geo_point = 23;
+    repeated CityRoutes routes = 24;
+    repeated CityRoutePoints route_points = 25;
+
+    string created_at = 28;
+    string updated_at = 29;
+    string deleted_at = 30;
+}
+
+message CityListResponse {
+    repeated City items = 1;
+}

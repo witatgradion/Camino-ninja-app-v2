@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message AlbergueUserReviewsImages {
+  int32 id = 1;
+  int32 albergue_user_reviews_id = 2;
+  string file_key = 3;
+  bool status = 4;
+  string created_at = 5;
+  string updated_at = 6;
+}
+
+message AlbergueUserReviews {
+    int32 albergue_id = 1;
+    bool status = 2;
+    string name = 3;
+    string email = 4;
+    string user_comment = 5;
+    double user_rating = 6;
+    repeated AlbergueUserReviewsImages images = 7;
+    int32 id = 12;
+
+    optional string source_lang = 8;
+    optional string translated_comment = 9;
+    optional string display_lang = 10;
+    bool is_translated = 11;
+
+
+    string created_at = 28;
+    string updated_at = 29;
+}
+
+message AlbergueUserReviewsByAlbergueId {
+    int64 total = 1;
+    repeated AlbergueUserReviews albergue_user_reviews = 2;
+}
+
+message AlbergueUserReviewsListResponse {
+  repeated AlbergueUserReviews albergue_user_reviews = 1;
+}

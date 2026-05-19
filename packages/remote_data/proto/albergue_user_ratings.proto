@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+option go_package = "camino-ninja-backend-go/internal/proto/go/pb";
+
+message AlbergueUserRatings {
+    int32 albergue_id = 1;
+    float rating = 2; 
+    int32 total_approved_reviews = 3;
+}
+
+message AlbergueUserRatingsListResponse {
+    repeated AlbergueUserRatings items = 1;
+}

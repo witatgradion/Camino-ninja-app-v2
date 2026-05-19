@@ -1,0 +1,12 @@
+{
+  "@@locale": "fr",
+  "seeMyComment": "Voir mon commentaire",
+  "versionCopied": "Version copiée",
+  "@versionCopied": {
+    "description": "Snack bar confirmation after copying the app version to clipboard"
+  },
+  "markAllAsRead": "Mark all as read",
+  "@markAllAsRead": {
+    "description": "Action to mark all notifications or announcements as read"
+  }
+}

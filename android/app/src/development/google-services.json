@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "831154377849",
+    "project_id": "camino-ninja-dev",
+    "storage_bucket": "camino-ninja-dev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831154377849:android:ade4dde2a288857f9630a8",
+        "android_client_info": {
+          "package_name": "ninja.camino.app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831154377849-8h8mqhkmpkrs1j738avs4u944rdojdfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app.dev",
+            "certificate_hash": "760a1b68117a22eea2ede5800226df52367cc656"
+          }
+        },
+        {
+          "client_id": "831154377849-mlh782qcr922ojlf4a3p35us50n5b2pc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app.dev",
+            "certificate_hash": "4c05262523af804e0b3f84201230ae9110f7f642"
+          }
+        },
+        {
+          "client_id": "831154377849-ncnou8lp6923hgamk8s7uncioos84ts9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ninja.camino.app.dev",
+            "certificate_hash": "c3ac73363118d8278e642c41b2be8ce6a2961024"
+          }
+        },
+        {
+          "client_id": "831154377849-k69gmc9vcnhg401taav1u8pugcll6u35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFxdiSBxHuhmTNe3qBqgcrQXzFptA-W4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831154377849-k69gmc9vcnhg401taav1u8pugcll6u35.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "831154377849-elfbufjnffjj6kdcof9sjed2dn170g5t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ninja.camino.app.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

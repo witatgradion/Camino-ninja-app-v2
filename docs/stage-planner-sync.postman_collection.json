@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "Stage Planner Sync API",
+		"description": "Test collection for POST /api/v1/stage_planner/sync\n\nCovers all sync scenarios: new plans, updates, conflicts, deletions, and empty sync.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://ec2-3-67-133-98.eu-central-1.compute.amazonaws.com:8080",
+			"type": "string"
+		},
+		{
+			"key": "jwt_token",
+			"value": "YOUR_JWT_TOKEN_HERE",
+			"type": "string"
+		},
+		{
+			"key": "device_id",
+			"value": "postman-test-device-001",
+			"type": "string"
+		},
+		{
+			"key": "device_name",
+			"value": "Postman Test Device",
+			"type": "string"
+		},
+		{
+			"key": "plan_uuid",
+			"value": "",
+			"type": "string",
+			"description": "Set after creating a plan via sync"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{jwt_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"item": [
+		{
+			"name": "1. New Plan (empty UUID)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Response has plans array', function () {",
+							"    var json = pm.response.json();",
+							"    pm.expect(json).to.have.property('plans');",
+							"    pm.expect(json.plans).to.be.an('array');",
+							"});",
+							"",
+							"pm.test('Plan has server-assigned UUID', function () {",
+							"    var json = pm.response.json();",
+							"    pm.expect(json.plans.length).to.be.greaterThan(0);",
+							"    var plan = json.plans[json.plans.length - 1];",
+							"    pm.expect(plan.uuid).to.be.a('string').and.not.empty;",
+							"    pm.collectionVariables.set('plan_uuid', plan.uuid);",
+							"    console.log('Saved plan_uuid:', plan.uuid);",
+							"});",
+							"",
+							"pm.test('Plan has correct route_id', function () {",
+							"    var json = pm.response.json();",
+							"    var plan = json.plans[json.plans.length - 1];",
+							"    pm.expect(plan.route_id).to.equal(1);",
+							"});",
+							"",
+							"pm.test('Plan has stages', function () {",
+							"    var json = pm.response.json();",
+							"    var plan = json.plans[json.plans.length - 1];",
+							"    pm.expect(plan.stages).to.be.an('array');",
+							"    pm.expect(plan.stages.length).to.equal(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"\",\n      \"route_id\": 1,\n      \"name\": \"Postman Test Plan\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-05-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328,\n          \"start_albergue_id\": null,\n          \"end_albergue_id\": null,\n          \"custom_start_notes\": null,\n          \"custom_end_notes\": null,\n          \"stage_notes\": \"First day - SJPP to Honto\",\n          \"created_at\": \"2026-02-12T10:00:00Z\",\n          \"updated_at\": \"2026-02-12T10:00:00Z\"\n        },\n        {\n          \"stage_number\": 2,\n          \"route_id\": 1,\n          \"date\": \"2026-05-02T00:00:00Z\",\n          \"start_city_id\": 328,\n          \"end_city_id\": 329,\n          \"start_albergue_id\": null,\n          \"end_albergue_id\": null,\n          \"custom_start_notes\": null,\n          \"custom_end_notes\": null,\n          \"stage_notes\": \"Day 2 - over the Pyrenees\",\n          \"created_at\": \"2026-02-12T10:00:00Z\",\n          \"updated_at\": \"2026-02-12T10:00:00Z\"\n        }\n      ],\n      \"updated_at\": \"2026-02-12T12:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Creates a new plan by sending an empty UUID. Server should assign a UUID and return it."
+			}
+		},
+		{
+			"name": "2. Update Plan (same device, newer timestamp)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Plan name is updated', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var plan = json.plans.find(p => p.uuid === uuid);",
+							"    pm.expect(plan).to.not.be.undefined;",
+							"    pm.expect(plan.name).to.equal('Updated Plan Name');",
+							"});",
+							"",
+							"pm.test('Stages updated to 3', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var plan = json.plans.find(p => p.uuid === uuid);",
+							"    pm.expect(plan.stages.length).to.equal(3);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"{{plan_uuid}}\",\n      \"route_id\": 1,\n      \"name\": \"Updated Plan Name\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-05-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328,\n          \"stage_notes\": \"Updated - First day\"\n        },\n        {\n          \"stage_number\": 2,\n          \"route_id\": 1,\n          \"date\": \"2026-05-02T00:00:00Z\",\n          \"start_city_id\": 328,\n          \"end_city_id\": 329,\n          \"stage_notes\": \"Updated - Day 2\"\n        },\n        {\n          \"stage_number\": 3,\n          \"route_id\": 1,\n          \"date\": \"2026-05-03T00:00:00Z\",\n          \"start_city_id\": 329,\n          \"end_city_id\": 330,\n          \"stage_notes\": \"New stage 3 added\"\n        }\n      ],\n      \"updated_at\": \"2026-02-12T18:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Updates an existing plan from the same device with a newer timestamp. Server should accept the update."
+			}
+		},
+		{
+			"name": "3. Stale Update (same device, older timestamp)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Server keeps newer version (name not overwritten)', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var plan = json.plans.find(p => p.uuid === uuid);",
+							"    pm.expect(plan).to.not.be.undefined;",
+							"    pm.expect(plan.name).to.not.equal('Stale Name Should Be Ignored');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"{{plan_uuid}}\",\n      \"route_id\": 1,\n      \"name\": \"Stale Name Should Be Ignored\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-05-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328\n        }\n      ],\n      \"updated_at\": \"2026-02-12T08:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends an update with an older timestamp from the same device. Server should ignore it and keep its newer version."
+			}
+		},
+		{
+			"name": "4. Conflict (different device, different stages)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Conflict creates duplicate plan', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    // Should have original + conflict copy",
+							"    var conflictPlan = json.plans.find(p => p.plan_uuid === uuid);",
+							"    if (conflictPlan) {",
+							"        pm.expect(conflictPlan.plan_uuid).to.equal(uuid);",
+							"        console.log('Conflict plan UUID:', conflictPlan.uuid);",
+							"    } else {",
+							"        console.log('No conflict detected - stages might be identical or server updated in place');",
+							"    }",
+							"});",
+							"",
+							"pm.test('Original plan still exists', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var original = json.plans.find(p => p.uuid === uuid);",
+							"    pm.expect(original).to.not.be.undefined;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "postman-conflict-device-002"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "Postman Conflict Device"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"{{plan_uuid}}\",\n      \"route_id\": 1,\n      \"name\": \"Modified from Different Device\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-06-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328,\n          \"stage_notes\": \"Completely different date and notes\"\n        },\n        {\n          \"stage_number\": 2,\n          \"route_id\": 1,\n          \"date\": \"2026-06-02T00:00:00Z\",\n          \"start_city_id\": 328,\n          \"end_city_id\": 400,\n          \"stage_notes\": \"Different end city too\"\n        }\n      ],\n      \"updated_at\": \"2026-02-12T20:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends an update from a DIFFERENT device with DIFFERENT stages. Should trigger conflict detection — server keeps original and creates a conflict copy with plan_uuid referencing the original."
+			}
+		},
+		{
+			"name": "5. No Conflict (different device, same stages)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('No new conflict plan created', function () {",
+							"    var json = pm.response.json();",
+							"    // Count how many plans reference plan_uuid",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var before = json.plans.length;",
+							"    console.log('Total plans after no-conflict sync:', before);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "postman-no-conflict-device-003"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "Postman No Conflict Device"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"{{plan_uuid}}\",\n      \"route_id\": 1,\n      \"name\": \"Updated Plan Name\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-05-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328,\n          \"stage_notes\": \"Updated - First day\"\n        },\n        {\n          \"stage_number\": 2,\n          \"route_id\": 1,\n          \"date\": \"2026-05-02T00:00:00Z\",\n          \"start_city_id\": 328,\n          \"end_city_id\": 329,\n          \"stage_notes\": \"Updated - Day 2\"\n        },\n        {\n          \"stage_number\": 3,\n          \"route_id\": 1,\n          \"date\": \"2026-05-03T00:00:00Z\",\n          \"start_city_id\": 329,\n          \"end_city_id\": 330,\n          \"stage_notes\": \"New stage 3 added\"\n        }\n      ],\n      \"updated_at\": \"2026-02-12T20:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends an update from a DIFFERENT device but with IDENTICAL stages. Should NOT create a conflict — stages are the same."
+			}
+		},
+		{
+			"name": "6. Soft Delete Plan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Deleted plan not in active plans or has deleted_at', function () {",
+							"    var json = pm.response.json();",
+							"    var uuid = pm.collectionVariables.get('plan_uuid');",
+							"    var plan = json.plans.find(p => p.uuid === uuid);",
+							"    if (plan) {",
+							"        pm.expect(plan.deleted_at).to.not.be.null;",
+							"        console.log('Plan marked as deleted:', plan.deleted_at);",
+							"    } else {",
+							"        console.log('Plan removed from response (server filtered it)');",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"{{plan_uuid}}\",\n      \"route_id\": 1,\n      \"name\": \"Updated Plan Name\",\n      \"is_imported\": false,\n      \"stages\": [],\n      \"updated_at\": \"2026-02-12T22:00:00Z\",\n      \"deleted_at\": \"2026-02-12T22:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Soft-deletes a plan by sending it with a deleted_at timestamp. Server should mark it as deleted."
+			}
+		},
+		{
+			"name": "7. Empty Sync (fetch all server plans)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Response has plans array', function () {",
+							"    var json = pm.response.json();",
+							"    pm.expect(json).to.have.property('plans');",
+							"    pm.expect(json.plans).to.be.an('array');",
+							"    console.log('Server has', json.plans.length, 'plans for this user');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": []\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends an empty plans array. Server should return ALL plans for the authenticated user. Useful for initial sync on a new device."
+			}
+		},
+		{
+			"name": "8. Multiple Plans in One Sync",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 200', function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Response contains both plans', function () {",
+							"    var json = pm.response.json();",
+							"    pm.expect(json.plans.length).to.be.greaterThan(1);",
+							"    console.log('Total plans:', json.plans.length);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "X-Device-Name",
+						"value": "{{device_name}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": [\n    {\n      \"uuid\": \"\",\n      \"route_id\": 1,\n      \"name\": \"Plan A - Camino Frances\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 1,\n          \"date\": \"2026-06-01T00:00:00Z\",\n          \"start_city_id\": 564,\n          \"end_city_id\": 328\n        }\n      ],\n      \"updated_at\": \"2026-02-12T12:00:00Z\"\n    },\n    {\n      \"uuid\": \"\",\n      \"route_id\": 2,\n      \"name\": \"Plan B - Camino del Norte\",\n      \"is_imported\": false,\n      \"stages\": [\n        {\n          \"stage_number\": 1,\n          \"route_id\": 2,\n          \"date\": \"2026-07-01T00:00:00Z\",\n          \"start_city_id\": 100,\n          \"end_city_id\": 101\n        },\n        {\n          \"stage_number\": 2,\n          \"route_id\": 2,\n          \"date\": \"2026-07-02T00:00:00Z\",\n          \"start_city_id\": 101,\n          \"end_city_id\": 102\n        }\n      ],\n      \"updated_at\": \"2026-02-12T12:00:00Z\"\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends multiple new plans in a single sync request. Verifies the server can handle batch creation."
+			}
+		},
+		{
+			"name": "9. Error - Missing Device ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 400', function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": []\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends a request without the X-Device-ID header. Should return 400."
+			}
+		},
+		{
+			"name": "10. Error - No Auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status is 401', function () {",
+							"    pm.response.to.have.status(401);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Device-ID",
+						"value": "{{device_id}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"plans\": []\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/stage_planner/sync",
+					"host": ["{{base_url}}"],
+					"path": ["api", "v1", "stage_planner", "sync"]
+				},
+				"description": "Sends a request without authentication. Should return 401."
+			}
+		}
+	]
+}

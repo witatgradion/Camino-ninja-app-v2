@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>ITSAppUsesNonExemptEncryption</key>
+		<false/>
+	    <key>NSPhotoLibraryUsageDescription</key>
+        <string>Camino Ninja needs access to the photo library to upload and share photos.</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Camino Ninja uses your location to show your position on the Camino trail map, so you can see nearby accommodations, cities, and how far you are from your next stop.</string>
+        <key>NSLocationAlwaysUsageDescription</key>
+        <string>Camino Ninja uses your background location to track your progress along the Camino trail, for example, to show your current position on the map when you return to the app.</string>
+        <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+        <string>Camino Ninja uses your location to show your position on the Camino trail map and track your progress, for example, to display nearby accommodations and your distance to the next stop.</string>
+		<key>CFBundleLocalizations</key>
+		<array>
+			<string>en</string>
+			<string>es</string>
+		</array>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>$(FLAVOR_APP_NAME)</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>$(FLAVOR_APP_NAME)</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(FLUTTER_BUILD_NAME)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleVersion</key>
+		<string>$(FLUTTER_BUILD_NUMBER)</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UIViewControllerBasedStatusBarAppearance</key>
+		<false/>
+		<key>CADisableMinimumFrameDurationOnPhone</key>
+		<true/>
+		<key>UIApplicationSupportsIndirectInputEvents</key>
+		<true/>
+		<key>UIStatusBarHidden</key>
+		<false/>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+		<string>comgooglemaps</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>googlechromes</string>
+		</array>
+		<key>CFBundleURLTypes</key>
+		<array>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.googleusercontent.apps.831154377849-elfbufjnffjj6kdcof9sjed2dn170g5t</string>
+					<string>com.googleusercontent.apps.831154377849-rsbf3c1e6buo2iq1kf5glreo8sm4cl59</string>
+					<string>com.googleusercontent.apps.1028157933483-rrjro37l5q7uvpk31ujo0q3cmo29kn84</string>
+					<string>com.googleusercontent.apps.1028157933483-te8f58ti751h60684spq0rc3795shlf0</string>
+				</array>
+			</dict>
+		</array>
+		<key>NSMotionUsageDescription</key>
+		<string>This app uses motion detection to enable the 'Shake to report a bug' feature.</string>
+	    <key>NSPhotoLibraryAddUsageDescription</key>
+        <string>Camino Ninja needs access to save images to your photo library to save QR codes.</string>
+	    <key>NSCameraUsageDescription</key>
+        <string>Camino Ninja needs camera access to scan QR codes for importing plans.</string>
+	    <key>ITSAppUsesNonExemptEncryption</key>
+        <false/>
+	</dict>
+	
+</plist>

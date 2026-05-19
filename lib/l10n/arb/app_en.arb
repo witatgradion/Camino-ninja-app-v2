@@ -1,0 +1,1373 @@
+{
+  "@@locale": "en",
+  "accommodationAddress": "Accommodation address",
+  "@accommodationAddress": {
+    "description": ""
+  },
+  "accommodationName": "Accommodation name",
+  "@accommodationName": {
+    "description": ""
+  },
+  "accommodations": "Accommodations",
+  "@accommodations": {
+    "description": ""
+  },
+  "accountDeleted": "Your account has been deleted.",
+  "addPhoto": "Add photo",
+  "@addPhoto": {
+    "description": ""
+  },
+  "addStage": "Add Stage",
+  "additionalFeedback": "Additional feedback",
+  "@additionalFeedback": {
+    "description": ""
+  },
+  "additionalInformation": "Additional information",
+  "@additionalInformation": {
+    "description": ""
+  },
+  "allCities": "All cities",
+  "allYear": "All year",
+  "allYearChristmasToMarch6FriSat": "All year, except from Christmas to March 6 it is open only Friday and Saturday (except for groups of more than 6 people)",
+  "allYearClosedHolidays": "All year, but closed for pilgrims for New Year, Epiphany, Easter, July, August and Christmas",
+  "allYearClosedSatSun_713": "All year (closed Saturdays and Sundays)",
+  "allYearClosedSundays": "All year (closed on Sundays)",
+  "allYearClosedThursdays": "All year, closed on Thursdays",
+  "allYearClosedTueNovToFebFriSun": "All year (closed on Tuesdays. November 1 to February 29 only open Friday to Sunday)",
+  "allYearClosedTuesFeb2022": "All year, except January 1, January 15 to Febuary 15 and December 24 to 25 and 30 to 31 (closed on tuesdays until Febuary 2022).",
+  "allYearClosedTuesdays": "All year (Closed on Tuesdays)",
+  "allYearClosedTuesdays_544": "All year (closed on Tuesdays)",
+  "allYearClosedTuesdays_589": "All year (closed on Tuesdays)",
+  "allYearClosedWednesdays_585": "All year (closed on wednesdays)",
+  "allYearClosedWeekends": "All year, closed in weekends",
+  "allYearDec1ToFeb28Call": "All year (December 1 to February 28 call in advance)",
+  "allYearExcept20DaysJuly": "All year, except 20 days in July",
+  "allYearExcept4DaysMidSeptember": "All year, except for 4 days in mid-September for the festivities (days vary every year)",
+  "allYearExceptChristmasHolidays": "All year, except Christmas holydays",
+  "allYearExceptChristmasWeek": "All year, except Christmas week",
+  "allYearExceptChristmas_190": "All year, except Christmas",
+  "allYearExceptDec10ToJan1": "All year, except December 10 to January 1",
+  "allYearExceptDec11ToJan9": "All year, except December 11 to January 9",
+  "allYearExceptDec15To30": "All year, except December 15 to 30",
+  "allYearExceptDec15ToJan15TuesWinter": "January 16 to December 14, except Tuesdays in winter",
+  "allYearExceptDec15ToJan1_217": "All year, except December 15 to January 1",
+  "allYearExceptDec19ToJan3": "All year, except December 19 to January 3",
+  "allYearExceptDec20ToJan10": "All year, except December 20 to January 10",
+  "allYearExceptDec22To25_619": "All year, except December 22 to 25",
+  "allYearExceptDec22To29Jan15ToFeb15": "All year, except December 22 to 29 and January 15 to February 15",
+  "allYearExceptDec22ToJan8": "All year, except from December 22 to January 8",
+  "allYearExceptDec232425": "All year, except December 23, 24 and 25",
+  "allYearExceptDec23ToJan3": "All year, except December 23 to January 3",
+  "allYearExceptDec23ToJan7_459": "All year, except December 23 to January 7",
+  "allYearExceptDec23ToJan8_486": "All year, except December 23 to January 8",
+  "allYearExceptDec23ToMarch1": "All year, except December 23 to March 1",
+  "allYearExceptDec242531Jan156": "All year, except December 24, 25 and 31 and January 01, 05 and 06",
+  "allYearExceptDec2425_571": "All year, except December 24 & 25",
+  "allYearExceptDec24After25Dec31AfterJan1": "All year, except December 24 (afternoon), 25, 31 (afternoon) and January 1",
+  "allYearExceptDec24And25": "All year, except December 24 and 25",
+  "allYearExceptDec24And25_490": "All year, except December 24 and 25",
+  "allYearExceptDec24And25_653": "All year, except December 24 and 25",
+  "allYearExceptDec24To31": "All year, except December 24 to 31",
+  "allYearExceptDec24To31Jan6": "All year, except December 24 to 31 and January 6",
+  "allYearExceptDec24ToJan10_661": "All year, except December 24 to January 10",
+  "allYearExceptDec24ToJan7": "All year, except December 24 to January 7",
+  "allYearExceptDec25Jan1": "All year, except December 25 and January 1",
+  "allYearExceptDec30ToJan2": "All year, except December 30 to January 2",
+  "allYearExceptDec31": "All year, except December 31",
+  "allYearExceptDec8To26": "All year, except December 8 to 26",
+  "allYearExceptDecHolidaysJan1": "All year, except December 24, 25, 31 and January 1",
+  "allYearExceptDecember": "All year, except December",
+  "allYearExceptFeb8To28_479": "All year, except February 8 to 28",
+  "allYearExceptFebChristmas": "All year, except February and Christmas",
+  "allYearExceptFebClosedMondays": "All year, except February (closed on Mondays in January, March, November and December)",
+  "allYearExceptFebClosedWed": "All year, except February (closed on Wednesdays in winter)",
+  "allYearExceptFebClosedWednesdays": "All year, except February (closed on Wednesdays)",
+  "allYearExceptFebruary": "All year, except February",
+  "allYearExceptHolidaysJanuary": "All year (except Christmas holidays and January)",
+  "allYearExceptJan10ToMarch1_587": "All year, except January 10 to March 1",
+  "allYearExceptJan10ToMarch31": "All year, except January 10 to March 31",
+  "allYearExceptJan12April17Dec24To26": "All year, except January 1 to 2, April 17 (2022) and December 24 to 26",
+  "allYearExceptJan15To31": "All year, except January 15 to 31",
+  "allYearExceptJan15ToFeb15_218": "All year, except from January 15 to February 15",
+  "allYearExceptJan15ToFeb28_677": "All year, except January 15 to February 28",
+  "allYearExceptJan18Feb18Dec242531": "All year, except January 1, January 18 to February 18 and December 24, 25 & 31",
+  "allYearExceptJan1ToFeb28": "All year, except January 1 to February 28",
+  "allYearExceptJan56Dec242531": "All year, except January 1, 5 & 6 and December 24, 25 & 31",
+  "allYearExceptJan6ToFeb28_481": "All year, except January 6 to February 28",
+  "allYearExceptJan8ToFeb8": "All year, except January 8 to February 8",
+  "allYearExceptJanFebNov": "All year, except January, February and November",
+  "allYearExceptJanuary_540": "All year, except January",
+  "allYearExceptJuly1ToAug31": "All year, except July 1 to August 31",
+  "allYearExceptJuly5To15": "All year, except July 5 to 15",
+  "allYearExceptJuly6To14": "All year, except July 6 to 14",
+  "allYearExceptLast3WeeksJan": "All year, except the last 3 weeks in January",
+  "allYearExceptLastTwoWeeksDecember": "All year, except the last two weeks in December",
+  "allYearExceptNov15To30": "All year, except November 15 to 30",
+  "allYearExceptNov15ToDec20": "All year, except November 15 to December 20",
+  "allYearExceptNov1To11Dec14ToJan2": "All year, except November 1 to 11 and December 14 to January 2",
+  "allYearExceptNov1To22": "All year, except November 1 to 22",
+  "allYearExceptNov1To30": "All year, except November 1 to 30",
+  "allYearExceptNov1To7_584": "All year, except November 1 to 7",
+  "allYearExceptNov1To7_625": "All year, except November 1 to 7",
+  "allYearExceptNov25ToDec29": "All year, except November 25 to December 29",
+  "allYearExceptNov29Dec12Dec2425Dec31Jan1": "All year, except November 29 to December 12, December 24 to 25 and December 31 to January 1",
+  "allYearExceptNov5ToJan25": "All year, except November 5 to January 25",
+  "allYearExceptNov6To20Dec20To29": "All year, except November 6 to 20 and December 20 to 29",
+  "allYearExceptNov7To30": "All year, except November 7 to 30",
+  "allYearExceptSomeDaysAugust": "All year, except some days in August",
+  "allYearExceptSomeDaysChristmas": "All year, except some days for Christmas",
+  "allYearExceptSomeDaysWinter": "All year, except some days in winter",
+  "allYearJan1To31Confirm": "All year, January 1 to 31 confirm",
+  "allYearLowSeasonConfirm": "All year, in low season confirm",
+  "allYearLowSeasonReservation": "All year, in low season by reservation",
+  "allYearMayCloseWinter": "All year (may be closed in winter depending on demand)",
+  "allYearNotify15Days": "All year round (from November 1 to March 31, notify 15 days in advance)",
+  "allYearNov15ToFeb15Reservation": "All year (by reservation only between November 15 and February 15)",
+  "allYearNov15ToMarch15Confirm": "All year, from November 15 to March 15 confirm",
+  "allYearNov1ToFeb28Reservation": "All year, but only by reservation from November 1 to February 28",
+  "allYearNov1ToFeb28Reservation_220": "All year, November 1 to February 28 only with reservation",
+  "allYearNov1ToJan31MayClose": "All year, but can be closed from November 1 to January 31",
+  "allYearNov1ToMarch31Confirm": "All year (November 1 to March 31 confirm)",
+  "allYearNovToMarchFriSat": "All year (from end of November to March 11 only open Fridays and Saturdays)",
+  "allYearOct15ToMarch15Call": "All year, October 15 to March 15, call first",
+  "allYearOctToMarchGroups": "All year (October 31 to March 1 only for groups with reservation)",
+  "allYearSomeDaysClosed": "All year, but some days the hostel is closed.",
+  "allYearWinterConfirm": "All year, in winter confirm",
+  "allYearWinterGroupsReservation": "All year (in winter only for groups with reservation)",
+  "allYearWinterNotify": "All year, in winter notify your arrival",
+  "allYearWinterReserve": "All year, in winter make reservation",
+  "allow": "Allow",
+  "allowsPets": "Allows Pets",
+  "andMore": "And more",
+  "@andMore": {
+    "description": ""
+  },
+  "announcementDetail": "Announcement",
+  "announcements": "Announcements",
+  "albergueReviewRequestTopic": "Albergue review requests",
+  "albergueReviewRequestTopicDescription": "Reminders to review albergues you've stayed at",
+  "awaitingYourReview": "Awaiting your review",
+  "@awaitingYourReview": {
+    "description": "Subtitle shown on an inbox notification asking the user to review an albergue"
+  },
+  "announcementsTopic": "Announcements",
+  "announcementsTopicDescription": "Trail updates, route changes, and community news",
+  "apartment": "Apartment",
+  "appNotBelieveYouAreOnRoute": "The Ninja App does not believe you are on {routeName}",
+  "@appNotBelieveYouAreOnRoute": {
+    "description": ""
+  },
+  "appRestrictionNote": "Can only be scanned/imported within\nCamino Ninja app",
+  "approved": "Approved",
+  "april11ToOct16": "April 11 to October 16",
+  "april15ToNov15": "April 15 to November 15",
+  "april15ToNovember30": "April 15 to November 30",
+  "april15ToOct31_620": "April 15 to October 31",
+  "april15ToOctober15": "April 15 to October 15",
+  "april15ToSept30": "April 15 to September 30",
+  "april1ToDec10": "April 1 to December 10",
+  "april1ToDec19": "April 1 to December 19",
+  "april1ToDecember31": "April 1 to December 31",
+  "april1ToNov12": "April 1 to November 12",
+  "april1ToNov15_541": "April 1 to November 15",
+  "april1ToNov1_581": "April 1 to November 1",
+  "april1ToNov3": "April 1 to November 3",
+  "april1ToNovember30": "April 1 to November 30",
+  "april1ToOct16_565": "April 1 to October 16",
+  "april1ToOct30": "April 1 to October 30",
+  "april1ToOct30_556": "April 1 to October 30",
+  "april1ToOctober15": "April 1 to October 15",
+  "april1ToOctober31": "April 1 to October 31",
+  "april1ToOctober31MonToFri": "April 1 to October 31, from Monday to Friday",
+  "april1ToOctober31RestConfirm": "April 1 to October 31 (rest of the year consult)",
+  "april1ToOctober31RestGroupsReservation": "April 1 to October 31 (rest of year only reservations by groups)",
+  "april1ToOctober31RestGroupsReservation_187": "April 1 to October 31 (rest of year only groups by reservation)",
+  "april1ToOctober31RestGroupsReserve_215": "April 1 to October 31 (rest of year groups can reserve)",
+  "april1ToOctober31RestReservation": "April 1 to October 31, rest of the year by reservation",
+  "april1ToOctober31RestReservation_226": "April 1 to October 31, rest of year only with reservation",
+  "april1ToSeptember30_214": "April 1 to September 30",
+  "april7ToOct15": "April 7 to October 15",
+  "april9ToOctober15": "April 9 to October 15",
+  "bed": "1 bed",
+  "bedSharedRoom": "Bed in shared room",
+  "beds": "{numberBunkbeds} beds",
+  "bedsDormitories": "{numberBunkbeds} beds in {numberDormitories} dormitories",
+  "bedsDormitory": "{numberBunkbeds} beds in 1 dormitory",
+  "breakfast": "Breakfast",
+  "breakfastIncluded": "Breakfast is included",
+  "bugReportContent": "A screenshot was captured when you shook your device. You’ll see it in the next step.",
+  "@bugReportContent": {
+    "description": ""
+  },
+  "bugReportDescription": "You can add more screenshots and details to help us improve Camino Ninja.",
+  "@bugReportDescription": {
+    "description": ""
+  },
+  "bugReportDescriptionNew": "Tell us what happened and attach a screenshot. This helps our team find a solution faster.",
+  "bugReportFailureDescription": "Please try submitting your bug report again.",
+  "@bugReportFailureDescription": {
+    "description": ""
+  },
+  "bugReportSuccessDescription": "Thanks for helping us make Camino Ninja better!",
+  "@bugReportSuccessDescription": {
+    "description": ""
+  },
+  "bugReportSuccessTitle": "Bug reported successfully",
+  "@bugReportSuccessTitle": {
+    "description": ""
+  },
+  "bugReportTitle": "We’ve captured the screen where the issue occurred",
+  "@bugReportTitle": {
+    "description": ""
+  },
+  "bunkBed": "Bunk Bed",
+  "cancel": "Cancel",
+  "canceled": "Canceled",
+  "@canceled": {
+    "description": ""
+  },
+  "checkIn": "Check-In",
+  "checkInTouristOffice": "Check-In is at the tourist office",
+  "checkout": "Checkout",
+  "choseThisCity": "chose this city",
+  "citiesAccommodation": "Cities with accommodation",
+  "cityPastDestination": "This city is past your destination. Continue and pick a new destination?",
+  "clearCache": "Clear cache",
+  "@clearCache": {
+    "description": ""
+  },
+  "clickHereToTurnItOn": "Click here to turn it on",
+  "@clickHereToTurnItOn": {
+    "description": ""
+  },
+  "closed": "Closed",
+  "@closed": {
+    "description": ""
+  },
+  "closedFebMarchSomeDec": "Closed February, March and some days of December",
+  "closedTuesdays15DaysSeptember": "Closed on Tuesdays and 15 days in September",
+  "closedWednesdays": "Closed on Wednesdays",
+  "closed_536": "Closed 2021",
+  "clothesline": "Clothesline",
+  "communityDinner": "Community Dinner",
+  "communityDinnerIncluded_445": "Community Dinner Included",
+  "communityLunch": "Community Lunch",
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": ""
+  },
+  "confirmDeletePlannedRoute": "Are you sure you want to delete the Planned Route",
+  "confirmDeleteStage": "Are you sure you want to delete this stage?",
+  "confirmSaveChange": "Looks like you’ve made a change. Do you want to save it?",
+  "contact": "Contact",
+  "contactPerson": "Contact {name}",
+  "continueAction": "Continue",
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": {
+    "description": ""
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": ""
+  },
+  "cookingPots": "Cooking Pots",
+  "cooktops": "Cooktops",
+  "cottonSheetsPillowcases": "Cotton Sheets & Pillowcases",
+  "couldNotLoadNotifications": "Could not load notifications",
+  "create": "Create",
+  "createNewStage": "Create New Stage",
+  "createPlan": "Create Plan",
+  "creatingStagesFor": "Creating stages for",
+  "cubeBeds": "Cube Beds",
+  "currentElev": "Current Elev.",
+  "currentVersion": "You are currently using version",
+  "darkMode": "Dark mode",
+  "@darkMode": {
+    "description": ""
+  },
+  "dayBefore": "Only the day before",
+  "dayGap": "day gap",
+  "nightsAtStop": "{count, plural, =1{Night at stop} other{Nights at stop}}",
+  "@nightsAtStop": {
+    "description": "Label for nights staying at a stop, singular/plural based on count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "daysGap": "days gap",
+  "dec19ToJan3_505": "December 19 to January 3",
+  "deleteAccountTitle": "Delete your Camino Ninja account?",
+  "deleteAction": "Delete Account",
+  "deleteErasedNote": "Once confirmed, your account will be erased along with all of your",
+  "deleteExitGreeting": "Buen Camino on your next journey!",
+  "deleteNoteBold": "permanent and immediate",
+  "deleteNoteEnd": ".",
+  "deleteNoteStart": "Please note that this action is ",
+  "deleteSorryToGo": "We’re sorry to see you go.",
+  "deleteThisPlan": "Delete this plan",
+  "deleteThisStage": "Delete this stage",
+  "deny": "Deny",
+  "dependentMonth": "Dependent on the month",
+  "destination": "Destination",
+  "dinnerAvailable": "Dinner Available",
+  "dinnerIncluded_444": "Dinner Included",
+  "distance": "dist.",
+  "distanceFromCity": "I am {distance} km from {cityName} in a direct line. The location closest to me on {routeName}.",
+  "distanceFromRoute": "Distance from route (included)",
+  "distanceFromTheTrail": "Distance from the trail",
+  "distance_344": "Distance",
+  "doNotAskMeAgain": "Don’t ask me again",
+  "@doNotAskMeAgain": {
+    "description": ""
+  },
+  "doNotShowThisAgain": "Don’t show this again",
+  "@doNotShowThisAgain": {
+    "description": ""
+  },
+  "donativoBreakfast": "Donativo Breakfast",
+  "dontAskAgainAndDisable": "Don‘t ask me again and disable this shake-to-report feature for me",
+  "doorsClose": "Doors Closes",
+  "doubleRoom": "Double Room",
+  "dutchOwnersDinner": "Dutch owners. Expect a good hearty dinner.",
+  "easterAndMay1ToOctober15": "Easter and from May 1 to October 15",
+  "easterAndMay1ToOctober_224": "Easter and from May 1 to October 31",
+  "easterToDec11_604": "Easter to December 11",
+  "easterToNov30RestGroups20": "Easter to November 30 (rest of year only for groups of 20 or more with reservation)",
+  "easterToNov30RestReservation": "Easter to November 30 (rest of the year by reservation)",
+  "easterToNovember15_128": "Easter to November 15",
+  "easterToNovember30": "Easter to November 30",
+  "easterToOct12": "Easter to October 12",
+  "easterToOctober15": "Easter to October 15",
+  "easterToOctober31": "Easter to October 31",
+  "easterToOctober31Groups": "Easter to October 31 (Rest of the year only open for large groups with reservation)",
+  "easterToOctober_114": "Easter to October 15",
+  "easterToSeptember30": "Easter to September 30",
+  "eightBedsDonation": "There's only 8 beds for donation and they are given as people arrive. No reservation. It is only for the pilgrims walking the true way.",
+  "elevation": "elev.",
+  "elevationGainLossRouteScreen": "elev. gain/loss",
+  "@elevationGainLossRouteScreen": {
+    "description": ""
+  },
+  "elevation_342": "Elevation",
+  "email": "E-mail",
+  "emailInvalidInlineError": "Please enter a valid email",
+  "@emailInvalidInlineError": {
+    "description": ""
+  },
+  "enableLocationAccuracy": "Enable location accuracy",
+  "enableNotifications": "Enable notifications",
+  "endFebToEndDec": "End of February to end of December",
+  "endOfStage": "End of stage",
+  "enterSomething": "Enter something",
+  "error": "Error",
+  "@error": {
+    "description": ""
+  },
+  "errorLoadingAnnouncements": "Could not load announcements",
+  "exportError": "Export Error",
+  "facility_airport": "Airport",
+  "facility_atm": "ATM",
+  "facility_bus_station": "Bus Station",
+  "facility_cafe": "Cafe",
+  "facility_clinic": "Clinic",
+  "facility_fountain": "Fountain",
+  "facility_hotel": "Hotel",
+  "facility_pharmacy": "Pharmacy",
+  "facility_post_office": "Post Office",
+  "facility_restaurant": "Restaurant",
+  "facility_shopping_stores": "Shops",
+  "facility_tobacco_shop": "Tobacconist",
+  "facility_train_station": "Train Station",
+  "feb10ToDec15": "February 10 to December 15",
+  "feb12ToDec12": "February 12 to December 12",
+  "feb15ToDec12_658": "February 15 to December 12",
+  "feb15ToDec31_458": "February 15 to December 31",
+  "feb15ToNov30_521": "February 15 to November 30",
+  "feb15ToOct31": "February 15 to October 31",
+  "feb16ToNov30RestGroups4To10": "February 16 to November 30 (rest of year groups of 4 to 10 can reserve)",
+  "feb16ToOct31": "February 16 to October 31",
+  "feb16ToOct31_600": "February 16 to October 31",
+  "feb1ToDec11_623": "February 1 to December 11",
+  "feb1ToDec12": "February 1 to December 12",
+  "feb1ToDec14_615": "February 1 to December 14",
+  "feb1ToDec19ClosedSunFebNovToDec": "February 1 to December 19 (closed on Sundays in February and November 1 to December 19)",
+  "feb1ToDec19_618": "February 1 to December 19",
+  "feb1ToDec19_624": "February 1 to December 19",
+  "feb1ToDec23WeekendsFeb": "February 1 to December 23 (only open in weekends in February)",
+  "feb1ToDec31_657": "February 1 to December 31",
+  "feb1ToDec7": "February 1 to December 7",
+  "feb1ToDec9_694": "February 1 to December 9",
+  "feb1ToNov11": "February 1 to November 11",
+  "feb1ToNov14": "February 1 to November 14",
+  "feb1ToOct31_457": "February 1 to October 31",
+  "feb1ToSept30": "February 1 to September 30",
+  "feb22ToDec22": "Februar 22 to December 22",
+  "feb26ToDec11": "February 26 to December 11",
+  "feb26ToOct31": "February 26 to October 31",
+  "feb27ToDec9": "February 27 to December 9",
+  "feb7ToNov30": "February 7 to November 30",
+  "feb8ToDec19": "February 8 to December 19",
+  "february15ToDecember15": "February 15 to December 15",
+  "february1ToDecember15": "February 1 to December 15",
+  "february1ToDecember21": "February 1 to December 21",
+  "february1ToDecember31": "February 1 to December 31",
+  "february1ToNovember30_141": "February 1 to November 30",
+  "february1ToNovember30_171": "February 1 to November 30",
+  "february1ToNovember5": "February 1 to November 5",
+  "february28ToOctober31": "February 28 to October 31",
+  "feedbackAlbergueBottomSheetDescription": "Let us know if you spot anything off or missing.",
+  "@feedbackAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "feedbackAlbergueBottomSheetTitle": "How could we improve Camino Ninja?",
+  "@feedbackAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "feedbackIsRequired": "Feedback is required",
+  "@feedbackIsRequired": {
+    "description": ""
+  },
+  "feedbackSubmissionFailed": "Feedback Submission Failed",
+  "@feedbackSubmissionFailed": {
+    "description": ""
+  },
+  "feedbackSubmitSuccessMessage": "We're reviewing your feedback. You'll be notified if it's approved and displayed here.",
+  "@feedbackSubmitSuccessMessage": {
+    "description": ""
+  },
+  "feedbackSubmitted": "Feedback Submitted",
+  "@feedbackSubmitted": {
+    "description": ""
+  },
+  "fetchingRoutesAndMarkers": "Fetching routes and markers",
+  "@fetchingRoutesAndMarkers": {
+    "description": ""
+  },
+  "findTransportation": "Find transportation",
+  "fiveEuroPerDog": "they charge 5 euros for each dog",
+  "freeStayWelcome": "People who cant pay are still welcome.",
+  "from": "from",
+  "fromEaster": "From Easter",
+  "fromMarch15": "From March 15",
+  "fromMarch1_238": "From March 1",
+  "fullLaundryService": "Full Laundry Service",
+  "gallery": "Gallery",
+  "@gallery": {
+    "description": ""
+  },
+  "giveARatingForThisAccommodation": "Give a rating for this accommodation",
+  "@giveARatingForThisAccommodation": {
+    "description": ""
+  },
+  "goToHereToday": "I'll go here today",
+  "handWashingSink": "Hand Washing Sink",
+  "headOfCaminoNinja": "Head of Camino Ninja",
+  "headOfData": "Head of Data",
+  "helpUsImproveCaminoNinja": "Help us improve Camino Ninja",
+  "@helpUsImproveCaminoNinja": {
+    "description": ""
+  },
+  "here": "here",
+  "hide": "Hide",
+  "hostel4Km": "The hostel is 4 km from the route",
+  "howWasYourStay": "How was your stay?",
+  "iWillGoHere": "I’ll go here",
+  "@iWillGoHere": {
+    "description": ""
+  },
+  "iWillGoThere": "I'll go there",
+  "iWillStartHere": "I'll start here",
+  "iWillStayHere": "I'll stay here",
+  "iWillStayHereOptional": "I'll stay here (optional)",
+  "import": "Import",
+  "importSuccess": "Import Success",
+  "imported": "Imported",
+  "importingPlans": "Importing plans",
+  "inAppReviewContentV1": "We are looking forward to reading your love letter! Please write it as a review in the {storeName}.",
+  "@inAppReviewContentV1": {
+    "description": ""
+  },
+  "inAppReviewContentV2": "If so, please write it as a review in the {storeName}.",
+  "@inAppReviewContentV2": {
+    "description": ""
+  },
+  "inAppReviewContentV3": "If so, please write it as a review in the {storeName}.",
+  "@inAppReviewContentV3": {
+    "description": ""
+  },
+  "inAppReviewContentV4": "We are looking forward to reading your love letter! Please write it as a review in the {storeName}.",
+  "@inAppReviewContentV4": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV1": "Do you also love Camino Ninja?",
+  "@inAppReviewDescriptionV1": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV2": "Are we also your favorite app?",
+  "@inAppReviewDescriptionV2": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV3": "Are we also a wonderful app?",
+  "@inAppReviewDescriptionV3": {
+    "description": ""
+  },
+  "inAppReviewDescriptionV4": "Do you also love Camino Ninja?",
+  "@inAppReviewDescriptionV4": {
+    "description": ""
+  },
+  "inAppReviewTitleV1": "We love you!",
+  "@inAppReviewTitleV1": {
+    "description": ""
+  },
+  "inAppReviewTitleV2": "You are our favorite user!",
+  "@inAppReviewTitleV2": {
+    "description": ""
+  },
+  "inAppReviewTitleV3": "You are a wonderful pilgrim!",
+  "@inAppReviewTitleV3": {
+    "description": ""
+  },
+  "inAppReviewTitleV4": "Camino Ninja loves you!",
+  "@inAppReviewTitleV4": {
+    "description": ""
+  },
+  "inbox": "Inbox",
+  "individualPowerPlugs": "Individual Power Plugs",
+  "instagram": "Instagram",
+  "jan10ToDec23": "January 10 to December 23",
+  "jan10ToDec23ExceptDec3To9": "January 10 to December 23, except December 3 to 9",
+  "jan10ToDec23ManyExceptions": "January 10 to December 23, except February 26 to March 2, November 20 and 27 to 28, December 3 to 12",
+  "jan10ToDec9": "January 10 to December 9",
+  "jan11ToDec19_499": "January 11 to December 19",
+  "jan11ToDec19_572": "January 11 to December 19",
+  "jan15ToDec31ExceptOct": "January 15 to December 31, except last week in October",
+  "jan17ToDec12": "January 17 to December 12",
+  "jan17ToDec19": "January 17 to December 19",
+  "jan1ToDec21_622": "January 1 to December 21",
+  "jan1ToDec22_630": "January 1 to December 22",
+  "jan1ToNov30": "January 1 to November 30",
+  "jan1ToOct31": "January 1 to October 31",
+  "jan21ToDec14_640": "January 21 to December 14",
+  "jan21ToDec15FriToSun": "January 21 to December 15 (only open Fridays to Sundays from January 21 to March 31 and November 1 to December 15)",
+  "jan21ToDec19_636": "January 21 to December 19",
+  "jan21ToDec19_671": "January 21 to December 19",
+  "jan22ToDec18": "January 22 to December 18",
+  "jan25ToDec20": "January 25 to December 20",
+  "jan26ToDec24ClosedMondays": "January 26 to December 24 (closed on Mondays in November, December, January and February)",
+  "jan2ToDec19": "January 2 to December 19",
+  "jan2ToDec22": "January 2 to December 22",
+  "jan2ToDec24": "January 2 to December 24",
+  "jan2ToDec24ExceptNov15To30": "January 2 to December 24, except November 15 to 30",
+  "jan3ToDec22_617": "January 3 to December 22",
+  "jan3ToDec23": "January 3 to December 23",
+  "jan4ToDec21": "January 4 to December 21",
+  "jan6ToDec19": "January 6 to December 19",
+  "jan6ToDec22_597": "January 6 to December 22",
+  "jan6ToDec23": "January 6 to December 23",
+  "jan6ToOct31": "January 6 to October 31",
+  "jan7ToDec23": "January 7 to December 23",
+  "jan8ToDec11": "January 8 to December 11",
+  "jan8ToDec21_601": "January 8 to December 21",
+  "jan8ToDec21_669": "January 8 to December 21",
+  "jan8ToDec23_626": "January 8 to December 23",
+  "january15ToNovember30": "January 15 to November 30",
+  "january16ToDecember14": "January 16 to December 14",
+  "januaryToDecember": "January 1 to December 31",
+  "july1ToAug30": "July 1 to August 30",
+  "july1ToSept24_722": "July 1 to September 24",
+  "july1ToSeptember15": "July 1 to September 15",
+  "july20ToSept30": "July 20 to September 30",
+  "june15ToOct31": "June 15 to October 31",
+  "june16ToOct15": "June 16 to October 15",
+  "june1ToOct30": "June 1 to October 30",
+  "june1ToSeptember30": "June 1 to September 30",
+  "kitchen": "Kitchen",
+  "km": "km",
+  "kmMiles": "Km/Miles",
+  "language": "Language",
+  "@language": {
+    "description": "Word for language selection"
+  },
+  "languageAvailable": "Languages Available",
+  "@languageAvailable": {
+    "description": ""
+  },
+  "lastUpdated": "Last Updated",
+  "@lastUpdated": {
+    "description": ""
+  },
+  "later": "Later",
+  "@later": {
+    "description": ""
+  },
+  "latestPriceOn": "Latest price on",
+  "@latestPriceOn": {
+    "description": ""
+  },
+  "laundryFree": "Laundry is free",
+  "legalAndPrivacy": "Legal & Privacy",
+  "@legalAndPrivacy": {
+    "description": ""
+  },
+  "letUsKnowIfAnyInformationIsIncorrect": "Let us know if any information is incorrect",
+  "@letUsKnowIfAnyInformationIsIncorrect": {
+    "description": ""
+  },
+  "letUsKnowStay": "Let us know how you’d like to stay in this city!",
+  "lightDark": "Light/Dark",
+  "lightMode": "Light mode",
+  "@lightMode": {
+    "description": ""
+  },
+  "list": "List",
+  "loadingMessage": "Loading route data...\n\nPlease wait a moment while we load the necessary data.\nThis will only happen once.\nYou can use the app offline after the initial loading is done.",
+  "@loadingMessage": {
+    "description": "Message shown during initial data loading"
+  },
+  "locateOnOtherMaps": "Locate on other maps",
+  "@locateOnOtherMaps": {
+    "description": ""
+  },
+  "locationAccuracyDetail": "your current position more accurately.",
+  "locationAccuracyIntro": "Turning on location accuracy helps us display ",
+  "locationPermissionGuideAndroidStep1Part1": "\nGo to ",
+  "locationPermissionGuideAndroidStep1Part2BoldPath": "Settings > Location",
+  "locationPermissionGuideAndroidStep1Part3": " and turn on ",
+  "locationPermissionGuideAndroidStep1Part4BoldAction": "Location access.",
+  "locationPermissionGuideAndroidStep2Part1": "\nIn your app settings, also ensure ",
+  "locationPermissionGuideAndroidStep2Part2BoldAppName": "Camino Ninja",
+  "locationPermissionGuideAndroidStep2Part3": " has permission to access your location.",
+  "locationPermissionGuideHeaderPart1": "To explore the map, you’ll need to turn on ",
+  "locationPermissionGuideHeaderPart2Bold": "Location Services.",
+  "locationPermissionGuideHeaderPart3": "\nJust follow the steps for your device:",
+  "locationPermissionGuideIosStep1Part1": "\nGo to ",
+  "locationPermissionGuideIosStep1Part2BoldPath": "Settings > Privacy & Security > Location Services",
+  "locationPermissionGuideIosStep1Part3": " and turn on ",
+  "locationPermissionGuideIosStep1Part4BoldAction": "Location Services.",
+  "locationPermissionGuideIosStep2Part1": "\nIn the ",
+  "locationPermissionGuideIosStep2Part2BoldTerm": "Apps",
+  "locationPermissionGuideIosStep2Part3": " settings, also ensure Camino Ninja has permission to access your location.",
+  "locationPermissionGuideIosStep3Part1": "\nFor best accuracy, turn on ",
+  "locationPermissionGuideIosStep3Part2BoldAction": "Precise Location.",
+  "locationPermissionGuideIosStep3Part4": " ",
+  "locationRequired": "Location Required",
+  "@locationRequired": {
+    "description": ""
+  },
+  "locationRouteDestination": "Location, route & destination",
+  "loginRequiredUpload": "You need to be logged in, to upload",
+  "loginToShare": "Log in to share or import plans.",
+  "lunchAvailable": "Lunch Available",
+  "manuallyAddStay": "Manually add my stay",
+  "map": "Map",
+  "march10ToDec23": "March 10 to December 23",
+  "march12ToOct31": "March 12 to October 31",
+  "march14ToDec11": "March 14 to December 11",
+  "march15ToDec10_523": "March 15 to December 10",
+  "march15ToDec11_715": "March 15 to December 11",
+  "march15ToDec15ExceptNovGroups4": "March 15 to December 15, except November 15 to 30 (only for groups of 4 and more in December)",
+  "march15ToDec15_554": "March 15 to December 15",
+  "march15ToNov15ClosedMondays": "March 15 to November 15 (Closed on Mondays)",
+  "march15ToNov15ClosedMondays_668": "March 15 to November 15 (closed on Mondays)",
+  "march15ToNov15RestReservation": "March 15 to November 15, rest of year by reservation",
+  "march15ToNov28": "March 15 to November 28",
+  "march15ToNov30_634": "March 15 to November 30",
+  "march15ToNov5_700": "March 15 to November 5",
+  "march15ToNovember15": "March 15 to November 15",
+  "march15ToOct15RestCall": "March 15 to October 15, rest of the year confirm",
+  "march15ToOct23": "March 15 to October 23",
+  "march15ToOct24ClosedMondays": "March 15 to October 24 (closed on mandays)",
+  "march15ToOctober15_130": "March 15 to October 15",
+  "march15ToOctober15_208": "March 15 to October 15",
+  "march15ToOctober15_227": "March 15 to October 15",
+  "march15ToOctober31_119": "March 15 to October 31",
+  "march15ToOctober31_180": "March 15 to October 31",
+  "march15ToSept30_558": "March 15 to September 30",
+  "march15ToSept30_563": "March 15 to September 30",
+  "march15ToSept30_686": "March 15 to September 30",
+  "march15ToSeptember15": "March 15 to September 15",
+  "march16ToDec14RestGroups": "March 16 to December 14 (rest of year only groups with reservations)",
+  "march18ToOctober19": "March 18 to October 19",
+  "march18ToOctober31": "March 18 to October 31",
+  "march19ToOct31_685": "March 19 to October 31",
+  "march1ToDec10_528": "March 1 to December 10",
+  "march1ToDec10_672": "March 1 to December 10",
+  "march1ToDec10_695": "March 1 to December 10",
+  "march1ToDec12_654": "March 1 to December 12",
+  "march1ToDec14_606": "March 1 to December 14",
+  "march1ToDec14_663": "March 1 to December 14",
+  "march1ToDec15_649": "March 1 to December 15",
+  "march1ToDec15_702": "March 1 to December 15",
+  "march1ToDec18": "March 1 to December 18",
+  "march1ToDec19RestGroups": "March 1 to December 19 (rest of the year only for groups with reservation)",
+  "march1ToDec20_550": "March 1 to December 20",
+  "march1ToDec21_673": "March 1 to December 21",
+  "march1ToDec22_707": "March 1 to December 22",
+  "march1ToDec23_627": "March 1 to December 23",
+  "march1ToDec31": "March 1 to December 31",
+  "march1ToDec31_698": "March 1 to December 31",
+  "march1ToDec8": "March 1 to December 8",
+  "march1ToDecember8": "March 1 to December 8",
+  "march1ToNov10": "March 1 to November 10",
+  "march1ToNov11": "March 1 to November 11",
+  "march1ToNov15RestGroups4": "March 1 to November 15 (rest of year only open for groups of 4 people or more)",
+  "march1ToNov19_610": "March 1 to November 19",
+  "march1ToNov20": "March 1 to November 20",
+  "march1ToNov26": "March 1 to November 26",
+  "march1ToNov28_655": "March 1 to November 28",
+  "march1ToNov30MayVary": "March 1 to November 30 (depending on the year, it may vary)",
+  "march1ToNov30RestGroupsReservation": "March 1 to November 30 (rest of the year only for groups with reservation)",
+  "march1ToNov30RestGroupsReservation_203": "March 1 to November 30 (rest of the year by reservation by groups only)",
+  "march1ToNov30RestReservation_174": "March 1 to November 30 (rest of year by reservation)",
+  "march1ToNovember15": "March 1 to November 15",
+  "march1ToNovember30": "March 1 to November 30",
+  "march1ToOct24_570": "March 1 to October 24",
+  "march1ToOct31ClosedSatSun": "March 1 to October 31 (closed Saturdays and Sundays)",
+  "march1ToOctober15": "March 1 to October 15",
+  "march1ToOctober31": "March 1 to October 31",
+  "march1ToOctober31GroupsReserve": "March 1 to October 31 (other months groups can reserve)",
+  "march1ToOctober31Reservation": "March 1 to October 31 (rest of the year according to reservations)",
+  "march1ToOctober31RestConfirm_123": "March 1 to October 31, rest of year confirm",
+  "march1ToOctober31RestReservation_160": "March 1 to October 31, rest of year make reservation",
+  "march1ToOctober31RestThuSun": "March 1 to October 31, rest of year from Thursday to Sunday",
+  "march1ToSeptember30": "March 1 to September 30",
+  "march20ToOct24": "March 20 to October 24",
+  "march20ToOct30": "March 20 to October 30",
+  "march21ToNovember6": "March 21 to November 6",
+  "march23ToNovember5": "March 23 to November 5",
+  "march25ToDec10_692": "March 25 to December 10",
+  "march25ToOct15_553": "March 25 to October 15",
+  "march26ToNov4": "March 26 to November 4",
+  "march26ToOct31_679": "March 26 to October 31",
+  "march28ToOct31ClosedSatSun": "March 28 to October 31 (closed Saturdays and Sundays)",
+  "march28ToOct31_705": "March 28 to October 31",
+  "march2ToDec20": "March 2 to December 20",
+  "march30ToOct31": "March 30 to October 31",
+  "march6ToOct31": "March 6 to October 31",
+  "may1ToNovember30_184": "May 1 to November 30",
+  "may1ToOct15": "May 1 to October 15",
+  "may1ToOctober31_173": "May 1 to October 31",
+  "may1ToSeptember30": "May 1 to September 30",
+  "may3ToOct30": "May 3 to October 30",
+  "maybeLater": "Maybe later",
+  "@maybeLater": {
+    "description": ""
+  },
+  "merlinDescription": "{name} is the Head of Data and, together with his team, takes care of new hostels, updated prices, changes to the route, and so on.",
+  "microwave": "Microwave",
+  "minMaxElevRouteScreen": "min/max elev.",
+  "@minMaxElevRouteScreen": {
+    "description": ""
+  },
+  "missingAccommodationPlaceholder": "Add a Google Maps link, website, or similar to help us locate the accommodation",
+  "@missingAccommodationPlaceholder": {
+    "description": ""
+  },
+  "missingAccommodationReported": "Missing accommodation reported",
+  "@missingAccommodationReported": {
+    "description": ""
+  },
+  "more": "More",
+  "mostPopular": "Most popular",
+  "myPlans": "My Plans",
+  "myReviews": "My Reviews",
+  "myStay": "My stay",
+  "name": "Name",
+  "@name": {
+    "description": ""
+  },
+  "nameItLater": "I'll name it later",
+  "namePlanHint": "My First Camino",
+  "namePlanOptional": "Name your plan (optional)",
+  "namePlanTitle": "What do you want to call this plan?",
+  "newDataAvailable": "New data available",
+  "@newDataAvailable": {
+    "description": ""
+  },
+  "newDataAvailableDescription": "Update may include new albergues, booking information, etc.",
+  "@newDataAvailableDescription": {
+    "description": ""
+  },
+  "newStagePlanner": "New: STAGE PLANNER",
+  "newsAndAnnouncements": "News & Announcements",
+  "nextCity": "Next city",
+  "no": "No",
+  "noAnnouncements": "No announcements yet",
+  "noLocationServices": "You did not authorize location services. Your location, distance from route, and elevation cannot be shown on the map.",
+  "noNotificationsYet": "No notifications yet",
+  "noReservationCheck": "No, but possible to confirm availability",
+  "noResultsFound": "No results found",
+  "@noResultsFound": {
+    "description": ""
+  },
+  "noSavedAccommodationYet": "No saved accommodation yet.",
+  "@noSavedAccommodationYet": {
+    "description": ""
+  },
+  "noSavedPlans": "Currently, there are no saved plans.\nFeel free to create a new one!",
+  "noStagePlannedToday": "You have no Stage planned for today",
+  "notNow": "Not now",
+  "@notNow": {
+    "description": ""
+  },
+  "notOnRouteName": "My Ninja App does not believe I am on {routeName}.",
+  "notSameDay": "Not the same day",
+  "notificationPromptDescription": "We'll notify you about important Camino trail updates — closures, new accommodations, and seasonal news.",
+  "notificationSettings": "Notifications",
+  "notificationSettingsDescription": "Manage your notification preferences",
+  "failedToUpdateSettings": "Failed to update settings. Please try again.",
+  "notifications": "Notifications",
+  "notificationsDisabledDescription": "Enable notifications in your device settings to receive trail updates and community news.",
+  "notificationsDisabledTitle": "Notifications are disabled",
+  "notificationsUnavailable": "Notifications are not available in this build.",
+  "nov1ToFeb29ExceptDec13To15": "November 1 to February 29, except December 13 to 15",
+  "nov1ToFeb29_590": "November 1 to Febuary 29",
+  "ok": "OK",
+  "onlyLowSeason_250": "Only in low season",
+  "onlyOffSeason": "Only off-season",
+  "oopsSomethingWentWrong": "Oops, something went wrong",
+  "@oopsSomethingWentWrong": {
+    "description": ""
+  },
+  "open": "Open",
+  "@open": {
+    "description": ""
+  },
+  "openSeason": "Open Season",
+  "openSeasonUnknown": "Open Season Unknown",
+  "openSettings": "Open Settings",
+  "@openSettings": {
+    "description": ""
+  },
+  "openWhenOthersClosed": "Only open when all other albergues in Frómista are closed",
+  "openWhenOthersClosedOctToMay": "Open when the other Frómista albergues are closed. Open from October to May discontinuously (call to check availability). Closed usually from June to September.",
+  "optional": "Optional",
+  "@optional": {
+    "description": ""
+  },
+  "organic": "Organic",
+  "original": "Original",
+  "otherChannels": "Other channels",
+  "@otherChannels": {
+    "description": ""
+  },
+  "oven": "Oven",
+  "pending": "Pending",
+  "peterDescription": "{name} is Head of Camino Ninja, and he and his team take care of strategic issues, new app features, and everything else.",
+  "phone": "Phone",
+  "@phone": {
+    "description": ""
+  },
+  "photoItem": "Uploaded photos",
+  "photoUploaded": "Photo uploaded",
+  "@photoUploaded": {
+    "description": ""
+  },
+  "photosAndReviews": "photos and reviews",
+  "plan": "Plan",
+  "planDataIncomplete": "Data incomplete. Update to the latest data to see this plan.",
+  "planDeletedSuccessfully": "Successfully deleted the plan",
+  "planDetail": "Plan Detail",
+  "planFor": "Plan for",
+  "plannedRoute": "Planned Route",
+  "plans": "Plans",
+  "plansImportSuccess": "Plans imported successfully!",
+  "plansLinkedDescription": "Plans are now linked to your account. Please sign in to access sharing features and import new Camino Ninja plans.",
+  "platesUtensils": "Plates & Utensils",
+  "pleaseRegisterToReviewYourStay": "Please register to rate your stay",
+  "@pleaseRegisterToReviewYourStay": {
+    "description": ""
+  },
+  "pleaseTryAgainLater": "Please try again later!",
+  "@pleaseTryAgainLater": {
+    "description": ""
+  },
+  "postedOn": "Posted on",
+  "preciseLocationWarning": "Precise Location is turned off, so your location may be inaccurate.",
+  "@preciseLocationWarning": {
+    "description": ""
+  },
+  "preferences": "Preferences",
+  "price": "Price",
+  "@price": {
+    "description": ""
+  },
+  "privacyCurtains": "Privacy Curtains",
+  "privateHomePizza": "This is not an albergue. It's a private home occationally hosting pilgrims. It's also a pretty awsome pizza restaurant.",
+  "privateLockers": "Private Lockers",
+  "proceedAsAGuest": "Proceed as a guest",
+  "@proceedAsAGuest": {
+    "description": ""
+  },
+  "proceedWithName": "Proceed with this name",
+  "provideARating": "Provide a rating",
+  "@provideARating": {
+    "description": ""
+  },
+  "qrCodeInvalid": "QR Code Invalid",
+  "qrCodeInvalidError": "QR Code is invalid",
+  "qrCodeSaveSuccess": "QR Code saved to gallery successfully!",
+  "qrCodeSaved": "QR Code Saved",
+  "quadrupleRoom": "Quadruple Room",
+  "qualityReasonPhotos": "This helps us to ensure the quality of the photos.",
+  "qualityReasonReviews": "This helps us to ensure the quality of the reviews.",
+  "rateThisAccommodation": "Rate this accommodation",
+  "@rateThisAccommodation": {
+    "description": ""
+  },
+  "ratings": "Ratings",
+  "@ratings": {
+    "description": ""
+  },
+  "recommendLogin": "We recommend to log in / create an account.",
+  "recommended": "Recommended",
+  "refrigerator": "Refrigerator",
+  "registerForPhotos": "Please register to upload photos",
+  "registerForReview": "Please register to write a review",
+  "remindMeLater": "Remind me later",
+  "removeStay": "Remove stay",
+  "rentWholeUntilMarch2022": "Until March 2022 it is only possible to rent the whole albergue for 120 a night (10 people)",
+  "reportAnIssue": "Report an issue",
+  "@reportAnIssue": {
+    "description": ""
+  },
+  "reportMissingAccommodation": "Report missing accommodation",
+  "@reportMissingAccommodation": {
+    "description": ""
+  },
+  "reportMissingAlbergueBottomSheetDescription": "Help us out by adding its details—like a Google Maps link or location info.",
+  "@reportMissingAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "reportMissingAlbergueBottomSheetTitle": "Don’t see an accommodation you know in this city?",
+  "@reportMissingAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "reportMissingAlbergueMessage": "Thank you for helping us keep Camino Ninja up to date.",
+  "@reportMissingAlbergueMessage": {
+    "description": ""
+  },
+  "reportTechnicalIssue": "Report Technical Issue",
+  "required": "Required",
+  "@required": {
+    "description": ""
+  },
+  "reservation60Plus": "Reservation only possible for pilgrims who are 60 years or older",
+  "reserve": "Reserve",
+  "restaurant": "Restaurant",
+  "retry": "Retry",
+  "@retry": {
+    "description": ""
+  },
+  "returnToAllLocations": "Return to all locations",
+  "@returnToAllLocations": {
+    "description": ""
+  },
+  "reviewAlbergueBottomSheetDescription": "Other pilgrims would like to know!",
+  "@reviewAlbergueBottomSheetDescription": {
+    "description": ""
+  },
+  "reviewAlbergueBottomSheetTitle": "How would you rate the overall experience with this place?",
+  "@reviewAlbergueBottomSheetTitle": {
+    "description": ""
+  },
+  "reviewApp": "Review Camino Ninja App",
+  "reviewItem": "Accommodation reviews",
+  "reviewRequiredLoginDescription": "Posting with an account makes reviews more genuine and trustworthy for everyone in the community.",
+  "@reviewRequiredLoginDescription": {
+    "description": ""
+  },
+  "reviews": "Reviews",
+  "@reviews": {
+    "description": ""
+  },
+  "reviewsIHaveWritten": "Reviews I have written",
+  "route": "Route",
+  "routeSummary": "Route Summary",
+  "save": "Save",
+  "@save": {
+    "description": ""
+  },
+  "saveChange": "Save change",
+  "saveQrCode": "Save QR Code",
+  "savedAccommodation": "Saved accommodation",
+  "savedAccommodations": "Saved accommodations",
+  "@savedAccommodations": {
+    "description": ""
+  },
+  "savedOn": "Saved on",
+  "savedStaysNote": "My saved stays are here",
+  "scanHere": "Scan here",
+  "scanOrOpenPhoto": "Scan (or open as a photo)\nwith the Camino Ninja app",
+  "scanOrUploadQr": "Scan or Upload QR Code",
+  "schedulingConflict": "You have a scheduling conflict on this date",
+  "search": "Search",
+  "@search": {
+    "description": ""
+  },
+  "secondMostPopular": "2nd most popular",
+  "seeMyComment": "See my comment",
+  "seeThemOnTheMap": "See them on the map",
+  "@seeThemOnTheMap": {
+    "description": ""
+  },
+  "selectCityCurrentLocation": "Select city from current location",
+  "selectDate": "Select date",
+  "selectStartDate": "Select a start date",
+  "selectDestinationCity": "Select your destination city",
+  "selectFromTheList": "Select from the list",
+  "selectLanguage": "Select Language",
+  "selectLanguageDescription": "Just a friendly reminder that some languages might be translated by AI.",
+  "@selectLanguageDescription": {
+    "description": ""
+  },
+  "selectLocation": "Select location",
+  "@selectLocation": {
+    "description": ""
+  },
+  "selectOrSpecify": "Select or specify",
+  "selectPlan": "Select Plan",
+  "selectPlansToShare": "Select a plans to share",
+  "selectRoute": "Select Route",
+  "@selectRoute": {
+    "description": ""
+  },
+  "selectRouteForMap": "Please select a route to show on the map.",
+  "selectRoute_431": "Select route",
+  "selectStartingCity": "Select your starting city",
+  "selectTheme": "Select Theme",
+  "selectUnit": "Select Unit",
+  "selectedRoute": "the selected route",
+  "sendLuggage": "Send luggage to Santiago",
+  "sessionExpired": "Your session has expired. Please log in again.",
+  "@sessionExpired": {
+    "description": "Shown when the user's authentication session expires and they are logged out"
+  },
+  "setStartingDateOptional": "Set starting date (optional)",
+  "shakeNinja": "Shake Ninja",
+  "@shakeNinja": {
+    "description": ""
+  },
+  "share": "Share",
+  "shareMessageSocial": "Share in message or social media",
+  "sharePlan": "Share Plan",
+  "shareYourPhotosOfThisAccommodation": "Share your photos of this accommodation",
+  "@shareYourPhotosOfThisAccommodation": {
+    "description": ""
+  },
+  "show": "Show",
+  "showOriginal": "Show original",
+  "showTranslated": "Show translated",
+  "signInSignUp": "Sign in / Sign up",
+  "signInToSync": "Sign in to sync your plans across devices",
+  "signOut": "Sign out",
+  "@signOut": {
+    "description": ""
+  },
+  "singleRoom": "Single Room",
+  "somethingNotWorking": "Something not working?",
+  "spinDryer": "Spin Dryer",
+  "stageDeletedSuccessfully": "Successfully deleted the stage",
+  "stageDistance": "Stage Distance",
+  "stageElevation": "Stage Elevation",
+  "stagePlannerDescription": "From now on you can PLAN your full camino with Ninja, planning as many days ahead as you like.\n\nThis is the first version of the PLAN feature. If you have an idea how we can improve this new feature, please send the feedback by shaking your phone, or use the contact email in the MORE section.",
+  "stagePlural": "Stages",
+  "stageScheduledPastDate": "This stage is scheduled for a past date",
+  "stageSingular": "Stage",
+  "stageToDeleteDetails": "The stage on",
+  "startHereToday": "I'll start here today",
+  "startOfStage": "Start of stage",
+  "startingDate": "Starting date",
+  "stayInTheLoop": "Stay in the loop",
+  "submit": "Submit",
+  "@submit": {
+    "description": ""
+  },
+  "suspended_537": "Suspended",
+  "swimmingPool": "Swimming pool",
+  "switchUnit": "Switch Unit",
+  "@switchUnit": {
+    "description": ""
+  },
+  "switchUnitKmMiles": "Switch Unit (km/miles)",
+  "@switchUnitKmMiles": {
+    "description": ""
+  },
+  "sync": "Sync",
+  "syncFailed": "Sync failed",
+  "syncFailureDescription": "Could not sync your plans. Please try again later.",
+  "syncFailureTitle": "Sync failed",
+  "syncSuccessDescription": "Your plans have been synced successfully.",
+  "syncSuccessTitle": "Plans synced",
+  "synced": "Synced!",
+  "syncedCopy": "Synced copy",
+  "syncing": "Syncing...",
+  "system": "System",
+  "@system": {
+    "description": ""
+  },
+  "tapToSeeTheMap": "Tap to see the map",
+  "@tapToSeeTheMap": {
+    "description": ""
+  },
+  "taxiBoat": "If you want to walk by the coast in Spain along Caminho Português da Costa (Senda Litoral) you can take the taxi boat Taxi-Mar (+351 915 955 827) from the old ferry dock",
+  "taxiBoatPontecesures": "Amare Turismo Náutico have taxi-boats sailing from Vilanova de Arousa to Pontecesures all year round for 25 euros per person. Minimum 8 persons and maximum 12. Reservations by phone / WhatsApp: +34 650 41 03 22",
+  "tellUsMoreAboutTheIssue": "Tell us more about the issue",
+  "@tellUsMoreAboutTheIssue": {
+    "description": ""
+  },
+  "tellYourFriendAboutThisPlace": "Tell your friend about this place",
+  "@tellYourFriendAboutThisPlace": {
+    "description": ""
+  },
+  "tentDonation": "You might want to ask if you can put your tent up in the garden for a donation and help volunteering a little. Donations are welcome for the restoration of the abbey as well.",
+  "tentsMattressSheet": "Tents are provided for sleeping with a mattress and bed sheet",
+  "theme": "Theme",
+  "@theme": {
+    "description": ""
+  },
+  "themeAvailable": "Themes Available",
+  "@themeAvailable": {
+    "description": ""
+  },
+  "thereIsNoAccommodationInThisLocation": "There is no accommodation in this location.",
+  "@thereIsNoAccommodationInThisLocation": {
+    "description": ""
+  },
+  "thirdMostPopular": "3rd most popular",
+  "thisFieldIsRequired": "This field is required",
+  "@thisFieldIsRequired": {
+    "description": ""
+  },
+  "to": "to",
+  "toReportAProblemWithTheApp": "to report a problem with the app",
+  "@toReportAProblemWithTheApp": {
+    "description": ""
+  },
+  "today": "Today",
+  "translate": "Translate",
+  "translated": "Translated",
+  "travelerStats": "{percent} of travelers starting in {startCity} end up in {endCity}.",
+  "tripleRoom": "Triple Room",
+  "tryAdjustingYourSearchTerms": "Try adjusting your search terms.",
+  "@tryAdjustingYourSearchTerms": {
+    "description": ""
+  },
+  "tumbleDryer": "Tumble Dryer",
+  "tv": "TV",
+  "twoWeeksBeforeEasterToNov15": "Two weeks before Easter to November 15",
+  "unnamedPlan": "Unnamed plan",
+  "updateDescription": "You’re on an old app version. Update today to keep your login active and get our newest trail maps—otherwise, you’ll miss out on all the latest features.",
+  "updateNow": "Update now",
+  "@updateNow": {
+    "description": ""
+  },
+  "updateTitle": "Update to stay on track!",
+  "updateToUseQR": "To use this QR code, please update your app to version {versionName} or higher.",
+  "update_360": "Update",
+  "updatingMessage": "Updating the latest data",
+  "@updatingMessage": {
+    "description": "Message shown when updating data"
+  },
+  "uploadFailDueToCancellation": "Upload was unsuccessful due to cancellation.",
+  "@uploadFailDueToCancellation": {
+    "description": ""
+  },
+  "uploadFailed": "Upload Failed",
+  "@uploadFailed": {
+    "description": ""
+  },
+  "uploadFromGallery": "Or upload QR code\nfrom your gallery",
+  "uploadImages": "Upload images",
+  "@uploadImages": {
+    "description": ""
+  },
+  "uploadPhotoSuccessMessage": "We’re reviewing your photos to keep the app respectful and high-quality.",
+  "@uploadPhotoSuccessMessage": {
+    "description": ""
+  },
+  "uploadPhotos": "Upload photos",
+  "useMyLocation": "Use my location",
+  "@useMyLocation": {
+    "description": ""
+  },
+  "useWithoutLogin": "You can still use Camino Ninja without being logged in - and this will never change.",
+  "vegan": "Vegan",
+  "veganOption": "Vegan Option",
+  "vegetarian": "Vegetarian",
+  "vegetarianOption": "Vegetarian Option",
+  "viewDetail": "View detail",
+  "viewOnMap": "View on map",
+  "viewPlan": "View Plan",
+  "warningOnlineToLoadAlbergueReviews": "You need to be online to load albergue reviews.",
+  "@warningOnlineToLoadAlbergueReviews": {
+    "description": ""
+  },
+  "warningRateBeforeSubmitReview": "Tap the stars to rate before submitting.",
+  "@warningRateBeforeSubmitReview": {
+    "description": ""
+  },
+  "washingMachine": "Washing Machine",
+  "waterBoiler": "Water Boiler",
+  "website": "Website",
+  "whatInHere": "What's in here",
+  "@whatInHere": {
+    "description": ""
+  },
+  "wifi": "Wi-Fi",
+  "willBeDeleted": "will be deleted",
+  "winterCheckIn1400To2000": "In winter the check-in time is from 14:00-20:00",
+  "xuntaReservation": "Yes, required. Xunta de Galicia albergues require online reservation at the latest the same day before 13:00 / 01:00 pm.",
+  "xuntaWifi": "All Xunta albergues: Wi-Fi may or may not work depending on your country and service provider as a text message is needed to log on to the wi-fi.",
+  "yes": "Yes",
+  "yes24Hours": "Yes, 24 hours in advance",
+  "yes5DaysWebsite": "Yes, 5 days in advance on the website",
+  "yesEmailPrepayment": "Yes, by email and with prepayment",
+  "yesExceptAugust": "Yes, exept in August",
+  "yesExceptSummer": "Yes, except in summer",
+  "yesOneDayAdvance": "Yes, but at least one day in advance.",
+  "yesOnline": "Yes, only online",
+  "yesPrivateRoomOnly": "Yes, for private room only",
+  "yesRecommendedChristmas": "Yes, recommended around Christmas",
+  "yesRecommendedWinter": "Yes, recommended in winter",
+  "yesRecommended_246": "Yes, recommended",
+  "yesRecommended_249": "Yes, recommended",
+  "yesRequired": "Yes (required)",
+  "yesRequiredFebMarch": "Yes, required in February and March",
+  "yesRequiredWinter": "Yes, required in winter",
+  "yesRequired_257": "Yes, required",
+  "yesSameDay": "Yes, same day",
+  "youAreDistanceFromCity": "You are {distance} km from {cityName}, the location closest to me on ",
+  "@youAreDistanceFromCity": {
+    "description": ""
+  },
+  "youAreHere": "You'are here",
+  "@youAreHere": {
+    "description": ""
+  },
+  "youAreTooFar": "You’re too far",
+  "@youAreTooFar": {
+    "description": ""
+  },
+  "stagesNotConnected": "Your stages are not connected",
+  "@stagesNotConnected": {
+    "description": ""
+  },
+  "addCityInBetween": "Add city in-between now",
+  "@addCityInBetween": {
+    "description": ""
+  },
+  "versionCopied": "Version copied",
+  "@versionCopied": {
+    "description": "Snack bar confirmation after copying the app version to clipboard"
+  },
+  "markAllAsRead": "Mark all as read",
+  "@markAllAsRead": {
+    "description": "Action to mark all notifications or announcements as read"
+  },
+  "scanWithVersion": "Scan with Camino Ninja {version} or newer.",
+  "@scanWithVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "addANote": "Add a note",
+  "@addANote": {
+    "description": "Placeholder text shown on the plan-detail Notes card when the stage has no note yet."
+  },
+  "buyNinjaACoffee": "Buy {brand} a coffee",
+  "@buyNinjaACoffee": {
+    "description": "Title on the Buy Me a Coffee banner on the More tab. {brand} is the Camino Ninja brand mascot name and is rendered in the brand color. Translators may move {brand} where natural in their language; the substituted text 'Ninja' stays in English.",
+    "placeholders": {
+      "brand": {
+        "type": "String"
+      }
+    }
+  },
+  "clearNote": "Clear note",
+  "@clearNote": {
+    "description": "Button label in the stage-note bottom sheet that clears the existing note."
+  },
+  "notesOptional": "Notes (optional)",
+  "@notesOptional": {
+    "description": "Label shown above the optional Notes text field in the Add/Edit Stage screen."
+  },
+  "stageNoteDescription": "Add a personal note for this stage — directions, reminders, vibes. Only you see this.",
+  "@stageNoteDescription": {
+    "description": "Subtitle/helper text in the stage-note bottom sheet explaining that notes are private."
+  },
+  "stageNoteTitle": "Stage note",
+  "@stageNoteTitle": {
+    "description": "Title shown at the top of the bottom sheet where the user edits a stage note."
+  },
+  "notes": "Notes",
+  "loginReminderBannerCallToAction" : "Tap",
+  "@loginReminderBannerCallToAction" : {
+    "description" : "Bold leading word of the login reminder banner. Translators may swap this with the natural call-to-action verb in their language; pair with loginReminderBannerCallToActionRest."
+  },
+  "loginReminderBannerCallToActionRest" : " to sign in and back up your {stageCount}-stage plan",
+  "@loginReminderBannerCallToActionRest" : {
+    "description" : "Remainder of the login reminder banner copy after the bold call-to-action word. Begins with a leading space so it concatenates after loginReminderBannerCallToAction.",
+    "placeholders" : {
+      "stageCount" : {
+        "type" : "int"
+      }
+    }
+  },
+  "loginReminderBannerDismissLabel" : "Dismiss login reminder",
+  "@loginReminderBannerDismissLabel" : {
+    "description" : "Accessibility label for the dismiss (X) button on the login reminder banner."
+  },
+  "loginReminderSheetTitle" : "Don't Lose Your Progress!",
+  "@loginReminderSheetTitle" : {
+    "description" : "Title shown at the top of the login reminder bottomsheet."
+  },
+  "loginReminderSheetSubtitle" : "Looks like you have a lot planned. Log in now to protect your data and unlock more features:",
+  "@loginReminderSheetSubtitle" : {
+    "description" : "Subtitle shown below the title in the login reminder bottomsheet, introducing the feature list."
+  },
+  "loginReminderSheetCloudSyncTitle" : "Cloud Sync",
+  "@loginReminderSheetCloudSyncTitle" : {
+    "description" : "Title of the Cloud Sync feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCloudSyncDescription" : "Access stays and plans on any device.",
+  "@loginReminderSheetCloudSyncDescription" : {
+    "description" : "Description of the Cloud Sync feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCommunityTitle" : "Community",
+  "@loginReminderSheetCommunityTitle" : {
+    "description" : "Title of the Community feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetCommunityDescription" : "Review places and share plans with pals.",
+  "@loginReminderSheetCommunityDescription" : {
+    "description" : "Description of the Community feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetPeaceOfMindTitle" : "Peace of Mind",
+  "@loginReminderSheetPeaceOfMindTitle" : {
+    "description" : "Title of the Peace of Mind feature row in the login reminder bottomsheet."
+  },
+  "loginReminderSheetPeaceOfMindDescription" : "Your plans stay safe, no matter what.",
+  "@loginReminderSheetPeaceOfMindDescription" : {
+    "description" : "Description of the Peace of Mind feature row in the login reminder bottomsheet."
+  },
+  "cameraPermissionTitle" : "Camera access needed",
+  "@cameraPermissionTitle" : {
+    "description" : "Title shown on the QR scanner permission explainer when camera access is required."
+  },
+  "cameraPermissionBody" : "We need camera access to scan QR codes. You can still upload a QR image from your gallery without it.",
+  "@cameraPermissionBody" : {
+    "description" : "Body text shown on the QR scanner permission explainer when camera access is required."
+  },
+  "includeDbDumpTitle" : "Share My Plans data to help us troubleshoot",
+  "@includeDbDumpTitle" : {
+    "description" : "Title for the bug-report opt-in checkbox that attaches an anonymized stage planner DB snapshot"
+  },
+  "includeDbDumpSubtitle" : "Plan names and notes are excluded for your privacy.",
+  "@includeDbDumpSubtitle" : {
+    "description" : "Subtitle/description under the bug-report DB-attachment checkbox; informs the user that PII is scrubbed"
+  }
+}
