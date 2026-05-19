@@ -1614,12 +1614,22 @@ class _JourneyOptionCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = context.textTheme;
 
-    // Colored left stripe takes the first route's color.
-    // Multi-route options still show all route names
-    // inline.
-    final accentColor = option.routes.isNotEmpty
-        ? parseRouteColor(option.routes.first, isDark: isDark)
-        : colorScheme.primary;
+    // Left accent stripe: a vertical gradient through
+    // every route's color so multi-route options show the
+    // full palette of the trail (e.g., pink → purple →
+    // yellow for a 3-route option).
+    final routeColors = option.routes
+        .map((r) => parseRouteColor(r, isDark: isDark))
+        .toList();
+    if (routeColors.isEmpty) routeColors.add(colorScheme.primary);
+    final stripeGradient = routeColors.length == 1
+        ? null
+        : LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: routeColors,
+          );
+    final stripeSolidColor = routeColors.first;
 
     final cardBg = isDark ? AppColors.gray800 : AppColors.primary95;
 
@@ -1643,7 +1653,10 @@ class _JourneyOptionCard extends StatelessWidget {
                   child: Container(
                     width: 4,
                     decoration: BoxDecoration(
-                      color: accentColor,
+                      color: stripeGradient == null
+                          ? stripeSolidColor
+                          : null,
+                      gradient: stripeGradient,
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),
