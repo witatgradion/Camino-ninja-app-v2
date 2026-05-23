@@ -276,7 +276,7 @@ jobs:
 
     - name: Deploy to TestFlight
       if: ${{ inputs.deploy_to_testflight }}
-      uses: apple-actions/upload-testflight-build@v3
+      uses: apple-actions/upload-testflight-build@v5
       with:
         app-path: ${{ steps.find_ipa.outputs.path }}
         issuer-id: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
